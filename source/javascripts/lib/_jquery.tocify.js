@@ -387,6 +387,12 @@
 
             hashValue = this._generateHashValue(arr, self, index);
 
+            var additionalClasses = "", extraClasses = self[0].classList.toString();
+
+            if (extraClasses !== "") {
+                additionalClasses = " " + extraClasses;
+            }
+
             // ADDED BY ROBERT
             // actually add the hash value to the element's id
             // self.attr("id", "link-" + hashValue);
@@ -395,7 +401,7 @@
             item = $("<li/>", {
 
                 // Sets a common class name to the list item
-                "class": itemClassName,
+                "class": itemClassName + additionalClasses,
 
                 "data-unique": hashValue
 
