@@ -1,5 +1,15 @@
 .lecturer-view
 	h2#delete-project.lecturer-view Delete Project
 
-	p Delete project
+	= authentication
 
+	p Delete a Project. Only the Lecturer that created it may do so.
+
+	= http_request "DELETE", "projects/:id"
+
+	= params param(required, "id", "Integer", "The id of the Project to be deleted.")
+
+	= errors error_authentication,
+			 error_not_lecturer,
+			 error_association,
+			 error_invalid_params

@@ -1,0 +1,15 @@
+= example "GET /projects/12/logs?student_id=38", data.doc_examples["V1::ProjectsController"]["Lecturer"]["index_logs_lecturer"]["success"].first[1]
+
+= authentication
+
+p Get all the logs for a specific Student, in a Specific Project
+
+= http_request "GET", "projects/:id/logs"
+
+= params param(required, "id", "Integer", "The id of the project, for which the logs will be returned"),
+		 param(required, "student_id", "Integer", "The id of the student, for which the logs will be returned")
+
+= errors error_authentication,
+		 error_not_lecturer,
+		 error_association("The id does not belong to any project associated with the current user"),
+		 error(422, "The student_id does not match any Student in the Project")

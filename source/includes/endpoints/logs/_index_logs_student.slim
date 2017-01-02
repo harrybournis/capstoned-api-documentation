@@ -1,0 +1,13 @@
+= example "GET /projects/12/logs", data.doc_examples["V1::ProjectsController"]["Student"]["index_logs_student"]["success"].first[1]
+
+= authentication
+
+p Get all of the completed Logs for a specific Project.
+
+= http_request "GET", "projects/:id/logs"
+
+= params param(required, "id", "Integer", "The Logs will be returned for this Project")
+
+= errors error_authentication,
+		 error_not_student,
+		 error_association

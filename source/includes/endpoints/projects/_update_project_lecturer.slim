@@ -1,0 +1,19 @@
+= example "PATCH /projects/1", data.doc_examples["V1::ProjectsController"]["Lecturer"]["update"]["success"].first[1]
+
+= authentication
+
+p Update a Project.
+
+= http_request "PATCH", "projects/:id"
+
+= params param(required, "id", "Integer", "The id of the Project"),
+		 param(optional, "project_name", "String", "The name of the project"),
+		 param(optional, "description", "String", "A short description of the Project"),
+		 param(optional, "team_name", "String", "The name of the team of students in this project."),
+		 param(optional, "enrollment_key", "String", "The key used by the Students in order to enrol in the project."),
+		 param(optional, "logo", "String", "The image logo of the Project.")
+
+= errors error(400, "No parameters were provided besides an id"),
+		 error_authentication,
+		 error_association,
+		 error_invalid_params

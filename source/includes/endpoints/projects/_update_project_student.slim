@@ -1,0 +1,18 @@
+= example "PATCH /projects/1", data.doc_examples["V1::ProjectsController"]["Student"]["update"]["success"].first[1]
+
+= example "PATCH /projects/1", data.doc_examples["V1::ProjectsController"]["Student"]["update"]["error"].first[1]
+
+= authentication
+
+p Update a Project. Students can only update team_name and logo.
+
+= http_request "PATCH", "projects/:id"
+
+= params param(required, "id", "Integer", "The id of the Project"),
+		 param(optional, "team_name", "String", "The name of the team of students in this project."),
+		 param(optional, "logo", "String", "The image logo of the Project.")
+
+= errors error(400, "No parameters could found that could be update by a Student. Students can only update team_name and logo."),
+		 error_authentication,
+		 error_association,
+		 error_invalid_params

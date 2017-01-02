@@ -1,0 +1,18 @@
+.lecturer-view
+	h2#remove-student.lecturer-view Remove Student from Project
+
+	= example "DELETE /projects/3/remove_student?student_id=80", data.doc_examples["V1::ProjectsController"]["Lecturer"]["remove_student"]["success"].first[1]
+
+	= authentication
+
+	p Remove a Student from a Project. Used in cases of error, when a Student has enrolled in the 'wrong' project. The Lecturer has the ability to remove them from a Project, in order for the Student to select a different one.
+
+	= http_request "DELETE", "projects/:id/remove_student"
+
+	= params param(required, "id", "Integer", "The id of the project that the Student should be removed from"),
+			 param(required, "student_id", "Integer", "The id of the Student that needs to be removed from the Project")
+
+	= errors error_authentication,
+			 error_not_lecturer,
+			 error_association,
+			 error(422, "The student_id does not belong to any Student in the provided Project")

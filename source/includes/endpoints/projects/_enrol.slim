@@ -1,4 +1,24 @@
 .student-view
 	h2#enrol.student-view Enrol in Project
 
-	p. enrol
+	= example "POST /projects/enrol", data.doc_examples["V1::ProjectsController"]["Student"]["enrol"]["success"]["201_8"]
+
+	= example "POST /projects/enrol", data.doc_examples["V1::ProjectsController"]["Student"]["enrol"]["success"]["200_9"]
+
+	= authentication
+
+	p Enrol in Project. Needs the enrollment key and the id of the project. A Student may also specify a nickname for the particular Project. A Student may only belong to one Project per Assignment.
+
+	= http_request "POST", "projects/enrol"
+
+	= params param(required, "enrollment_key", "String", "The enrollment key specified by the Lecturer in order to enrol in this project"),
+			 param(required, "id", "Integer", "The id of this project. Used in order to distinguish two projects in case they have the same enrollment key"),
+			 param(optional, "nickname", "String", "The Student may specify a nickname for the specific project.")
+
+	aside.warning The nickname is project-specific. Just because a Student selected a nickname for a Project, it does not mean that all subsequent projects will share the same nickname.
+
+	= errors error_authentication,
+			 error_not_student,
+			 error(403, "Student tried to join same Project twice"),
+			 error(403, "Student tried to join two Projects in the same Assignment"),
+			 error(403, "Wrong enrollment_key/id")

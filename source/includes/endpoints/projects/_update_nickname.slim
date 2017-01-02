@@ -1,0 +1,19 @@
+.student-view
+	h2#update-nickname.student-view Update Nickname in Project
+
+	= example "PATCH /projects/12/update_nickname", data.doc_examples["V1::ProjectsController"]["Student"]["update_nickname"]["success"].first[1]
+
+	= authentication
+
+	p Update the Student's nicname in a specific project.
+
+	= http_request "PATCH", "projects/:id/update_nickname"
+
+	= params param(required, "id", "Integer", "The id of the Project that the Student wishes to change their nickname for"),
+			 param(required, "nickname", "String", "The new nickname for this Project")
+
+	= errors error_authentication,
+			 error_not_student,
+			 error_association("The Student does not belong in this Project"),
+			 error(422, "Nickname was not provided or it was invalid. See response body for info")
+

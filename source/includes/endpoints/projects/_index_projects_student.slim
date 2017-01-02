@@ -1,0 +1,14 @@
+= example "GET /projects", data.doc_examples["V1::ProjectsController"]["Student"]["index"]["success"].first[1]
+
+= authentication
+= includes
+
+p Returns all the Projects of the Student
+
+= http_request "GET", "projects"
+
+= params param(required, "assignment_id", "Integer", "Return all Projects for a specific assignment")
+
+= errors error_includes,
+		 error_authentication,
+		 error(403, "Parameters contained assignment_id. This is only allowed for Lecturers")

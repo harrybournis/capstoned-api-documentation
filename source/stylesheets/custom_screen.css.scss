@@ -1,5 +1,11 @@
 @import "screen";
 @import "switch";
+@import "custom_styling";
+
+// Variables
+$aside-authentication-color: #fcf8e3;
+$aside-includes-color: #8fbcd4;
+$aside-warning-text-color: white;
 
 body {
 	.student-view {
@@ -24,12 +30,6 @@ body {
 	padding: 0;
 }
 
-// @each $yo in skata, maimou {
-// 	.#{$yo} {
-// 		background-color: red;
-// 	}
-// }
-
 @each $view in student-view, lecturer-view {
 	.content > .#{$view} > h1, .content > .#{$view} > h2, .content > .#{$view} > h3, .content > .#{$view} > h4, .content > .#{$view} > h5, .content > .#{$view} > h6, .content > .#{$view} > p, .content > .#{$view} > table, .content > .#{$view} > ul, .content > .#{$view} > ol, .content > .#{$view} > aside, .content > .#{$view} > dl {
 	    margin-right: 50%;
@@ -38,5 +38,53 @@ body {
 	    display: block;
 	    text-shadow: 0px 1px 0px #fff;
 	}
+
+	.content > .#{$view} > h2 {
+		padding-top: 25px;
+	}
+
+	// Aside Classes
+	.content .#{$view} aside {
+	    padding-top: 1em;
+	    padding-bottom: 1em;
+	    text-shadow: 0 1px 0 #c6dde9;
+	    margin-top: 1.5em;
+	    margin-bottom: 1.5em;
+	    background: #8fbcd4;
+	    line-height: 1.6;
+	}
+
+	.content .#{$view} aside > img {
+		width: 23px;
+		height: 23px;
+		padding-bottom: 2px;
+		vertical-align: bottom;
+	}
+
+
+	.content .#{$view} aside.aside-authentication {
+	    background-color: $aside-authentication-color;
+	    text-shadow: 0 1px 0 #dfb0b3;
+	}
+
+	.content .#{$view} aside.aside-includes {
+	    background-color: $aside-includes-color;
+	    text-shadow: 0 1px 0 #dfb0b3;
+	}
+
+	.content .#{$view} aside.warning {
+		color: $aside-warning-text-color;
+	}
+}
+
+.content aside > img {
+	width: 23px;
+	height: 23px;
+	padding-bottom: 2px;
+	vertical-align: bottom;
+}
+
+.content aside.warning {
+	color: white;
 }
 

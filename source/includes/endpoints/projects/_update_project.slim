@@ -1,4 +1,9 @@
 .lecturer-view
 	h2#update-project.lecturer-view Update Project
 
-	p update prjoect
+	= partial "#{endpoints}/projects/update_project_lecturer"
+
+.student-view
+	h2#update-project.student-view Update Project
+
+	= partial "#{endpoints}/projects/update_project_student"
