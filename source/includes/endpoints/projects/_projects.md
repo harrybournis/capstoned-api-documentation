@@ -1,6 +1,7 @@
 # Projects
 
-<p class="short-description">'Projects belong to Assignments, and contain many Students'</p>
+'Projects belong to Assignments, and contain many Students'
+{: .short-description }
 
 Projects contain many Students that participate in a Assignment. A Project has an enrollment key,
 which Student will use to become members of the Project, and by extension, participate in a
@@ -19,11 +20,3 @@ logo | string | The logo of the Project in its url form. Usually created by the 
 ## Relationships
 
 <img src="images/erd_project.png" alt="Project Relationships">
-
-
-
-## Enrol In a Project
-
-## Update a Project
-
-## Delete a Project

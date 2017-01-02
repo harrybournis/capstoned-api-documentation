@@ -1,5 +1,15 @@
 # Markdown
-set :markdown_engine, :redcarpet
+# set :markdown_engine, :redcarpet
+# set :markdown,
+#     fenced_code_blocks: true,
+#     smartypants: true,
+#     disable_indented_code_blocks: true,
+#     prettify: true,
+#     tables: true,
+#     with_toc_data: true,
+#     no_intra_emphasis: true
+
+set :markdown_engine, :kramdown
 set :markdown,
     fenced_code_blocks: true,
     smartypants: true,
@@ -44,3 +54,5 @@ end
 # Deploy Configuration
 # If you want Middleman to listen on a different port, you can set that below
 set :port, 4567
+
+require 'slim'

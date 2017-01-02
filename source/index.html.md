@@ -17,8 +17,11 @@ toc_footers:
 includes:
   - introduction
   - endpoints/projects/projects
+  - endpoints/projects/enrol
   - endpoints/projects/get_projects
   - endpoints/projects/create_project
+  - endpoints/projects/update_project
+  - endpoints/projects/delete_project
   - demo/authentication
   - demo/kittens
   - demo/errors
