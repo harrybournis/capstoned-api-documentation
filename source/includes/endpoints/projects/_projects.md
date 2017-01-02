@@ -1,7 +1,6 @@
 # Projects
 
-'Projects belong to Assignments, and contain many Students'
-{: .short-description }
+<p class="short-description">'Projects belong to Assignments, and contain many Students'</p>
 
 Projects contain many Students that participate in a Assignment. A Project has an enrollment key,
 which Student will use to become members of the Project, and by extension, participate in a

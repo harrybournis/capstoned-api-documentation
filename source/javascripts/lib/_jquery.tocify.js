@@ -417,7 +417,9 @@
                 // Sets a name attribute on the anchor tag to the text of the currently traversed HTML element (also making sure that all whitespace is replaced with an underscore)
                 "name": hashValue,
 
-                "data-unique": hashValue
+                "data-unique": hashValue,
+
+                "class": extraClasses
 
             }));
 
@@ -770,7 +772,20 @@
             var self = this;
             self.cachedHeights = [];
             self.cachedAnchors = [];
+            console.log(self.options.context);
             var anchors = $(self.options.context).find("div[data-unique]");
+            anchors.each(function(idx) {
+                var distance = (($(this).next().length ? $(this).next() : $(this)).offset().top - self.options.highlightOffset);
+                self.cachedHeights[idx] = distance;
+            });
+            self.cachedAnchors = anchors;
+        },
+
+        calculateHeights: function(viewToExclude) {
+            var self = this;
+            self.cachedHeights = [];
+            self.cachedAnchors = [];
+            var anchors = $(self.options.context).find("div[data-unique]:not(." + viewToExclude + "-view)");
             anchors.each(function(idx) {
                 var distance = (($(this).next().length ? $(this).next() : $(this)).offset().top - self.options.highlightOffset);
                 self.cachedHeights[idx] = distance;
