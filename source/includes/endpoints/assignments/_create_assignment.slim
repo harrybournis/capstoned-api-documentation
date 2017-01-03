@@ -1,0 +1,33 @@
+.lecturer-view
+	h2#create-assignment.lecturer-view Create Assignment
+
+	- @key1, @key2 = data.doc_examples["V1::AssignmentsController"]["Lecturer"]["create"]["success"].keys
+
+	= example 'POST /assignments', data.doc_examples["V1::AssignmentsController"]["Lecturer"]["create"]["success"][@key1]
+
+	= example 'POST /assignments', data.doc_examples["V1::AssignmentsController"]["Lecturer"]["create"]["success"][@key2], "Creating an Assignment with 2 Projects"
+
+	= example 'POST /assignments', data.doc_examples["V1::AssignmentsController"]["Lecturer"]["create"]["error"].first[1], "Errors in projects_attributes"
+
+	= authentication
+
+	p Create a new Assignment. Only Lecturers can create a Assignment, and it will automatically be associated with the current user. Requires a unit_id, which must be a Unit that belongs to the current user. Can also create multiple Projects through the same request. See examples.
+
+	= http_request "POST", "assignments"
+
+	= params param(required, "unit_id", "Integer", "The id of the Unit that the new Assignment will belong to"),
+			 param(required, "name", "String", "The name of the Assignment"),
+			 param(required, "start_date", "Date", "The date that the Assignment starts"),
+			 param(required, "end_date", "Date", "The year that the Unit takes place"),
+			 param(optional, "projects_attributes: [{ project_name, team_name, description, enrollment_key, logo}]", "Array", "An array of projects parameters to create associated projects for the new Assignment. See examples.")
+
+	p There is the Option of creating Projects for the Assignment through this endpoint. Pass the parameters for each project in an array, with "projects_attributes" as the key
+
+	= code_prettyprint JSON.pretty_generate(JSON.parse({ name: "New Unit", projects_attributes: [{ project_name: 'New Project1', team_name: 'persons', description: 'dddd', enrollment_key: 'key' }, { project_name: 'New Project2', team_name: 'persons2', description: 'descr', enrollment_key: 'key2' }] }.to_json))
+
+	p Projects will be validated normally, and errors will be returned in the response.
+
+	= errors error_authentication,
+			 error_not_lecturer,
+			 error_association,
+			 error_invalid_params

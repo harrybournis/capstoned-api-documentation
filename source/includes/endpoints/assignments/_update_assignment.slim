@@ -1,0 +1,27 @@
+.lecturer-view
+	h2#update-assignment.lecturer-view Update Assignment
+
+	= example 'PATCH /assignments/:id', data.doc_examples["V1::AssignmentsController"]["Lecturer"]["update"]["success"].first[1]
+
+	= authentication
+
+	p Update an Assignment. Only Lecturers can create a Assignment, and it will automatically be associated with the current user. Requires a unit_id, which must be a Unit that belongs to the current user. Can also create multiple Projects through the same request. See examples.
+
+	= http_request "PATCH", "assignments/:id"
+
+	= params param(required, "unit_id", "Integer", "The id of the Unit that the new Assignment will belong to"),
+			 param(optional, "name", "String", "The name of the Assignment"),
+			 param(optional, "start_date", "Date", "The date that the Assignment starts"),
+			 param(optional, "end_date", "Date", "The year that the Unit takes place"),
+			 param(optional, "projects_attributes: [{ project_name, team_name, description, enrollment_key, logo}]", "Array", "An array of projects parameters to create associated projects for the new Assignment. See examples.")
+
+	p There is the Option of creating Projects for the Assignment through this endpoint. Pass the parameters for each project in an array, with "projects_attributes" as the key
+
+	= code_prettyprint JSON.pretty_generate(JSON.parse({ name: "New Unit", projects_attributes: [{ project_name: 'New Project1', team_name: 'persons', description: 'dddd', enrollment_key: 'key' }, { project_name: 'New Project2', team_name: 'persons2', description: 'descr', enrollment_key: 'key2' }] }.to_json))
+
+	p Projects will be validated normally, and errors will be returned in the response.
+
+	= errors error_authentication,
+			 error_not_lecturer,
+			 error_association,
+			 error_invalid_params

@@ -1,6 +1,6 @@
 h2#get-single-unit Get Single Unit
 
-/= example 'GET /units/:id', data.doc_examples["V1::UnitsController"]["Lecturer"]["show"]["success"].first[1]
+= example 'GET /units/:id', data.doc_examples["V1::UnitsController"]["Lecturer"]["show"]["success"].first[1]
 
 = authentication
 = includes
@@ -8,6 +8,8 @@ h2#get-single-unit Get Single Unit
 p Returns a single Unit
 
 = http_request "GET", "units/:id"
+
+= params param(required, "id", "Integer", "The id of the Unit to be returned")
 
 = errors error_includes,
 		 error_authentication,

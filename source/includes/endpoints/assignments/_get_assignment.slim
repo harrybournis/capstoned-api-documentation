@@ -1,0 +1,14 @@
+h2#get-single-assignment Get Single Assignment
+
+= example 'GET /assignments/:id', data.doc_examples["V1::AssignmentsController"]["Lecturer"]["show"]["success"].first[1]
+
+= authentication
+= includes
+
+p Returns a single Assignment
+
+= http_request "GET", "assignments/:id"
+
+= errors error_includes,
+		 error_authentication,
+		 error_association

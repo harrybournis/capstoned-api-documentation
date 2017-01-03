@@ -1,0 +1,13 @@
+= example "GET /assignments", data.doc_examples["V1::AssignmentsController"]["Lecturer"]["index"]["success"].first[1]
+
+= authentication
+= includes
+
+p Returns all the Assignments for the current user
+
+= http_request "GET", "assignments"
+
+= errors error_includes,
+		 error_authentication,
+		 error_association,
+		 error(403, "unit_id was present in the params. This is a lecturer-only functionality. Retry without any parameters.")

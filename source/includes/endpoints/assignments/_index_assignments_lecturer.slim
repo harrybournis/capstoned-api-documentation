@@ -1,0 +1,17 @@
+= example "GET /assignments", data.doc_examples["V1::AssignmentsController"]["Lecturer"]["index"]["success"].first[1]
+
+= example "GET /assignments", data.doc_examples["V1::AssignmentsController"]["Lecturer"]["index_with_unit"]["success"].first[1], "Get Assingments for specific Unit"
+
+= authentication
+= includes
+
+p Returns all the Assignments for the current user. If a unit_id is passed in the parameters, the assignments will be scoped to that Unit.
+
+= http_request "GET", "assignments"
+
+= params param(optional, "unit_id", "Integer", "Return all Assignments for a specific Unit")
+
+= errors error_includes,
+		 error_authentication,
+		 error_association,
+		 error_not_lecturer

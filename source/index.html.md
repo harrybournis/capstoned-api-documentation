@@ -24,6 +24,12 @@ includes:
   - endpoints/units/update_unit
   - endpoints/units/delete_unit
   - endpoints/units/archive_unit
+  - endpoints/assignments/assignments
+  - endpoints/assignments/create_assignment
+  - endpoints/assignments/index_assignments
+  - endpoints/assignments/get_assignment
+  - endpoints/assignments/update_assignment
+  - endpoints/assignments/delete_assignment
   - endpoints/projects/projects
   - endpoints/projects/enrol
   - endpoints/projects/index_projects
