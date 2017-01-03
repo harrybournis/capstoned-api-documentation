@@ -1,0 +1,14 @@
+h2#get-single-unit Get Single Unit
+
+/= example 'GET /units/:id', data.doc_examples["V1::UnitsController"]["Lecturer"]["show"]["success"].first[1]
+
+= authentication
+= includes
+
+p Returns a single Unit
+
+= http_request "GET", "units/:id"
+
+= errors error_includes,
+		 error_authentication,
+		 error_association

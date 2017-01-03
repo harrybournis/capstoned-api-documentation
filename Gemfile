@@ -8,3 +8,4 @@ gem "middleman-sprockets", "~> 4.0.0"
 gem 'rouge', '~> 2.0.5'
 gem 'redcarpet', '~> 3.3.2'
 gem 'slim', '~> 3.0', '>= 3.0.7'
+gem 'better_errors', '~> 2.1', '>= 2.1.1'

@@ -16,6 +16,14 @@ toc_footers:
 
 includes:
   - introduction
+  - endpoints/units/units
+  - endpoints/units/create_unit
+  - endpoints/units/index_units
+  - endpoints/units/index_archived_units
+  - endpoints/units/get_unit
+  - endpoints/units/update_unit
+  - endpoints/units/delete_unit
+  - endpoints/units/archive_unit
   - endpoints/projects/projects
   - endpoints/projects/enrol
   - endpoints/projects/index_projects

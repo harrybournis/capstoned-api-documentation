@@ -46,3 +46,11 @@ end
 set :port, 4567
 
 require 'slim'
+
+set :show_exceptions, false # Disable Rack::ShowExceptions middleware
+
+require 'better_errors' # Do not forget to load the gem
+configure :development do
+  use BetterErrors::Middleware
+  BetterErrors.application_root = __dir__
+end

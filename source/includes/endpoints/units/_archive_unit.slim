@@ -1,0 +1,19 @@
+.lecturer-view
+	h2#archive-unit.lecturer-view Archive Unit
+
+	= example 'PATCH /units/:id/archive', data.doc_examples["V1::UnitsController"]["Lecturer"]["archive"]["success"].first[1]
+
+	= example 'PATCH /units/:id/archive', data.doc_examples["V1::UnitsController"]["Lecturer"]["archive"]["error"].first[1]
+
+	= authentication
+
+	p Archive a Unit. Only the Lecturer that created it may do so. The server will set the current date as the archived_at date. The Unit will no longer be returns at the GET /units endpoint, use the GET /units/archived instead.
+
+	= http_request "PATCH", "units/:id/archive"
+
+	= params param(required, "id", "Integer", "The id of the Unit to be archived.")
+
+	= errors error_authentication,
+			 error_not_lecturer,
+			 error_association,
+			 error_invalid_params

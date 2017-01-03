@@ -1,0 +1,39 @@
+.lecturer-view
+	h2#create-unit.lecturer-view Create Unit
+
+	- @key1, @key2 = data.doc_examples["V1::UnitsController"]["Lecturer"]["create"]["success"].keys
+
+	= example 'POST /units', data.doc_examples["V1::UnitsController"]["Lecturer"]["create"]["success"][@key1], "Creating a new Department with the Unit"
+
+	= example 'POST /units', data.doc_examples["V1::UnitsController"]["Lecturer"]["create"]["success"][@key2], "Associating an existing Department with the Unit"
+
+	= example 'POST /units', data.doc_examples["V1::UnitsController"]["Lecturer"]["create"]["error"].first[1]
+
+	= authentication
+
+	p Create a new Unit. A Unit belongs to a Department. If a department_id is supplied in the params, the unit will become associated with an existing Department. If department_attributes are present, then a new Department will be created and associated with the Unit. In case both department_id, and department_attributes are present, the department_id takes precedence, and the new Unit is associated with an existing Department.
+
+	= http_request "POST", "units"
+
+	= params param(required, "name", "String", "The name of the Unit"),
+			 param(required, "code", "String", "The code of the Unit. does not have to be unique"),
+			 param(required, "semester", "String", "The Semester that the Unit takes place. example: 'Autumn' or 'Spring'"),
+			 param(required, "year", "Integer", "The year that the Unit takes place"),
+			 param(required, "department_attributes: { name }", "String", "The name of the Unit's Department"),
+			 param(required, "department_attributes: { university }", "String", "The name of the Department's university"),
+			 param(required, "department_id", "Integer", "The id of an existing Department that will be associated with the new Unit")
+
+
+	p In order to create a new Department with the Unit, use "department_attributes"
+
+	= code_prettyprint JSON.pretty_generate(JSON.parse({ name: "New Unit", department_attributes: { name: "New Department", university: "University of .." } }.to_json))
+
+	p In order to associate an existing Department with the Unit, use "department_id"
+
+	= code_prettyprint JSON.pretty_generate(JSON.parse({ name: "New Unit", department_id: 4 }.to_json))
+
+
+	= errors error_authentication,
+			 error_not_lecturer,
+			 error_association,
+			 error_invalid_params

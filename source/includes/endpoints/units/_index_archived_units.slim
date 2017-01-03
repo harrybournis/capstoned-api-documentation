@@ -1,0 +1,16 @@
+h2#index-archived-units Get Archived Units
+
+- @key1, @key2 = data.doc_examples["V1::UnitsController"]["Lecturer"]["index_archived"]["success"].keys
+= example 'GET /units/archived', data.doc_examples["V1::UnitsController"]["Lecturer"]["index_archived"]["success"][@key1]
+
+= example 'GET /units/archived', data.doc_examples["V1::UnitsController"]["Lecturer"]["index_archived"]["success"][@key2]
+
+= authentication
+= includes
+
+p Returns all the ARCHIVED Units of the current User. For the active Units, see get index
+
+= http_request "GET", "units/archived"
+
+= errors error_includes,
+		 error_authentication

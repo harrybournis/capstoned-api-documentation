@@ -1,9 +1,9 @@
 .student-view
-	h2#enrol.student-view Enrol in Project
+	h2#enrol.student-view Enrol
 
-	= example "POST /projects/enrol", data.doc_examples["V1::ProjectsController"]["Student"]["enrol"]["success"]["201_8"]
+	= example "POST /projects/enrol", data.doc_examples["V1::ProjectsController"]["Student"]["enrol"]["success"].first[1]
 
-	= example "POST /projects/enrol", data.doc_examples["V1::ProjectsController"]["Student"]["enrol"]["success"]["200_9"]
+	= example "POST /projects/enrol", data.doc_examples["V1::ProjectsController"]["Student"]["enrol"]["error"].first[1]
 
 	= authentication
 

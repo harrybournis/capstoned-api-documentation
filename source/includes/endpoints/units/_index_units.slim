@@ -1,0 +1,13 @@
+h2#index-units Get Units
+
+= example 'GET /units', data.doc_examples["V1::UnitsController"]["Lecturer"]["index"]["success"].first[1]
+
+= authentication
+= includes
+
+p Returns all the NOT-ARCHIVED Units of the current User. For the archived Units, see get archived
+
+= http_request "GET", "units"
+
+= errors error_includes,
+		 error_authentication

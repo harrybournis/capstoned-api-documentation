@@ -9,12 +9,12 @@ system. The students can change the team_name and the logo if they wish.
 
 ## Attributes
 
-Parameter | Type | Description
---------- | ------- | -----------
-project_name | string | The name of the Project. Given by the Lecturer.
-team_name | string | The name of the Team. Given by the Students.
-enrolment_key | string | The key used by the Student to enrol in the Project.
-logo | string | The logo of the Project in its url form. Usually created by the Students.
+Parameter | Type | Description | Unique?
+--------- | ------- | ----------- | -----------
+project_name | string | The name of the Project. Given by the Lecturer. | unique for the assignment
+team_name | string | The name of the Team. Given by the Students. | unique for the assignment
+enrolment_key | string | The key used by the Student to enrol in the Project. |
+logo | string | The logo of the Project in its url form. Usually created by the Students. |
 
 ## Relationships
 

@@ -116,7 +116,12 @@ module CustomHelpers
 		return Tilt['markdown'].new { markdown }.render
 	end
 
-	def example url, example
+	def example url, example, description = nil
+		desc = 	if description
+		 					"<blockquote class='example-description'><p>Example: #{description}</p></blockquote>"
+		 				else
+		 					"<blockquote class='example-description'></blockquote>"
+		 				end
   	request_head = "<blockquote class='request-label'><p>Request#{example.error ? ' (Error)' : ''}</p></blockquote>"
   	request = code('text') { url }
   	if example.request_params.length > 2
@@ -131,7 +136,7 @@ module CustomHelpers
 			response += code('json') { "{\n  \"\"\n}" }
 		end
 
-		result = request_head + request + response_head + response
+		result = desc + request_head + request + response_head + response
 		return result
 	end
 end

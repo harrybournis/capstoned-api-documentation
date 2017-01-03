@@ -4,12 +4,22 @@
     font-size: 1em;
 }
 
+blockquote.example-description {
+	background-color: #393939;
+	font-size: 1.2em;
+	padding: 2em 0px 0em 1em;
+
+	p {
+		background-color: #4c4c4c;;
+	}
+}
+
 .content blockquote.request-label, .content blockquote.response-label {
     padding: 0;
 	font-size: 1.2em;
     background-color: #393939;
     padding-top: 8px;
-    margin-top: 70px;
+    //margin-top: 70px;
 
 	p {
 		padding: 0px 28px;
@@ -24,11 +34,14 @@
     text-overflow: ellipsis;
 }
 
-.content blockquote.response-label {
-	margin-top: 0;
+blockquote.example-description {
+	//margin-top: 0;
+	margin-top: 70px;
 }
 
 // Remove margin from the first one
-h2.lecturer-view + blockquote.request-label, h2.student-view + blockquote.request-label {
+h2.lecturer-view + blockquote.example-description, h2.student-view + blockquote.example-description,
+	h2 + blockquote.example-description {
 	margin-top: 0;
+	padding: 0;
 }
