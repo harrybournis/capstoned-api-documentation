@@ -1,0 +1,16 @@
+.lecturer-view
+	h2#update-department.lecturer-view Update Department
+
+	= authentication
+
+	p Update Department
+
+	= http_request "PATCH", "departments/:id"
+
+	= params param(required, "id", "Integer", "The id of the Department to be updated"),
+			 param(optional, "name", "string", "The name of the Department"),
+			 param(optional, "university", "string", "The name of the Department's university")
+
+	= errors error_authentication,
+			 error_not_lecturer,
+			 error_invalid_params

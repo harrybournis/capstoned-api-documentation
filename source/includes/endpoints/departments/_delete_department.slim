@@ -1,0 +1,14 @@
+.lecturer-view
+	h2#delete-department.lecturer-view Delete Department
+
+	= authentication
+
+	p Delete Department
+
+	= http_request "DELETE", "departments/:id"
+
+	= params param(required, "id", "Integer", "The id of the Department to be updated")
+
+	= errors error_authentication,
+			 error_not_lecturer,
+			 error_invalid_params

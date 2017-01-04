@@ -18,4 +18,4 @@ archived_at | date | The date that the Unit was archived. Completed by the syste
 
 ## Relationships
 
-<img src="images/erd_unit.png" alt="Project Relationships">
+<img src="images/erd_unit.png" alt="Unit Relationships">

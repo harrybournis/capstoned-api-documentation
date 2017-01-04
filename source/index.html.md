@@ -24,6 +24,9 @@ includes:
   - endpoints/units/update_unit
   - endpoints/units/delete_unit
   - endpoints/units/archive_unit
+  - endpoints/departments/departments
+  - endpoints/departments/update_department
+  - endpoints/departments/delete_department
   - endpoints/assignments/assignments
   - endpoints/assignments/create_assignment
   - endpoints/assignments/index_assignments
