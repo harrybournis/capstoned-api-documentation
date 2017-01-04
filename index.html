@@ -174,25 +174,25 @@
 
 <h2 id="relationships">Relationships</h2>
 
-<p><img src="images/erd_unit.png" alt="Project Relationships"></p>
+<p><img src="images/erd_unit.png" alt="Unit Relationships"></p>
 
           <div class="lecturer-view"><h2 class="lecturer-view" id="create-unit">Create Unit</h2><blockquote class='example-description'><p>Example: Creating a new Department with the Unit</p></blockquote><blockquote class='request-label'><p>Request</p></blockquote><pre class="highlight plaintext"><code>POST /units</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"archived_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"abuHKe53f0e4GQ=="</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"zQ2fcKg8BgRXvw=="</span><span class="p">,</span><span class="w">
   </span><span class="s2">"department_attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"departmentname"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"university"</span><span class="p">:</span><span class="w"> </span><span class="s2">"university"</span><span class="w">
   </span><span class="p">},</span><span class="w">
-  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unit 967"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unit 737"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"semester"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Autumn"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"year"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015"</span><span class="w">
+  </span><span class="s2">"year"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2014"</span><span class="w">
 </span><span class="p">}</span></code></pre><blockquote class='response-label'><p>Response</p></blockquote><pre class="highlight plaintext"><code>Status: 201 -- Created</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"unit"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unit 967"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"abuHKe53f0e4GQ=="</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unit 737"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"zQ2fcKg8BgRXvw=="</span><span class="p">,</span><span class="w">
     </span><span class="s2">"semester"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Autumn"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"year"</span><span class="p">:</span><span class="w"> </span><span class="mi">2015</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"year"</span><span class="p">:</span><span class="w"> </span><span class="mi">2014</span><span class="p">,</span><span class="w">
     </span><span class="s2">"archived_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
     </span><span class="s2">"department"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
       </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -202,32 +202,32 @@
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span></code></pre><blockquote class='example-description'><p>Example: Associating an existing Department with the Unit</p></blockquote><blockquote class='request-label'><p>Request</p></blockquote><pre class="highlight plaintext"><code>POST /units</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"archived_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"6E559e4PCJpQ3w=="</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/3V1zzgBjzSOpQ=="</span><span class="p">,</span><span class="w">
   </span><span class="s2">"department_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unit 570"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unit 420"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"semester"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Autumn"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"year"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016"</span><span class="w">
+  </span><span class="s2">"year"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015"</span><span class="w">
 </span><span class="p">}</span></code></pre><blockquote class='response-label'><p>Response</p></blockquote><pre class="highlight plaintext"><code>Status: 201 -- Created</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"unit"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unit 570"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"6E559e4PCJpQ3w=="</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unit 420"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/3V1zzgBjzSOpQ=="</span><span class="p">,</span><span class="w">
     </span><span class="s2">"semester"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Autumn"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"year"</span><span class="p">:</span><span class="w"> </span><span class="mi">2016</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"year"</span><span class="p">:</span><span class="w"> </span><span class="mi">2015</span><span class="p">,</span><span class="w">
     </span><span class="s2">"archived_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
     </span><span class="s2">"department"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
       </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"university"</span><span class="p">:</span><span class="w"> </span><span class="s2">"University of 54898"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Computer Science46958"</span><span class="w">
+      </span><span class="s2">"university"</span><span class="p">:</span><span class="w"> </span><span class="s2">"University of 71009"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Computer Science60274"</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span></code></pre><blockquote class='example-description'></blockquote><blockquote class='request-label'><p>Request (Error)</p></blockquote><pre class="highlight plaintext"><code>POST /units</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"archived_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0FscLwCeW1j+/g=="</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9AUo1i7dS+i+Ag=="</span><span class="p">,</span><span class="w">
   </span><span class="s2">"department_attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="w">
   </span><span class="p">},</span><span class="w">
-  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unit 604"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unit 56"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"semester"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Autumn"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"year"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016"</span><span class="w">
 </span><span class="p">}</span></code></pre><blockquote class='response-label'><p>Response</p></blockquote><pre class="highlight plaintext"><code>Status: 422 -- Unprocessable Entity</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
@@ -251,28 +251,28 @@
   </span><span class="s2">"units"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
       </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unit 121"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"UQtZwvon9eg8RA=="</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unit 756"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"QYxb4CQ1hZFKoQ=="</span><span class="p">,</span><span class="w">
       </span><span class="s2">"semester"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Spring"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"year"</span><span class="p">:</span><span class="w"> </span><span class="mi">2016</span><span class="p">,</span><span class="w">
       </span><span class="s2">"archived_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
       </span><span class="s2">"department"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"university"</span><span class="p">:</span><span class="w"> </span><span class="s2">"University of 2364"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Computer Science92625"</span><span class="w">
+        </span><span class="s2">"university"</span><span class="p">:</span><span class="w"> </span><span class="s2">"University of 47417"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Computer Science70017"</span><span class="w">
       </span><span class="p">}</span><span class="w">
     </span><span class="p">},</span><span class="w">
     </span><span class="p">{</span><span class="w">
       </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unit 598"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tZ6jAtZRi+MCvQ=="</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unit 451"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"btmLc8i6m2Lqjg=="</span><span class="p">,</span><span class="w">
       </span><span class="s2">"semester"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Spring"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"year"</span><span class="p">:</span><span class="w"> </span><span class="mi">2014</span><span class="p">,</span><span class="w">
       </span><span class="s2">"archived_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
       </span><span class="s2">"department"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"university"</span><span class="p">:</span><span class="w"> </span><span class="s2">"University of 34281"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Computer Science32974"</span><span class="w">
+        </span><span class="s2">"university"</span><span class="p">:</span><span class="w"> </span><span class="s2">"University of 98262"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Computer Science48125"</span><span class="w">
       </span><span class="p">}</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
@@ -282,28 +282,28 @@
   </span><span class="s2">"units"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
       </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unit 260"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"l7cCGqnCxxGVCg=="</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"semester"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Spring"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"year"</span><span class="p">:</span><span class="w"> </span><span class="mi">2015</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"archived_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-01-04"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"department"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"university"</span><span class="p">:</span><span class="w"> </span><span class="s2">"University of 90777"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Computer Science68321"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unit 448"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Tnn+2W/bovTopQ=="</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unit 744"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DbK4TdJVlBld3Q=="</span><span class="p">,</span><span class="w">
       </span><span class="s2">"semester"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Autumn"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"year"</span><span class="p">:</span><span class="w"> </span><span class="mi">2015</span><span class="p">,</span><span class="w">
       </span><span class="s2">"archived_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-01-04"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"department"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"university"</span><span class="p">:</span><span class="w"> </span><span class="s2">"University of 12476"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Computer Science88551"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unit 927"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A2D7BKl1OiWRhw=="</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"semester"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Autumn"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"year"</span><span class="p">:</span><span class="w"> </span><span class="mi">2016</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"archived_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-01-04"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"department"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"university"</span><span class="p">:</span><span class="w"> </span><span class="s2">"University of 92385"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Computer Science59071"</span><span class="w">
+        </span><span class="s2">"university"</span><span class="p">:</span><span class="w"> </span><span class="s2">"University of 14723"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Computer Science48614"</span><span class="w">
       </span><span class="p">}</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
@@ -311,8 +311,24 @@
   </span><span class="s2">""</span><span class="w">
 </span><span class="p">}</span></code></pre><aside class='aside-authentication'> <img src='images/locked-padlock.svg'> Authentication Needed</aside><aside class='aside-includes'> Can Include other resources in the response</aside><p>Returns all the ARCHIVED Units of the current User. For the active Units, see get index</p><h3>HTTP Request</h3>
 <p><code class='prettyprint'>GET http://example.com/v1/units/archived</code></p><h3>Errors</h3><table><thead><tr><th>Error Code</th><th>Meaning</th></tr></thead><tbody><tr><td>400</td><td>Bad Request -- Invalid 'includes' parameter</td></tr><tr><td>401</td><td>Unauthorized -- Authentication Failed</td></tr></tbody></table>
-          <h2 id="get-single-unit">Get Single Unit</h2><aside class='aside-authentication'> <img src='images/locked-padlock.svg'> Authentication Needed</aside><aside class='aside-includes'> Can Include other resources in the response</aside><p>Returns a single Unit</p><h3>HTTP Request</h3>
-<p><code class='prettyprint'>GET http://example.com/v1/units/:id</code></p><h3>Errors</h3><table><thead><tr><th>Error Code</th><th>Meaning</th></tr></thead><tbody><tr><td>400</td><td>Bad Request -- Invalid 'includes' parameter</td></tr><tr><td>401</td><td>Unauthorized -- Authentication Failed</td></tr><tr><td>403</td><td>Forbidden -- The current user is not associated with this resource</td></tr></tbody></table>
+          <h2 id="get-single-unit">Get Single Unit</h2><blockquote class='example-description'></blockquote><blockquote class='request-label'><p>Request</p></blockquote><pre class="highlight plaintext"><code>GET /units/:id</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12"</span><span class="w">
+</span><span class="p">}</span></code></pre><blockquote class='response-label'><p>Response</p></blockquote><pre class="highlight plaintext"><code>Status: 200 -- OK</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"unit"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unit 989"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"E3BKl1FjWDxFmg=="</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"semester"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Autumn"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"year"</span><span class="p">:</span><span class="w"> </span><span class="mi">2016</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"archived_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"department"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"university"</span><span class="p">:</span><span class="w"> </span><span class="s2">"University of 42249"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Computer Science96074"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span></code></pre><aside class='aside-authentication'> <img src='images/locked-padlock.svg'> Authentication Needed</aside><aside class='aside-includes'> Can Include other resources in the response</aside><p>Returns a single Unit</p><h3>HTTP Request</h3>
+<p><code class='prettyprint'>GET http://example.com/v1/units/:id</code></p><h3>Query Parameters</h3><table><thead><tr><th>Required</th><th>Parameter</th><th>Type</th><th>Desription</th></tr></thead><tbody><tr><td>required</td><td>id</td><td>Integer</td><td>The id of the Unit to be returned</td></tr></tbody></table><h3>Errors</h3><table><thead><tr><th>Error Code</th><th>Meaning</th></tr></thead><tbody><tr><td>400</td><td>Bad Request -- Invalid 'includes' parameter</td></tr><tr><td>401</td><td>Unauthorized -- Authentication Failed</td></tr><tr><td>403</td><td>Forbidden -- The current user is not associated with this resource</td></tr></tbody></table>
           <div class="lecturer-view"><h2 class="lecturer-view" id="update-unit">Update Unit</h2><blockquote class='example-description'></blockquote><blockquote class='request-label'><p>Request</p></blockquote><pre class="highlight plaintext"><code>PATCH /units/:id</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"different"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"different"</span><span class="p">,</span><span class="w">
@@ -322,13 +338,13 @@
     </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">19</span><span class="p">,</span><span class="w">
     </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"different"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"different"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"semester"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Autumn"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"year"</span><span class="p">:</span><span class="w"> </span><span class="mi">2016</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"semester"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Spring"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"year"</span><span class="p">:</span><span class="w"> </span><span class="mi">2017</span><span class="p">,</span><span class="w">
     </span><span class="s2">"archived_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
     </span><span class="s2">"department"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
       </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">19</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"university"</span><span class="p">:</span><span class="w"> </span><span class="s2">"University of 3849"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Computer Science42005"</span><span class="w">
+      </span><span class="s2">"university"</span><span class="p">:</span><span class="w"> </span><span class="s2">"University of 81298"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Computer Science44802"</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span></code></pre><aside class='aside-authentication'> <img src='images/locked-padlock.svg'> Authentication Needed</aside><p>Update a Unit. A Unit belongs to a Department. If a department_id is supplied in the params, the unit will become associated with an existing Department. If department_attributes are present, then a new Department will be created and associated with the Unit. In case both department_id, and department_attributes are present, the department_id takes precedence, and the new Unit is associated with an existing Department.</p><h3>HTTP Request</h3>
@@ -349,15 +365,15 @@
 </span><span class="p">}</span></code></pre><blockquote class='response-label'><p>Response</p></blockquote><pre class="highlight plaintext"><code>Status: 200 -- OK</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"unit"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">29</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unit 160"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"f2+ewD11+QNlWw=="</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"semester"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Autumn"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unit 988"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ULcEMC/NJ+nMzA=="</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"semester"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Spring"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"year"</span><span class="p">:</span><span class="w"> </span><span class="mi">2016</span><span class="p">,</span><span class="w">
     </span><span class="s2">"archived_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-01-04"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"department"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
       </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">32</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"university"</span><span class="p">:</span><span class="w"> </span><span class="s2">"University of 93607"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Computer Science3299"</span><span class="w">
+      </span><span class="s2">"university"</span><span class="p">:</span><span class="w"> </span><span class="s2">"University of 45243"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Computer Science9051"</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span></code></pre><blockquote class='example-description'></blockquote><blockquote class='request-label'><p>Request (Error)</p></blockquote><pre class="highlight plaintext"><code>PATCH /units/:id/archive</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
@@ -370,6 +386,450 @@
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span></code></pre><aside class='aside-authentication'> <img src='images/locked-padlock.svg'> Authentication Needed</aside><p>Archive a Unit. Only the Lecturer that created it may do so. The server will set the current date as the archived_at date. The Unit will no longer be returns at the GET /units endpoint, use the GET /units/archived instead.</p><h3>HTTP Request</h3>
 <p><code class='prettyprint'>PATCH http://example.com/v1/units/:id/archive</code></p><h3>Query Parameters</h3><table><thead><tr><th>Required</th><th>Parameter</th><th>Type</th><th>Desription</th></tr></thead><tbody><tr><td>required</td><td>id</td><td>Integer</td><td>The id of the Unit to be archived.</td></tr></tbody></table><h3>Errors</h3><table><thead><tr><th>Error Code</th><th>Meaning</th></tr></thead><tbody><tr><td>401</td><td>Unauthorized -- Authentication Failed</td></tr><tr><td>403</td><td>Forbidden -- The current user is not a Lecturer. This endpoint is only available to Lecturers.</td></tr><tr><td>403</td><td>Forbidden -- The current user is not associated with this resource</td></tr><tr><td>422</td><td>Unprocessable Entity -- Invalid Params. See response body for more info.</td></tr></tbody></table></div>
+          <h1 id="departments">Departments</h1>
+
+<p class="short-description">&lsquo;Departments contain Units&rsquo;</p>
+
+<p>A Department has a name and a university attribute. A Unit belongs to a Department.</p>
+
+<h2 id="attributes">Attributes</h2>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>The name of the Department.</td>
+</tr>
+<tr>
+<td>university</td>
+<td>string</td>
+<td>The University that the Department belongs to</td>
+</tr>
+</tbody></table>
+
+<h2 id="relationships">Relationships</h2>
+
+<p><img src="images/erd_department.png" alt="Department Relationships"></p>
+
+          <div class="lecturer-view"><h2 class="lecturer-view" id="update-department">Update Department</h2><aside class='aside-authentication'> <img src='images/locked-padlock.svg'> Authentication Needed</aside><p>Update Department</p><h3>HTTP Request</h3>
+<p><code class='prettyprint'>PATCH http://example.com/v1/departments/:id</code></p><h3>Query Parameters</h3><table><thead><tr><th>Required</th><th>Parameter</th><th>Type</th><th>Desription</th></tr></thead><tbody><tr><td>required</td><td>id</td><td>Integer</td><td>The id of the Department to be updated</td></tr><tr><td></td><td>name</td><td>string</td><td>The name of the Department</td></tr><tr><td></td><td>university</td><td>string</td><td>The name of the Department's university</td></tr></tbody></table><h3>Errors</h3><table><thead><tr><th>Error Code</th><th>Meaning</th></tr></thead><tbody><tr><td>401</td><td>Unauthorized -- Authentication Failed</td></tr><tr><td>403</td><td>Forbidden -- The current user is not a Lecturer. This endpoint is only available to Lecturers.</td></tr><tr><td>422</td><td>Unprocessable Entity -- Invalid Params. See response body for more info.</td></tr></tbody></table></div>
+          <div class="lecturer-view"><h2 class="lecturer-view" id="delete-department">Delete Department</h2><aside class='aside-authentication'> <img src='images/locked-padlock.svg'> Authentication Needed</aside><p>Delete Department</p><h3>HTTP Request</h3>
+<p><code class='prettyprint'>DELETE http://example.com/v1/departments/:id</code></p><h3>Query Parameters</h3><table><thead><tr><th>Required</th><th>Parameter</th><th>Type</th><th>Desription</th></tr></thead><tbody><tr><td>required</td><td>id</td><td>Integer</td><td>The id of the Department to be deleted</td></tr></tbody></table><h3>Errors</h3><table><thead><tr><th>Error Code</th><th>Meaning</th></tr></thead><tbody><tr><td>401</td><td>Unauthorized -- Authentication Failed</td></tr><tr><td>403</td><td>Forbidden -- The current user is not a Lecturer. This endpoint is only available to Lecturers.</td></tr><tr><td>422</td><td>Unprocessable Entity -- Invalid Params. See response body for more info.</td></tr></tbody></table></div>
+          <h1 id="assignments">Assignments</h1>
+
+<p class="short-description">&lsquo;An Assignment belongs to Unit and has many Projects&rsquo;</p>
+
+<p>Assignments belong to Units and have many teams of Students. A Lecturer creates a Assignment, and Students undertake a assignments by spliting themselves into teams. A Assignments can have many Iterations, for each of which the Students are expected to complete peer assessments.</p>
+
+<h2 id="attributes">Attributes</h2>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>The name of the Assignment.</td>
+</tr>
+<tr>
+<td>start_date</td>
+<td>Date</td>
+<td>The Date that the Assignment started</td>
+</tr>
+<tr>
+<td>end_date</td>
+<td>Date</td>
+<td>The Date that the Assignment ended</td>
+</tr>
+</tbody></table>
+
+<h2 id="relationships">Relationships</h2>
+
+<p><img src="images/erd_assignment.png" alt="Assignment Relationships"></p>
+
+          <div class="lecturer-view"><h2 class="lecturer-view" id="create-assignment">Create Assignment</h2><blockquote class='example-description'></blockquote><blockquote class='request-label'><p>Request</p></blockquote><pre class="highlight plaintext"><code>POST /assignments</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-04-15"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"lecturer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"lecturer_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Assignment 97.18398510445617"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-01-04"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"unit_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="w">
+</span><span class="p">}</span></code></pre><blockquote class='response-label'><p>Response</p></blockquote><pre class="highlight plaintext"><code>Status: 201 -- Created</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"assignment"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-01-04"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-04-15"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Assignment 97.18398510445617"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/assignments/5"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span></code></pre><blockquote class='example-description'><p>Example: Creating an Assignment with 2 Projects</p></blockquote><blockquote class='request-label'><p>Request</p></blockquote><pre class="highlight plaintext"><code>POST /assignments</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-04-18"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"lecturer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"18"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"lecturer_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"18"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Assignment 17.45468142984753"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"projects_attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dddd"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"key"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"New Project1"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"persons"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"descr"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"key2"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"New Project2"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"persons2"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-01-04"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"unit_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7"</span><span class="w">
+</span><span class="p">}</span></code></pre><blockquote class='response-label'><p>Response</p></blockquote><pre class="highlight plaintext"><code>Status: 201 -- Created</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"assignment"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-01-04"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-04-18"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Assignment 17.45468142984753"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/assignments/10"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"projects"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"New Project2"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"persons2"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"descr"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"key2"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"New Project1"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"persons"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dddd"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"key"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span></code></pre><blockquote class='example-description'><p>Example: Errors in projects_attributes</p></blockquote><blockquote class='request-label'><p>Request (Error)</p></blockquote><pre class="highlight plaintext"><code>POST /assignments</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-04-07"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"lecturer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"27"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"lecturer_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"27"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Assignment 5.781685513125323"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"projects_attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dddd"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"key"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"New Project1"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"descr"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"key2"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"New Project2"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"persons2"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-01-04"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"unit_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"13"</span><span class="w">
+</span><span class="p">}</span></code></pre><blockquote class='response-label'><p>Response</p></blockquote><pre class="highlight plaintext"><code>Status: 422 -- Unprocessable Entity</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"projects.team_name"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"can't be blank"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span></code></pre><aside class='aside-authentication'> <img src='images/locked-padlock.svg'> Authentication Needed</aside><p>Create a new Assignment. Only Lecturers can create a Assignment, and it will automatically be associated with the current user. Requires a unit_id, which must be a Unit that belongs to the current user. Can also create multiple Projects through the same request. See examples.</p><h3>HTTP Request</h3>
+<p><code class='prettyprint'>POST http://example.com/v1/assignments</code></p><h3>Query Parameters</h3><table><thead><tr><th>Required</th><th>Parameter</th><th>Type</th><th>Desription</th></tr></thead><tbody><tr><td>required</td><td>unit_id</td><td>Integer</td><td>The id of the Unit that the new Assignment will belong to</td></tr><tr><td>required</td><td>name</td><td>String</td><td>The name of the Assignment</td></tr><tr><td>required</td><td>start_date</td><td>Date</td><td>The date that the Assignment starts</td></tr><tr><td>required</td><td>end_date</td><td>Date</td><td>The year that the Unit takes place</td></tr><tr><td></td><td>projects_attributes: [{ project_name, team_name, description, enrollment_key, logo}]</td><td>Array</td><td>An array of projects parameters to create associated projects for the new Assignment. See examples.</td></tr></tbody></table><p>There is the Option of creating Projects for the Assignment through this endpoint. Pass the parameters for each project in an array, with "projects_attributes" as the key</p><p><code class='prettyprint'>{
+  "name": "New Unit",
+  "projects_attributes": [
+    {
+      "project_name": "New Project1",
+      "team_name": "persons",
+      "description": "dddd",
+      "enrollment_key": "key"
+    },
+    {
+      "project_name": "New Project2",
+      "team_name": "persons2",
+      "description": "descr",
+      "enrollment_key": "key2"
+    }
+  ]
+}</code></p><p>Projects will be validated normally, and errors will be returned in the response.</p><h3>Errors</h3><table><thead><tr><th>Error Code</th><th>Meaning</th></tr></thead><tbody><tr><td>401</td><td>Unauthorized -- Authentication Failed</td></tr><tr><td>403</td><td>Forbidden -- The current user is not a Lecturer. This endpoint is only available to Lecturers.</td></tr><tr><td>403</td><td>Forbidden -- The current user is not associated with this resource</td></tr><tr><td>422</td><td>Unprocessable Entity -- Invalid Params. See response body for more info.</td></tr></tbody></table></div>
+          <div class="lecturer-view"><h2 class="lecturer-view" id="index-assignments">Get Assignments</h2><blockquote class='example-description'></blockquote><blockquote class='request-label'><p>Request</p></blockquote><pre class="highlight plaintext"><code>GET /assignments</code></pre><blockquote class='response-label'><p>Response</p></blockquote><pre class="highlight plaintext"><code>Status: 200 -- OK</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"assignments"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-01-04"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-07-09"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Assignment 68.78641350456385"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/assignments/3"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-01-04"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-07-07"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Assignment 83.67996190222249"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/assignments/2"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-01-04"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-06-21"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Assignment 5.437236112357969"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/assignments/1"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span></code></pre><blockquote class='example-description'><p>Example: Get Assingments for specific Unit</p></blockquote><blockquote class='request-label'><p>Request</p></blockquote><pre class="highlight plaintext"><code>GET /assignments</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"unit_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="w">
+</span><span class="p">}</span></code></pre><blockquote class='response-label'><p>Response</p></blockquote><pre class="highlight plaintext"><code>Status: 200 -- OK</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"assignments"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-01-04"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-07-07"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Assignment 83.67996190222249"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/assignments/2"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-01-04"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-06-21"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Assignment 5.437236112357969"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/assignments/1"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span></code></pre><aside class='aside-authentication'> <img src='images/locked-padlock.svg'> Authentication Needed</aside><aside class='aside-includes'> Can Include other resources in the response</aside><p>Returns all the Assignments for the current user. If a unit_id is passed in the parameters, the assignments will be scoped to that Unit.</p><h3>HTTP Request</h3>
+<p><code class='prettyprint'>GET http://example.com/v1/assignments</code></p><h3>Query Parameters</h3><table><thead><tr><th>Required</th><th>Parameter</th><th>Type</th><th>Desription</th></tr></thead><tbody><tr><td></td><td>unit_id</td><td>Integer</td><td>Return all Assignments for a specific Unit</td></tr></tbody></table><h3>Errors</h3><table><thead><tr><th>Error Code</th><th>Meaning</th></tr></thead><tbody><tr><td>400</td><td>Bad Request -- Invalid 'includes' parameter</td></tr><tr><td>401</td><td>Unauthorized -- Authentication Failed</td></tr><tr><td>403</td><td>Forbidden -- The current user is not associated with this resource</td></tr><tr><td>403</td><td>Forbidden -- The current user is not a Lecturer. This endpoint is only available to Lecturers.</td></tr></tbody></table></div><div class="student-view"><h2 class="student-view" id="index-assignments">Get Assignments</h2><blockquote class='example-description'></blockquote><blockquote class='request-label'><p>Request</p></blockquote><pre class="highlight plaintext"><code>GET /assignments</code></pre><blockquote class='response-label'><p>Response</p></blockquote><pre class="highlight plaintext"><code>Status: 200 -- OK</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"assignments"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-01-04"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-07-09"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Assignment 68.78641350456385"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/assignments/3"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-01-04"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-07-07"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Assignment 83.67996190222249"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/assignments/2"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-01-04"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-06-21"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Assignment 5.437236112357969"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/assignments/1"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span></code></pre><aside class='aside-authentication'> <img src='images/locked-padlock.svg'> Authentication Needed</aside><aside class='aside-includes'> Can Include other resources in the response</aside><p>Returns all the Assignments for the current user</p><h3>HTTP Request</h3>
+<p><code class='prettyprint'>GET http://example.com/v1/assignments</code></p><h3>Errors</h3><table><thead><tr><th>Error Code</th><th>Meaning</th></tr></thead><tbody><tr><td>400</td><td>Bad Request -- Invalid 'includes' parameter</td></tr><tr><td>401</td><td>Unauthorized -- Authentication Failed</td></tr><tr><td>403</td><td>Forbidden -- The current user is not associated with this resource</td></tr><tr><td>403</td><td>Forbidden -- unit_id was present in the params. This is a lecturer-only functionality. Retry without any parameters.</td></tr></tbody></table></div>
+          <h2 id="get-single-assignment">Get Single Assignment</h2><blockquote class='example-description'></blockquote><blockquote class='request-label'><p>Request</p></blockquote><pre class="highlight plaintext"><code>GET /assignments/:id</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"includes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unit"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7"</span><span class="w">
+</span><span class="p">}</span></code></pre><blockquote class='response-label'><p>Response</p></blockquote><pre class="highlight plaintext"><code>Status: 200 -- OK</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"assignment"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-01-04"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-06-08"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Assignment 60.43298044740668"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/assignments/7"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"unit"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unit 841"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"gkv5lhgIJJKldg=="</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"semester"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Spring"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"year"</span><span class="p">:</span><span class="w"> </span><span class="mi">2017</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"archived_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span></code></pre><aside class='aside-authentication'> <img src='images/locked-padlock.svg'> Authentication Needed</aside><aside class='aside-includes'> Can Include other resources in the response</aside><p>Returns a single Assignment</p><h3>HTTP Request</h3>
+<p><code class='prettyprint'>GET http://example.com/v1/assignments/:id</code></p><h3>Errors</h3><table><thead><tr><th>Error Code</th><th>Meaning</th></tr></thead><tbody><tr><td>400</td><td>Bad Request -- Invalid 'includes' parameter</td></tr><tr><td>401</td><td>Unauthorized -- Authentication Failed</td></tr><tr><td>403</td><td>Forbidden -- The current user is not associated with this resource</td></tr></tbody></table>
+          <div class="lecturer-view"><h2 class="lecturer-view" id="update-assignment">Update Assignment</h2><blockquote class='example-description'></blockquote><blockquote class='request-label'><p>Request</p></blockquote><pre class="highlight plaintext"><code>PATCH /assignments/:id</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-01-04"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"17"</span><span class="w">
+</span><span class="p">}</span></code></pre><blockquote class='response-label'><p>Response</p></blockquote><pre class="highlight plaintext"><code>Status: 200 -- OK</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"assignment"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">17</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-01-04"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-01-04"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Assignment 45.821713759320836"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/assignments/17"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span></code></pre><aside class='aside-authentication'> <img src='images/locked-padlock.svg'> Authentication Needed</aside><p>Update an Assignment. Only Lecturers can create a Assignment, and it will automatically be associated with the current user. Requires a unit_id, which must be a Unit that belongs to the current user. Can also create multiple Projects through the same request. See examples.</p><h3>HTTP Request</h3>
+<p><code class='prettyprint'>PATCH http://example.com/v1/assignments/:id</code></p><h3>Query Parameters</h3><table><thead><tr><th>Required</th><th>Parameter</th><th>Type</th><th>Desription</th></tr></thead><tbody><tr><td>required</td><td>unit_id</td><td>Integer</td><td>The id of the Unit that the new Assignment will belong to</td></tr><tr><td></td><td>name</td><td>String</td><td>The name of the Assignment</td></tr><tr><td></td><td>start_date</td><td>Date</td><td>The date that the Assignment starts</td></tr><tr><td></td><td>end_date</td><td>Date</td><td>The year that the Unit takes place</td></tr><tr><td></td><td>projects_attributes: [{ project_name, team_name, description, enrollment_key, logo}]</td><td>Array</td><td>An array of projects parameters to create associated projects for the new Assignment. See examples.</td></tr></tbody></table><p>There is the Option of creating Projects for the Assignment through this endpoint. Pass the parameters for each project in an array, with "projects_attributes" as the key</p><p><code class='prettyprint'>{
+  "name": "New Unit",
+  "projects_attributes": [
+    {
+      "project_name": "New Project1",
+      "team_name": "persons",
+      "description": "dddd",
+      "enrollment_key": "key"
+    },
+    {
+      "project_name": "New Project2",
+      "team_name": "persons2",
+      "description": "descr",
+      "enrollment_key": "key2"
+    }
+  ]
+}</code></p><p>Projects will be validated normally, and errors will be returned in the response.</p><h3>Errors</h3><table><thead><tr><th>Error Code</th><th>Meaning</th></tr></thead><tbody><tr><td>401</td><td>Unauthorized -- Authentication Failed</td></tr><tr><td>403</td><td>Forbidden -- The current user is not a Lecturer. This endpoint is only available to Lecturers.</td></tr><tr><td>403</td><td>Forbidden -- The current user is not associated with this resource</td></tr><tr><td>422</td><td>Unprocessable Entity -- Invalid Params. See response body for more info.</td></tr></tbody></table></div>
+          <div class="lecturer-view"><h2 class="lecturer-view" id="delete-assignment">Delete Assignment</h2><aside class='aside-authentication'> <img src='images/locked-padlock.svg'> Authentication Needed</aside><p>Delete an Assignment. Only the Lecturer that created it may do so.</p><h3>HTTP Request</h3>
+<p><code class='prettyprint'>DELETE http://example.com/v1/assignments/:id</code></p><h3>Query Parameters</h3><table><thead><tr><th>Required</th><th>Parameter</th><th>Type</th><th>Desription</th></tr></thead><tbody><tr><td>required</td><td>id</td><td>Integer</td><td>The id of the Assignment to be deleted.</td></tr></tbody></table><h3>Errors</h3><table><thead><tr><th>Error Code</th><th>Meaning</th></tr></thead><tbody><tr><td>401</td><td>Unauthorized -- Authentication Failed</td></tr><tr><td>403</td><td>Forbidden -- The current user is not a Lecturer. This endpoint is only available to Lecturers.</td></tr><tr><td>403</td><td>Forbidden -- The current user is not associated with this resource</td></tr><tr><td>422</td><td>Unprocessable Entity -- Invalid Params. See response body for more info.</td></tr></tbody></table></div>
+          <h1 id="iterations">Iterations</h1>
+
+<p class="short-description">&lsquo;An Assignment may have one or more Iterations&rsquo;</p>
+
+<p>Each Assignment can have many iterations which are connected with a form. A Lecturer creates Iterations for an Assignment, and Studens must submit peer evaluation forms for each Iteration. Each Iteration has its own PAForm and Project Evaluations.</p>
+
+<h2 id="attributes">Attributes</h2>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>The name of the Unit.</td>
+</tr>
+<tr>
+<td>start_date</td>
+<td>Date</td>
+<td>The date that the Iteration starts. It cannot be a date in the past</td>
+</tr>
+<tr>
+<td>deadline</td>
+<td>Date</td>
+<td>The date that the Iteration ends, and the deadline for submitting the PAForm and Project Evaluations</td>
+</tr>
+</tbody></table>
+
+<h2 id="relationships">Relationships</h2>
+
+<p><img src="images/erd_iteration.png" alt="Iteration Relationships"></p>
+
+          <h2 id="index-iterations">Get Assignment Iterations</h2><blockquote class='example-description'></blockquote><blockquote class='request-label'><p>Request</p></blockquote><pre class="highlight plaintext"><code>GET /iterations</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"assignment_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3"</span><span class="w">
+</span><span class="p">}</span></code></pre><blockquote class='response-label'><p>Response</p></blockquote><pre class="highlight plaintext"><code>Status: 200 -- OK</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"iterations"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Analysis"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-04-20T02:28:36.965Z"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"deadline"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-02-10T18:42:39.374Z"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"pa_form"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Testing"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-05-06T20:14:28.662Z"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"deadline"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-02-24T16:45:00.484Z"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"pa_form"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span></code></pre><aside class='aside-authentication'> <img src='images/locked-padlock.svg'> Authentication Needed</aside><aside class='aside-includes'> Can Include other resources in the response</aside><p>Returns all Iterations for a specific Assignment. Needs assignment_id in the params.</p><h3>HTTP Request</h3>
+<p><code class='prettyprint'>GET http://example.com/v1/iterations</code></p><h3>Query Parameters</h3><table><thead><tr><th>Required</th><th>Parameter</th><th>Type</th><th>Desription</th></tr></thead><tbody><tr><td>required</td><td>assignment_id</td><td>Integer</td><td>The Assignment for which the Iteration will be returned</td></tr></tbody></table><h3>Errors</h3><table><thead><tr><th>Error Code</th><th>Meaning</th></tr></thead><tbody><tr><td>400</td><td>Bad Request -- assignment_id is missing from the params</td></tr><tr><td>401</td><td>Unauthorized -- Authentication Failed</td></tr><tr><td>403</td><td>Forbidden -- The current user is not associated with this resource</td></tr></tbody></table>
+          <h2 id="get-iteration">Get Specific Iteration</h2><blockquote class='example-description'></blockquote><blockquote class='request-label'><p>Request</p></blockquote><pre class="highlight plaintext"><code>GET /iterations/2</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="w">
+</span><span class="p">}</span></code></pre><blockquote class='response-label'><p>Response</p></blockquote><pre class="highlight plaintext"><code>Status: 200 -- OK</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"iteration"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Analysis"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-04-20T02:28:36.965Z"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"deadline"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-02-10T18:42:39.374Z"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"pa_form"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span></code></pre><aside class='aside-authentication'> <img src='images/locked-padlock.svg'> Authentication Needed</aside><aside class='aside-includes'> Can Include other resources in the response</aside><p>Returns a specific iteration</p><h3>HTTP Request</h3>
+<p><code class='prettyprint'>GET http://example.com/v1/iterations/:id</code></p><h3>Query Parameters</h3><table><thead><tr><th>Required</th><th>Parameter</th><th>Type</th><th>Desription</th></tr></thead><tbody><tr><td>required</td><td>id</td><td>Integer</td><td>The id of the Iteration that will be returned</td></tr></tbody></table><h3>Errors</h3><table><thead><tr><th>Error Code</th><th>Meaning</th></tr></thead><tbody><tr><td>401</td><td>Unauthorized -- Authentication Failed</td></tr><tr><td>403</td><td>Forbidden -- The current user is not associated with this resource</td></tr></tbody></table>
+          <div class="lecturer-view"><h2 class="lecturer-view" id="create-iteration">Create Iteration for Assignment</h2><blockquote class='example-description'></blockquote><blockquote class='request-label'><p>Request</p></blockquote><pre class="highlight plaintext"><code>POST /iterations</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"assignment_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"6"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"deadline"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-04-04T04:00:34+02:00"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"name"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"pa_form_attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"end_offset"</span><span class="p">:</span><span class="w"> </span><span class="s2">"432000"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"questions"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"Who is it?"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"Human?"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"Hello?"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"Favorite Power Ranger?"</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"start_offset"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-01-11T04:00:34+02:00"</span><span class="w">
+</span><span class="p">}</span></code></pre><blockquote class='response-label'><p>Response</p></blockquote><pre class="highlight plaintext"><code>Status: 201 -- Created</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"iteration"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"name"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-01-11T02:00:34.000Z"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"deadline"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-04-04T02:00:34.000Z"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"pa_form"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"iteration_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"questions"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"question_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Who is it?"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"question_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Human?"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"question_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Hello?"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"question_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Favorite Power Ranger?"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="s2">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-04-04T05:00:34.000+03:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"deadline"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-04-09T05:00:34.000+03:00"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span></code></pre><blockquote class='example-description'></blockquote><blockquote class='request-label'><p>Request</p></blockquote><pre class="highlight plaintext"><code>POST /iterations</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"assignment_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"6"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"deadline"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-04-04T04:00:34+02:00"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"name"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-01-11T04:00:34+02:00"</span><span class="w">
+</span><span class="p">}</span></code></pre><blockquote class='response-label'><p>Response</p></blockquote><pre class="highlight plaintext"><code>Status: 201 -- Created</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"iteration"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"name"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-01-11T02:00:34.000Z"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"deadline"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-04-04T02:00:34.000Z"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"pa_form"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span></code></pre><aside class='aside-authentication'> <img src='images/locked-padlock.svg'> Authentication Needed</aside><aside class='aside-includes'> Can Include other resources in the response</aside><p>Create a new Iteration for an Assignment</p><h3>HTTP Request</h3>
+<p><code class='prettyprint'>POST http://example.com/v1/iterations</code></p><h3>Query Parameters</h3><table><thead><tr><th>Required</th><th>Parameter</th><th>Type</th><th>Desription</th></tr></thead><tbody><tr><td>required</td><td>assignment_id</td><td>Integer</td><td>The assignment that the iteration belongs to</td></tr><tr><td>required</td><td>name</td><td>String</td><td>The name of the project</td></tr><tr><td>required</td><td>start_date</td><td>String</td><td>The date that the Iteration starts</td></tr><tr><td>required</td><td>deadline</td><td>String</td><td>The date that the iteration ends</td></tr></tbody></table><h3>Errors</h3><table><thead><tr><th>Error Code</th><th>Meaning</th></tr></thead><tbody><tr><td>401</td><td>Unauthorized -- Authentication Failed</td></tr><tr><td>403</td><td>Forbidden -- The current user is not a Lecturer. This endpoint is only available to Lecturers.</td></tr><tr><td>403</td><td>Forbidden -- The current user is not associated with this resource</td></tr><tr><td>422</td><td>Unprocessable Entity -- Invalid params. Start Date must be sometime AFTER the current time, and deadline must be AFTER start_date. See response body.</td></tr></tbody></table></div>
+          <div class="lecturer-view"><h2 class="lecturer-view" id="update-iteration">Update Iteration</h2><blockquote class='example-description'></blockquote><blockquote class='request-label'><p>Request</p></blockquote><pre class="highlight plaintext"><code>PATCH /projects/2</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"different"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="w">
+</span><span class="p">}</span></code></pre><blockquote class='response-label'><p>Response</p></blockquote><pre class="highlight plaintext"><code>Status: 200 -- OK</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"iteration"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"different"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-04-20T02:28:36.965Z"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"deadline"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-02-10T18:42:39.374Z"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"pa_form"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span></code></pre><aside class='aside-authentication'> <img src='images/locked-padlock.svg'> Authentication Needed</aside><aside class='aside-includes'> Can Include other resources in the response</aside><p>Update Iteration</p><h3>HTTP Request</h3>
+<p><code class='prettyprint'>PATCH http://example.com/v1/iterations/:id</code></p><h3>Query Parameters</h3><table><thead><tr><th>Required</th><th>Parameter</th><th>Type</th><th>Desription</th></tr></thead><tbody><tr><td>required</td><td>id</td><td>Integer</td><td>The id of the Iteration to be updated</td></tr><tr><td></td><td>name</td><td>String</td><td>The name of the project</td></tr><tr><td></td><td>start_date</td><td>String</td><td>The date that the Iteration starts</td></tr><tr><td></td><td>deadline</td><td>String</td><td>The date that the iteration ends</td></tr></tbody></table><h3>Errors</h3><table><thead><tr><th>Error Code</th><th>Meaning</th></tr></thead><tbody><tr><td>401</td><td>Unauthorized -- Authentication Failed</td></tr><tr><td>403</td><td>Forbidden -- The current user is not a Lecturer. This endpoint is only available to Lecturers.</td></tr><tr><td>403</td><td>Forbidden -- The current user is not associated with this resource</td></tr><tr><td>422</td><td>Unprocessable Entity -- Invalid params. Start Date must be sometime AFTER the current time, and deadline must be AFTER start_date. See response body.</td></tr></tbody></table></div>
+          <div class="lecturer-view"><h2 class="lecturer-view" id="delete-iteration">Delete Iteration</h2><aside class='aside-authentication'> <img src='images/locked-padlock.svg'> Authentication Needed</aside><p>Delete Iteration</p><h3>HTTP Request</h3>
+<p><code class='prettyprint'>DELETE http://example.com/v1/iterations/:id</code></p><h3>Query Parameters</h3><table><thead><tr><th>Required</th><th>Parameter</th><th>Type</th><th>Desription</th></tr></thead><tbody><tr><td>required</td><td>id</td><td>Integer</td><td>The id of the Iteration to be deleted</td></tr></tbody></table><h3>Errors</h3><table><thead><tr><th>Error Code</th><th>Meaning</th></tr></thead><tbody><tr><td>401</td><td>Unauthorized -- Authentication Failed</td></tr><tr><td>403</td><td>Forbidden -- The current user is not a Lecturer. This endpoint is only available to Lecturers.</td></tr><tr><td>403</td><td>Forbidden -- The current user is not associated with this resource</td></tr><tr><td>422</td><td>Unprocessable Entity -- Invalid Params. See response body for more info.</td></tr></tbody></table></div>
           <h1 id="projects">Projects</h1>
 
 <p class="short-description">&lsquo;Projects belong to Assignments, and contain many Students&rsquo;</p>
@@ -420,7 +880,7 @@ system. The students can change the team_name and the logo if they wish.</p>
 <p><img src="images/erd_project.png" alt="Project Relationships"></p>
 
           <div class="student-view"><h2 class="student-view" id="enrol">Enrol</h2><blockquote class='example-description'></blockquote><blockquote class='request-label'><p>Request</p></blockquote><pre class="highlight plaintext"><code>POST /projects/enrol</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"927bc9cbb5f5cf806f778190293a7ef3"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"843788657fa673da80634906177f8968"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"14"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"nickname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"giorgakis"</span><span class="w">
 </span><span class="p">}</span></code></pre><blockquote class='response-label'><p>Response</p></blockquote><pre class="highlight plaintext"><code>Status: 201 -- Created</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
@@ -430,7 +890,7 @@ system. The students can change the team_name and the logo if they wish.</p>
     </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen100"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
     </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"927bc9cbb5f5cf806f778190293a7ef3"</span><span class="w">
+    </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"843788657fa673da80634906177f8968"</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span></code></pre><blockquote class='example-description'></blockquote><blockquote class='request-label'><p>Request (Error)</p></blockquote><pre class="highlight plaintext"><code>POST /projects/enrol</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"invalidkey"</span><span class="p">,</span><span class="w">
@@ -448,12 +908,12 @@ system. The students can change the team_name and the logo if they wish.</p>
 </span><span class="p">}</span></code></pre><blockquote class='response-label'><p>Response</p></blockquote><pre class="highlight plaintext"><code>Status: 200 -- OK</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"projects"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 68"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen68"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 70"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen70"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
       </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1b9dd2e8b6d04afff5ef9279ff3f2f3a"</span><span class="w">
+      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"28340074989ab475944efa518239c82f"</span><span class="w">
     </span><span class="p">},</span><span class="w">
     </span><span class="p">{</span><span class="w">
       </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
@@ -461,15 +921,15 @@ system. The students can change the team_name and the logo if they wish.</p>
       </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen69"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
       </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3f6c42ae5fe00afbb09a0f4a4f8130bc"</span><span class="w">
+      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"a30c548c0a0e15ace4e14d6229ff578e"</span><span class="w">
     </span><span class="p">},</span><span class="w">
     </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 70"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen70"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 68"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen68"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
       </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5c7258ebec09ef77d158b27715963eee"</span><span class="w">
+      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"517dd3592b2a86d7596d53f4b7c3eac4"</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span></code></pre><blockquote class='example-description'></blockquote><blockquote class='request-label'><p>Request (Error)</p></blockquote><pre class="highlight plaintext"><code>GET /projects</code></pre><blockquote class='response-label'><p>Response</p></blockquote><pre class="highlight plaintext"><code>Status: 403 -- Forbidden</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
@@ -487,7 +947,7 @@ system. The students can change the team_name and the logo if they wish.</p>
       </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen79"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
       </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ea53a33f0c251b9bf5633fbe2be167d4"</span><span class="w">
+      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"e27a9ecbe5e525642cec0e95aafa675b"</span><span class="w">
     </span><span class="p">},</span><span class="w">
     </span><span class="p">{</span><span class="w">
       </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -495,7 +955,7 @@ system. The students can change the team_name and the logo if they wish.</p>
       </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen68"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
       </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1b9dd2e8b6d04afff5ef9279ff3f2f3a"</span><span class="w">
+      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"517dd3592b2a86d7596d53f4b7c3eac4"</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span></code></pre><aside class='aside-authentication'> <img src='images/locked-padlock.svg'> Authentication Needed</aside><aside class='aside-includes'> Can Include other resources in the response</aside><p>Returns all the Projects of the Student</p><h3>HTTP Request</h3>
@@ -510,34 +970,34 @@ system. The students can change the team_name and the logo if they wish.</p>
     </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen269"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
     </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"15f969711f30a7a36c60600251b838c7"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"97dc25a14a903f94a2ef3fc09806edc3"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"students"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
       </span><span class="p">{</span><span class="w">
         </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Jonathan665"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Burgerhuman119"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jonathan479burgerhuman445@gmail.com"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Jonathan866"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Burgerhuman622"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jonathan510burgerhuman459@gmail.com"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Student"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"provider"</span><span class="p">:</span><span class="w"> </span><span class="s2">"test"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"nickname"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
       </span><span class="p">},</span><span class="w">
       </span><span class="p">{</span><span class="w">
         </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">9</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Jonathan799"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Burgerhuman913"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jonathan286burgerhuman253@gmail.com"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Jonathan450"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Burgerhuman859"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jonathan670burgerhuman545@gmail.com"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Student"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"provider"</span><span class="p">:</span><span class="w"> </span><span class="s2">"test"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"nickname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"wolverine857"</span><span class="w">
+        </span><span class="s2">"nickname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"wolverine877"</span><span class="w">
       </span><span class="p">},</span><span class="w">
       </span><span class="p">{</span><span class="w">
         </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Jonathan381"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Burgerhuman235"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jonathan983burgerhuman915@gmail.com"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Jonathan456"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Burgerhuman61"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jonathan332burgerhuman553@gmail.com"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Student"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"provider"</span><span class="p">:</span><span class="w"> </span><span class="s2">"test"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"nickname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"wolverine169"</span><span class="w">
+        </span><span class="s2">"nickname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"wolverine56"</span><span class="w">
       </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
   </span><span class="p">}</span><span class="w">
@@ -546,7 +1006,7 @@ system. The students can change the team_name and the logo if they wish.</p>
           <div class="lecturer-view"><h2 class="lecturer-view" id="create-project">Create Project</h2><blockquote class='example-description'></blockquote><blockquote class='request-label'><p>Request</p></blockquote><pre class="highlight plaintext"><code>POST /projects</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"assignment_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"c287eb147ed78f1cce78e986234db988"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"395eb6c0719381b85c14d2a411625105"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
   </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 84"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen84"</span><span class="w">
@@ -557,12 +1017,12 @@ system. The students can change the team_name and the logo if they wish.</p>
     </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen84"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
     </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"c287eb147ed78f1cce78e986234db988"</span><span class="w">
+    </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"395eb6c0719381b85c14d2a411625105"</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span></code></pre><blockquote class='example-description'></blockquote><blockquote class='request-label'><p>Request (Error)</p></blockquote><pre class="highlight plaintext"><code>POST /projects</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"assignment_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"21"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"28b66a5ba4ab8cce02c9fd072a006c4f"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2ba3e7707166bd2ba6b093bb9e99d924"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
   </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 85"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen85"</span><span class="w">
@@ -598,7 +1058,7 @@ system. The students can change the team_name and the logo if they wish.</p>
     </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CrazyProject666"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
     </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.images.com/images/4259"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1b9dd2e8b6d04afff5ef9279ff3f2f3a"</span><span class="w">
+    </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"517dd3592b2a86d7596d53f4b7c3eac4"</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span></code></pre><blockquote class='example-description'></blockquote><blockquote class='request-label'><p>Request (Error)</p></blockquote><pre class="highlight plaintext"><code>PATCH /projects/1</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"whatever"</span><span class="p">,</span><span class="w">
@@ -615,7 +1075,7 @@ system. The students can change the team_name and the logo if they wish.</p>
 <p><code class='prettyprint'>DELETE http://example.com/v1/projects/:id</code></p><h3>Query Parameters</h3><table><thead><tr><th>Required</th><th>Parameter</th><th>Type</th><th>Desription</th></tr></thead><tbody><tr><td>required</td><td>id</td><td>Integer</td><td>The id of the Project to be deleted.</td></tr></tbody></table><h3>Errors</h3><table><thead><tr><th>Error Code</th><th>Meaning</th></tr></thead><tbody><tr><td>401</td><td>Unauthorized -- Authentication Failed</td></tr><tr><td>403</td><td>Forbidden -- The current user is not a Lecturer. This endpoint is only available to Lecturers.</td></tr><tr><td>403</td><td>Forbidden -- The current user is not associated with this resource</td></tr><tr><td>422</td><td>Unprocessable Entity -- Invalid Params. See response body for more info.</td></tr></tbody></table></div>
           <div class="lecturer-view"><h2 class="lecturer-view" id="remove-student">Remove Student from Project</h2><blockquote class='example-description'></blockquote><blockquote class='request-label'><p>Request</p></blockquote><pre class="highlight plaintext"><code>DELETE /projects/3/remove_student?student_id=80</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"student_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"80"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10"</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3"</span><span class="w">
 </span><span class="p">}</span></code></pre><blockquote class='response-label'><p>Response</p></blockquote><pre class="highlight plaintext"><code>Status: 204 -- No Content</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">""</span><span class="w">
 </span><span class="p">}</span></code></pre><aside class='aside-authentication'> <img src='images/locked-padlock.svg'> Authentication Needed</aside><p>Remove a Student from a Project. Used in cases of error, when a Student has enrolled in the 'wrong' project. The Lecturer has the ability to remove them from a Project, in order for the Student to select a different one.</p><h3>HTTP Request</h3>
@@ -683,16 +1143,16 @@ system. The students can change the team_name and the logo if they wish.</p>
     </span><span class="p">{</span><span class="w">
       </span><span class="s2">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Worked on database and use cases"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"stage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Analysis"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"date_worked"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1483396861"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"date_worked"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1483408845"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"time_worked"</span><span class="p">:</span><span class="w"> </span><span class="s2">"36000"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"date_submitted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1483483261"</span><span class="w">
+      </span><span class="s2">"date_submitted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1483495245"</span><span class="w">
     </span><span class="p">},</span><span class="w">
     </span><span class="p">{</span><span class="w">
       </span><span class="s2">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Worked on database and use cases"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"stage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Analysis"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"date_worked"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1483396862"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"date_worked"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1483408845"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"time_worked"</span><span class="p">:</span><span class="w"> </span><span class="s2">"36000"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"date_submitted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1483483262"</span><span class="w">
+      </span><span class="s2">"date_submitted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1483495245"</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span></code></pre><aside class='aside-authentication'> <img src='images/locked-padlock.svg'> Authentication Needed</aside><p>Get all the logs for a specific Student, in a Specific Project</p><h3>HTTP Request</h3>
@@ -703,37 +1163,37 @@ system. The students can change the team_name and the logo if they wish.</p>
     </span><span class="p">{</span><span class="w">
       </span><span class="s2">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Worked on database and use cases"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"stage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Analysis"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"date_worked"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1483396861"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"date_worked"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1483408845"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"time_worked"</span><span class="p">:</span><span class="w"> </span><span class="s2">"36000"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"date_submitted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1483483261"</span><span class="w">
+      </span><span class="s2">"date_submitted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1483495245"</span><span class="w">
     </span><span class="p">},</span><span class="w">
     </span><span class="p">{</span><span class="w">
       </span><span class="s2">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Worked on database and use cases"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"stage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Analysis"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"date_worked"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1483396861"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"date_worked"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1483408845"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"time_worked"</span><span class="p">:</span><span class="w"> </span><span class="s2">"36000"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"date_submitted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1483483261"</span><span class="w">
+      </span><span class="s2">"date_submitted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1483495245"</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span></code></pre><aside class='aside-authentication'> <img src='images/locked-padlock.svg'> Authentication Needed</aside><p>Get all of the completed Logs for a specific Project.</p><h3>HTTP Request</h3>
 <p><code class='prettyprint'>GET http://example.com/v1/projects/:id/logs</code></p><h3>Query Parameters</h3><table><thead><tr><th>Required</th><th>Parameter</th><th>Type</th><th>Desription</th></tr></thead><tbody><tr><td>required</td><td>id</td><td>Integer</td><td>The Logs will be returned for this Project</td></tr></tbody></table><h3>Errors</h3><table><thead><tr><th>Error Code</th><th>Meaning</th></tr></thead><tbody><tr><td>401</td><td>Unauthorized -- Authentication Failed</td></tr><tr><td>403</td><td>Forbidden -- The current user is not a Student. This endpoint is only available to Students.</td></tr><tr><td>403</td><td>Forbidden -- The current user is not associated with this resource</td></tr></tbody></table></div>
           <div class="student-view"><h2 class="student-view" id="create-log">New Log Entry</h2><blockquote class='example-description'></blockquote><blockquote class='request-label'><p>Request</p></blockquote><pre class="highlight plaintext"><code>POST /projects/12/update_logs</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"date_submitted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1483483261"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"date_worked"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1483396861"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"date_submitted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1483495245"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"date_worked"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1483408845"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"stage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Analysis"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Worked on database and use cases"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"time_worked"</span><span class="p">:</span><span class="w"> </span><span class="s2">"36000"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12"</span><span class="w">
 </span><span class="p">}</span></code></pre><blockquote class='response-label'><p>Response</p></blockquote><pre class="highlight plaintext"><code>Status: 200 -- OK</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"log_entry"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"date_worked"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1483396861"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"date_worked"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1483408845"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"time_worked"</span><span class="p">:</span><span class="w"> </span><span class="s2">"36000"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"stage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Analysis"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Worked on database and use cases"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"date_submitted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1483483261"</span><span class="w">
+    </span><span class="s2">"date_submitted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1483495245"</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span></code></pre><blockquote class='example-description'></blockquote><blockquote class='request-label'><p>Request (Error)</p></blockquote><pre class="highlight plaintext"><code>POST /projects/12/update_logs</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"date_worked"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1483396861"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"date_worked"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1483408845"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"stage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Analysis"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Worked on database and use cases"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12"</span><span class="w">
