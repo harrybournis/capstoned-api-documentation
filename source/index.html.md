@@ -33,6 +33,12 @@ includes:
   - endpoints/assignments/get_assignment
   - endpoints/assignments/update_assignment
   - endpoints/assignments/delete_assignment
+  - endpoints/iterations/iterations
+  - endpoints/iterations/index_iterations
+  - endpoints/iterations/get_iteration
+  - endpoints/iterations/create_iteration
+  - endpoints/iterations/update_iteration
+  - endpoints/iterations/delete_iteration
   - endpoints/projects/projects
   - endpoints/projects/enrol
   - endpoints/projects/index_projects

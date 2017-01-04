@@ -1,0 +1,15 @@
+.lecturer-view
+	h2#delete-iteration.lecturer-view Delete Iteration
+
+	= authentication
+
+	p Delete Iteration
+
+	= http_request "DELETE", "iterations/:id"
+
+	= params param(required, "id", "Integer", "The id of the Iteration to be deleted")
+
+	= errors error_authentication,
+			 error_not_lecturer,
+			 error_association,
+			 error_invalid_params

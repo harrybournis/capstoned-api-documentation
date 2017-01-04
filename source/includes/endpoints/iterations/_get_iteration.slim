@@ -1,0 +1,15 @@
+h2#get-iteration Get Specific Iteration
+
+= example 'GET /iterations/2', data.doc_examples["V1::IterationsController"]["Lecturer"]["show"]["success"].first[1]
+
+= authentication
+= includes
+
+p Returns a specific iteration
+
+= http_request "GET", "iterations/:id"
+
+= params param(required, "id", "Integer", "The id of the Iteration that will be returned")
+
+= errors error_authentication,
+		 error_association

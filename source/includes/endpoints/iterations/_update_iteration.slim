@@ -1,0 +1,21 @@
+.lecturer-view
+	h2#update-iteration.lecturer-view Update Iteration
+
+	= example "PATCH /projects/2", data.doc_examples["V1::IterationsController"]["Lecturer"]["update"]["success"].first[1]
+
+	= authentication
+	= includes
+
+	p Update Iteration
+
+	= http_request "PATCH", "iterations/:id"
+
+	= params param(required, "id", "Integer", "The id of the Iteration to be updated"),
+			 param(optional, "name", "String", "The name of the project"),
+			 param(optional, "start_date", "String", "The date that the Iteration starts"),
+			 param(optional, "deadline", "String", "The date that the iteration ends")
+
+	= errors error_authentication,
+			 error_not_lecturer,
+			 error_association,
+			 error(422, "Invalid params. Start Date must be sometime AFTER the current time, and deadline must be AFTER start_date. See response body.")

@@ -1,0 +1,16 @@
+h2#index-iterations Get Assignment Iterations
+
+= example 'GET /iterations', data.doc_examples["V1::IterationsController"]["Lecturer"]["index"]["success"].first[1]
+
+= authentication
+= includes
+
+p Returns all Iterations for a specific Assignment. Needs assignment_id in the params.
+
+= http_request "GET", "iterations"
+
+= params param(required, "assignment_id", "Integer", "The Assignment for which the Iteration will be returned")
+
+= errors error(400, "assignment_id is missing from the params"),
+		 error_authentication,
+		 error_association
