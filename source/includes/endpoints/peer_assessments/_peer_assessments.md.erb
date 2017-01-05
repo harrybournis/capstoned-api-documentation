@@ -1,0 +1,33 @@
+# Peer Assessments
+
+<p class="short-description">'Students submit Peer Assessments about other Students'</p>
+
+A Peer Assessment is submitted for a Student by a Student from the same Team for a PAForm in an Iteration of a Project. It contains the answers to the questions contained in the associated PAForm and the	date and time it was submitted. A Student may assess another Student once per iteration.
+
+## Attributes
+
+Parameter | Type | Description
+--------- | ------- | -----------
+submitted_by_id | Integer | The id of the Student that submitted the form
+submitted_for_id | Integer | The id of the Student that was assessed
+pa_form_id | Integer | The id of the PAForm that was completed in the assessment
+date_submitted | DateTime | The date and time that the Peer Assessment was completed. Filed in automatically by the server.
+answers | JSON | The anwers to each question of the PAForm. See "Answers Format" above for explanation
+
+## Answers Format
+
+Answers are submitted and saved as a JSON array of JSON objects with the id of the question and the answer as a pair.
+
+`answers: [ { question_id : answer } ]`
+
+> Example
+
+```json
+<%= JSON.pretty_generate(JSON.parse({ "answers": [ { "1": "Answer to question1" }, { "2": "Answer to question 2" }, { "3": "Answer to question 3" } ] }.to_json)) %>
+```
+
+> The answers format will be validated, and input will be rejected if it does not follow the above example.
+
+## Relationships
+
+<img src="images/erd_peer_assessment.png" alt="Peer Assessment Relationships">

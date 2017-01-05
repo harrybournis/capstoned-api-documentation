@@ -1,0 +1,21 @@
+.student-view
+	h2#create-peer-assessment.student-view Submit Peer Assessment
+
+	= example "POST /peer_assessments", data.doc_examples["V1::PeerAssessmentsController"]["Student"]["create"]["success"].first[1]
+
+	= example "POST /peer_assessments", data.doc_examples["V1::PeerAssessmentsController"]["Student"]["create"]["error"].first[1], "Invalid Answers Format"
+
+	= authentication
+
+	p Submit a Peer Assessment for another Student. Students should evaluate their teammates once per iteration. The current time will be saved as `date_submitted` by the server. The server will return an error if the deadline for the Peer Assessment has passed, or the start date is in the future. A Student can not update a Peer Assessment after they have submitted it.
+
+	= http_request "POST", "peer_assessments"
+
+	= params param(required, "pa_form_id", "Integer", "The id of the PAForm that was completed."),
+			 param(required, "submitted_for_id", "Integer", "The id of the Student that was evaluated"),
+			 param(required, "answers", "JSON", "The anwers to each question of the PAForm. <a href='/#answers-format'>See 'Answers Format' section for information about the format</a>")
+
+	= errors error_authentication,
+			 error_not_student,
+			 error_association,
+			 error_invalid_params

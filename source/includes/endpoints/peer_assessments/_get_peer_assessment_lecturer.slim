@@ -1,0 +1,14 @@
+= example "GET /peer_assessments/:id", data.doc_examples["V1::PeerAssessmentsController"]["Lecturer"]["show"]["success"].first[1]
+
+= authentication
+= includes
+
+p Get a specific Peer Assessment. Must be associated with the current user
+
+= http_request "GET", "peer_assessments/:id"
+
+= params param(required, "id", "Integer", "The id of the Peer Assessment to be returned")
+
+= errors error_authentication,
+		 error_includes,
+		 error_association

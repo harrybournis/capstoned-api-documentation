@@ -1,0 +1,28 @@
+- @key1, @key2, @key3 = data.doc_examples["V1::PeerAssessmentsController"]["Student"]["index"]["success"].keys
+
+= example "GET /peer_assessments", data.doc_examples["V1::PeerAssessmentsController"]["Student"]["index"]["success"][@key1], "Get all that were Submitted by a specific Student for a specific PAForm"
+= example "GET /peer_assessments", data.doc_examples["V1::PeerAssessmentsController"]["Student"]["index"]["success"][@key2]
+= example "GET /peer_assessments", data.doc_examples["V1::PeerAssessmentsController"]["Student"]["index"]["success"][@key3], "All Peer Assessments for a specific Project"
+= example "GET /peer_assessments", data.doc_examples["V1::PeerAssessmentsController"]["Student"]["index"]["error"].first[1]
+
+= authentication
+= includes
+
+p Get Peer Assessments based on the parameter passed. Can get Peer Assessments for a Project, Iterations, PAForm, Student that submitted the form, Student that the form was submitted for or any combination of the above. Basically, the database will be queried with the parameters provided. See 'Attributes' for a complete list of available options. At least <em>ONE</em> of them must be present, or the request will produce and error. The answers to the Peer Assessments are not available to the Students for privacy reasons.
+
+= http_request "GET", "peer_assessments"
+
+= params param(optional, "pa_form_id", "Integer", "Used to get all Peer Assessments that were submitted for a specific PAForm"),
+		 param(optional, "submitted_by_id", "Integer", "Used to get all Peer Assessments that were submitted BY a specific Student"),
+		 param(optional, "submitted_for_id", "Integer", "Used to get all Peer Asesssments that were submitted FOR a specific student"),
+		 param(optional, "iteration_id", "Integer", "Used to get all Peer Assessments that were submitted during a specific Assignment Iteration"),
+		 param(optional, "project_id", "Integer", "Used to get all Peer Assessments that were submitted for a specific Project")
+
+aside.warning At least ONE of these parameters has to be present or the request will return an Error.
+
+= errors error_authentication,
+		 error(400, "No relevant parameter was found. This endpoint must have at least one of the following: pa_form_id, submitted_by_id, submitted_for_id, project_id, iteration_id"),
+		 error_includes,
+		 error_association
+
+
