@@ -1,4 +1,11 @@
-/= example 'GET /iterations/2', data.doc_examples["V1::IterationsController"]["Lecturer"]["show"]["success"].first[1]
+- @key1, @key2 = data.doc_examples["V1::UsersController"]["Lecturer"]["update"]["success"].keys
+
+- @key3, @key4 = data.doc_examples["V1::UsersController"]["Lecturer"]["update"]["error"].keys
+
+= example 'PATCH /users/1', data.doc_examples["V1::UsersController"]["Lecturer"]["update"]["success"][@key1]
+= example 'PATCH /users/1', data.doc_examples["V1::UsersController"]["Lecturer"]["update"]["success"][@key2]
+= example 'PATCH /users/1', data.doc_examples["V1::UsersController"]["Lecturer"]["update"]["error"][@key3]
+= example 'PATCH /users/1', data.doc_examples["V1::UsersController"]["Lecturer"]["update"]["error"][@key4]
 
 = authentication
 

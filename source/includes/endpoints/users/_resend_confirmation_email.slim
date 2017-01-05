@@ -1,5 +1,9 @@
 h2#resend-confirmation-email Resend Confirmation Email
 
+= example 'POST /resend_confirmation_email', data.doc_examples["V1::ConfirmationsController"]["Lecturer"]["create"]["success"].first[1]
+
+= example 'POST /resend_confirmation_email', data.doc_examples["V1::ConfirmationsController"]["Lecturer"]["create"]["error"].first[1]
+
 p Resends a confirmation email to the email provided in the params. The email must be a valid email in the system.
 
 = http_request "POST", "resend_confirmation_email"

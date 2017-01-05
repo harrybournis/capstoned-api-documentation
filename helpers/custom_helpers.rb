@@ -131,7 +131,11 @@ module CustomHelpers
 		response_head = "<blockquote class='response-label'><p>Response</p></blockquote>"
 		response = code('text') { "Status: #{example.status} -- #{error_name example.status}" }
 		if example.response_body.length > 2
-			response += code('json') { JSON.pretty_generate(JSON.parse(example.response_body)) }
+			if example.response_body.include?("&lt;html&gt;")
+				response += code('html') { example.response_body }
+			else
+				response += code('json') { JSON.pretty_generate(JSON.parse(example.response_body)) } # JSON.parse(JSON.pretty_generate(example.response_body).to_s)
+			end
 		else
 			response += code('json') { "{\n  \"\"\n}" }
 		end

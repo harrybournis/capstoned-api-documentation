@@ -1,5 +1,12 @@
 h2#confirm-account Confirm Account
 
+- @key1, @key2 = data.doc_examples["V1::ConfirmationsController"]["Lecturer"]["show"]["error"].keys
+
+
+= example 'GET /confirm_account', data.doc_examples["V1::ConfirmationsController"]["Lecturer"]["show"]["error"][@key1]
+
+= example 'GET /confirm_account', data.doc_examples["V1::ConfirmationsController"]["Lecturer"]["show"]["error"][@key2]
+
 p Accept Confirmation. The link contained in the email sent to the user points to this route. It redirects to a 'success' or 'failure' page to inform the user. Evaluates the confirmation token contained within the params and confirms or rejects the user. If this fails, assure that the link sent to the user contains the confirmation token in the url, and offer the user the option to resend the confirmation email through the POST /confirmation endpoint.
 
 = http_request "GET", "confirm_account"

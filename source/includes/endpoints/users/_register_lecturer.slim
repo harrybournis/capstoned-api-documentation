@@ -1,4 +1,11 @@
-/= example 'GET /iterations/2', data.doc_examples["V1::IterationsController"]["Lecturer"]["show"]["success"].first[1]
+- @key1, @key2, @key3, @key4 = data.doc_examples["V1::UsersController"]["Lecturer"]["create"]["error"].keys
+
+= example 'POST /users', data.doc_examples["V1::UsersController"]["Lecturer"]["create"]["success"].first[1]
+
+= example 'POST /users', data.doc_examples["V1::UsersController"]["Lecturer"]["create"]["error"][@key1]
+= example 'POST /users', data.doc_examples["V1::UsersController"]["Lecturer"]["create"]["error"][@key2]
+= example 'POST /users', data.doc_examples["V1::UsersController"]["Lecturer"]["create"]["error"][@key3]
+= example 'POST /users', data.doc_examples["V1::UsersController"]["Lecturer"]["create"]["error"][@key4]
 
 p Register a new User resource, of type Lecturer, that is authenticatable with email and password.
 

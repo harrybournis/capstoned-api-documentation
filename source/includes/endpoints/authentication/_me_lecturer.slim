@@ -1,0 +1,9 @@
+= example 'GET /me', data.doc_examples["V1::AuthenticationsController"]["Lecturer"]["me"]["success"].first[1]
+
+= authentication
+
+p Authenticate with the server after exiting the application. Returns the current_user in the response body. Due to the short expiration time of the access-token, requests to this endpoint will most likely be successful for a short period of time. If the request is not successful, the application should send a request to the <a href='#'> /refresh </a> route, in order to receive a new access-token.
+
+= http_request "GET", "me"
+
+= errors error(401, "User Authentication failed. Either the X-XSRF-TOKEN is missing from the headers, or the access-token is missing, invalid or expired")
