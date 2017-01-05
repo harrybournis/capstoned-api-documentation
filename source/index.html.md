@@ -60,6 +60,9 @@ includes:
   - endpoints/projects/update_project
   - endpoints/projects/delete_project
   - endpoints/projects/remove_student
+  - endpoints/projects/create_extension
+  - endpoints/projects/update_extension
+  - endpoints/projects/destroy_extension
   - endpoints/projects/update_nickname
   - endpoints/logs/logs
   - endpoints/logs/index_logs
@@ -72,9 +75,6 @@ includes:
   - endpoints/peer_assessments/create_peer_assessment
   - endpoints/peer_assessments/index_peer_assessments
   - endpoints/peer_assessments/get_peer_assessment
-  - demo/authentication
-  - demo/kittens
-  - demo/errors
 
 search: true
 ---

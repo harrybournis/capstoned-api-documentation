@@ -1,0 +1,18 @@
+.lecturer-view
+	h2#destroy-extension.lecturer-view Revoke Extension
+
+	= example "DELETE /projects/1/extensions/2", data.doc_examples["V1::ExtensionsController"]["Lecturer"]["destroy"]["success"].first[1]
+
+	= authentication
+
+	p Revoke an already given extension
+
+	= http_request "DELETE", "projects/:project_id/extensions/:id"
+
+	= params param(required, "id", "Integer", "The id of the extension that will be destroyd"),
+			 param(required, "extra_time", "Integer", "The time that will be added to the extension of the form. Must be an Integer. In Unix Time.")
+
+	= errors error_authentication,
+			 error_not_lecturer,
+			 error_association("Either the Project, or PAForm is not associated the the Lecturer"),
+			 error_invalid_params

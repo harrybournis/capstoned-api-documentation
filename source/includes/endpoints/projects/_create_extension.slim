@@ -1,0 +1,19 @@
+.lecturer-view
+	h2#create-extension.lecturer-view Give Extension
+
+	= example "POST /projects/1/extensions", data.doc_examples["V1::ExtensionsController"]["Lecturer"]["create"]["success"].first[1]
+
+	= authentication
+
+	p The Lecturer may choose to give an extension to give an Extension to the submission of the PA Form for a Project, extending its deadline. The Lecturer has to provide the project_id of the project that will receive the extension, as well as the pa_form_id of the particular form that will have its deadline extended.
+
+	= http_request "POST", "projects/:project_id/extensions"
+
+	= params param(required, "project_id", "Integer", "The id of the Project that will receive the extension"),
+			 param(required, "pa_form_id", "Integer", "The id of the PAForm that will have its deadline extended"),
+			 param(required, "extra_time", "Integer", "The time that will be added to the extension of the form. In Unix Time.")
+
+	= errors error_authentication,
+			 error_not_lecturer,
+			 error_association("Either the Project, or PAForm is not associated the the Lecturer"),
+			 error_invalid_params
