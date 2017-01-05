@@ -20,6 +20,8 @@ includes:
   - endpoints/users/users
   - endpoints/users/register
   - endpoints/users/update_account
+  - endpoints/users/confirm_account
+  - endpoints/users/resend_confirmation_email
   - endpoints/authentication/authentication
   - endpoints/authentication/sign_in
   - endpoints/authentication/me

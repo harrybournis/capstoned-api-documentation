@@ -1,0 +1,9 @@
+h2#resend-confirmation-email Resend Confirmation Email
+
+p Resends a confirmation email to the email provided in the params. The email must be a valid email in the system.
+
+= http_request "POST", "resend_confirmation_email"
+
+= params param(required, "email", "String", "The user's email. The confirmation email will be sent to this email")
+
+= errors error_invalid_params

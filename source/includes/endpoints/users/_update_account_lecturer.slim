@@ -4,7 +4,7 @@
 
 p Register a new User resource, of type Student, that is authenticatable with email and password.
 
-= http_request "POST", "users"
+= http_request "PATCH", "users/:id"
 
 = params param(required, "id", "Integer", "The id of the User to be updated. It should be the current user."),
 		 param(optional, "email", "String", "A Unique Email"),
