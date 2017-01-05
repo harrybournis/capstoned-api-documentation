@@ -1,0 +1,20 @@
+/= example 'GET /iterations/2', data.doc_examples["V1::IterationsController"]["Lecturer"]["show"]["success"].first[1]
+
+= authentication
+
+p Register a new User resource, of type Student, that is authenticatable with email and password.
+
+= http_request "POST", "users"
+
+= params param(required, "id", "Integer", "The id of the User to be updated. It should be the current user."),
+		 param(optional, "email", "String", "A Unique Email"),
+		 param("Required only if password will be updated", "current_password", "String", "The current password of the user." ),
+		 param(optional, "password", "String", "Minimum 8 characters. Requires current_password and password_confirmation to be present in the params"),
+		 param(optional, "password_confirmation", "String", "Must equal password. Requires password and current_password to be present in the params."),
+		 param(optional, "first_name", "string", "The first name of the User"),
+		 param(optional, "last_name", "string", "The last name of the User"),
+		 param(optional, "type", "String", "Should be 'Student'. Note the capital 'S' at the beginning of the work.")
+
+= errors error_authentication,
+		 error(403, "The User to be updated is not the authenticated user. One can only update themselves"),
+		 error_invalid_params

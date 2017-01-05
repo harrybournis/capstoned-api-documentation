@@ -17,6 +17,9 @@ toc_footers:
 includes:
   - introduction
   - endpoints/includes
+  - endpoints/users/users
+  - endpoints/users/register
+  - endpoints/users/update_account
   - endpoints/authentication/authentication
   - endpoints/authentication/sign_in
   - endpoints/authentication/me

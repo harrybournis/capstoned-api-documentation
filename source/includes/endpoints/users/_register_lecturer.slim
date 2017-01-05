@@ -1,0 +1,16 @@
+/= example 'GET /iterations/2', data.doc_examples["V1::IterationsController"]["Lecturer"]["show"]["success"].first[1]
+
+p Register a new User resource, of type Lecturer, that is authenticatable with email and password.
+
+= http_request "POST", "users"
+
+= params param(required, "email", "String", "A Unique email"),
+		 param(required, "password", "String", "Minimum 8 characters. Requires password_confirmation to be present in the params"),
+		 param(required, "password_confirmation", "String", "Must equal password. Required password to be present in the params"),
+		 param(required, "first_name", "string", "The first name of the User"),
+		 param(required, "last_name", "string", "The last name of the User"),
+		 param(required, "university", "String", "The Lecturer's university"),
+		 param(required, "position", "String", "The Lecturer's academic position in the university"),
+		 param(required, "type", "String", "Should be 'Lecturer'. Note the capital 'L' at the beginning of the work.")
+
+= errors error_invalid_params
