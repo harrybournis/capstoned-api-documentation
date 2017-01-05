@@ -139,4 +139,29 @@ module CustomHelpers
 		result = desc + request_head + request + response_head + response
 		return result
 	end
+
+	def example_with_headers url, example, description = nil
+		desc = 	if description
+		 					"<blockquote class='example-description'><p>Example: #{description}</p></blockquote>"
+		 				else
+		 					"<blockquote class='example-description'></blockquote>"
+		 				end
+		response_headers = code('json') { 	JSON.pretty_generate(example.response_headers) }
+  	request_head = "<blockquote class='request-label'><p>Request#{example.error ? ' (Error)' : ''}</p></blockquote>"
+  	request = code('text') { url }
+  	if example.request_params.length > 2
+			request += code('json') { JSON.pretty_generate(JSON.parse(example.request_params)) }
+		end
+
+		response_head = "<blockquote class='response-label'><p>Response</p></blockquote>"
+		response = code('text') { "Status: #{example.status} -- #{error_name example.status}" }
+		if example.response_body.length > 2
+			response += code('json') { JSON.pretty_generate(JSON.parse(example.response_body)) }
+		else
+			response += code('json') { "{\n  \"\"\n}" }
+		end
+
+		result = desc + request_head + request + response_head + response_headers + response
+		return result
+	end
 end
