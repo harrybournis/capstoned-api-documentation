@@ -1,0 +1,32 @@
+# PA Forms
+
+<p class="short-description">'PA Forms (Peer Assessment Forms) are complted by Students for other Students'</p>
+
+A PA Form is created by the Lecturer for each Iteration. Students have to assess their teammates with this form for every Iteration of the Project.
+
+## Attributes
+
+Parameter | Type | Description
+--------- | ------- | -----------
+iteration_id | Integer | The id of the Iteration that the PA Form belongs to
+start_date | Integer | The id of the Student that was assessed
+end_date | Integer | The id of the PAForm that was completed in the assessment
+questions | JSON | The questions of the form. See "Answers Format" above for explanation
+
+## Questions Format
+
+Questions are submitted and saved as a JSON array of JSON objects with the id of the question and the text of the question as a pair.
+
+`questions: [ { question_id : question_text } ]`
+
+> Example
+
+```json
+<%= JSON.pretty_generate(JSON.parse({ "questions": [ { "1": "Did this person work hard?" }, { "2": "Did they deliver the work in time?" }, { "3": "Die they exhbit leadership skills?" } ] }.to_json)) %>
+```
+
+> The questions format will be validated, and input will be rejected if it does not follow the above example.
+
+## Relationships
+
+<img src="images/erd_pa_form.png" alt="PA Form Relationships">

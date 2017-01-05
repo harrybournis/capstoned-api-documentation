@@ -1,0 +1,14 @@
+h2#get-pa-form Get a Specific PA Form
+
+= authentication
+= includes
+
+p Returns a Peer Assessment Form. Must be associated with the current user. If there is an extension on pa_form, the new submission date (with the extension) is included inside the pa_form object as 'extension_until'. It there are any extensions for any team for a pa_form, they are included in 'extensions' inside the 'pa_form' object.
+
+= http_request "GET", "pa_forms/:id"
+
+= params param(required, "id", "Integer", "The id of the PA Form to be returned")
+
+= errors error_authentication,
+		 error_association,
+		 error_includes

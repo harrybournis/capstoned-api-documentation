@@ -1,0 +1,13 @@
+.student-view
+	h2#index-pa-forms.student-view Get Active PA Forms
+
+	= authentication
+	= includes
+
+	p Returns all Peer Assessment forms, associated with the current_user, that can be submitted at the moment, meaning that the start_date has passed, but the deadline is still in the future. If there is an extension on pa_form, the new submission date (with the extension) is included inside the pa_form object as 'extension_until'.
+
+	= http_request "GET", "pa_forms"
+
+	= errors error_authentication,
+			 error_not_student,
+			 error_association

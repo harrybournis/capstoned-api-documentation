@@ -51,6 +51,10 @@ includes:
   - endpoints/logs/logs
   - endpoints/logs/index_logs
   - endpoints/logs/create_log
+  - endpoints/pa_forms/pa_forms
+  - endpoints/pa_forms/create_pa_form
+  - endpoints/pa_forms/index_pa_forms
+  - endpoints/pa_forms/get_pa_form
   - endpoints/peer_assessments/peer_assessments
   - endpoints/peer_assessments/create_peer_assessment
   - endpoints/peer_assessments/index_peer_assessments
