@@ -16,6 +16,14 @@ toc_footers:
 
 includes:
   - introduction
+  - endpoints/includes
+  - endpoints/authentication/authentication
+  - endpoints/authentication/sign_in
+  - endpoints/authentication/me
+  - endpoints/authentication/refresh
+  - endpoints/authentication/sign_out
+  - endpoints/authentication/request_reset_password
+  - endpoints/authentication/reset_password
   - endpoints/units/units
   - endpoints/units/create_unit
   - endpoints/units/index_units

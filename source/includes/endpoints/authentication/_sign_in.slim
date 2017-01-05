@@ -1,0 +1,13 @@
+h2#sign-in Sign In
+
+/= example 'GET /iterations/2', data.doc_examples["V1::IterationsController"]["Lecturer"]["show"]["success"].first[1]
+
+p Sign In using Email and Password. The user must have confirmed their account through the confirmation email sent after /register. On successful authentication, the user is returned. The XSRF-TOKEN header is added to the response, which should be saved on the client, to be added in subsequent requests under the header X-XSRF-TOKEN. The response also sets two cookies, one with the access-token, and one with the refresh-token, which are secure and http-only, thus they are not accessible via javascript, and require no further action for the client in order to use them. The access-token cookie will automatically be sent to all subsequent requests, while the refresh-token cookie will only be sent to the /refresh path. The remember_me param should be either '0' for false, or '1' for true.
+
+= http_request "POST", "sign_in"
+
+= params param(required, "email", "String", "The User's Email"),
+		 param(required, "password", "String", "The User's password"),
+		 param(required, "remember_me", "Integer", "Whether the userp will stay logged in after the browser closes. Accepted Values: '0' for false, '1' for true. Defaults to false.")
+
+= errors error(401, "Missing email/password, wrong email/password, invalid value for remember_me or unconfirmed account. see errors in response body.")

@@ -1,0 +1,9 @@
+h2#refresh Refresh
+
+/= example 'GET /iterations/2', data.doc_examples["V1::IterationsController"]["Lecturer"]["show"]["success"].first[1]
+
+p Refresh the access-token of the user. Requires a refresh-token stored in a cookie. On successful validation of the refresh-token, the response sets two new access-token and refresh-token cookies, and contains a new XSRF-TOKEN header, to be saved by the client.
+
+= http_request "POST", "refresh"
+
+= errors error_authentication

@@ -1,0 +1,11 @@
+h2#sign-out Sign Out
+
+/= example 'GET /iterations/2', data.doc_examples["V1::IterationsController"]["Lecturer"]["show"]["success"].first[1]
+
+= authentication
+
+p Sign out of the application. One has to be authenticated in order to sign out, meaning that the requrest has to have an access-token cookie, and an X-XSRF-TOKEN header. On successful authentication, the user's refresh-token is deleted from the database, as well as the access-token and refresh-token cookies.
+
+= http_request "POST", "sign_out"
+
+= errors error_authentication
