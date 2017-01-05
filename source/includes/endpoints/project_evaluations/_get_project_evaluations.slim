@@ -1,0 +1,14 @@
+h2#get-project-evaluations Get Project Statistics
+
+= example "GET /projects/:project_id/evaluations", data.doc_examples["V1::ProjectEvaluationsController"]["Lecturer"]["index_with_project"]["success"].first[1]
+
+= authentication
+
+p Get Project Health, Team Health statistics for a specific Project. Called in the Project page.
+
+= http_request "GET", "projects/:project_id/evaluations"
+
+= params param(required, "project_id", "Integer", "The id of the Project that the statistics will be returned for")
+
+= errors error_authentication,
+		 error_association

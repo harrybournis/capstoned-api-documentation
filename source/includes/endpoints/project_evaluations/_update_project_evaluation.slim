@@ -1,0 +1,19 @@
+.lecturer-view
+	h2#update-project-evaluation.lecturer-view Update a previous Project Evaluation
+
+	= example "PATCH /project_evaluations/1", data.doc_examples["V1::ProjectEvaluationsController"]["Lecturer"]["update"]["success"].first[1]
+
+	= authentication
+
+	p Update the percent_complete or feeling of an already submitted Project Evaluation
+
+	= http_request "PATCH", "project_evaluations/:id"
+
+	= params param(required, "id", "Integer", "The id of the Project Evaluation to be updated"),
+			 param(optional, "percent_complete", "Integer", "A number from 0 to 100 that shows the perceived percentage of completion of the Project"),
+		 	 param(optional, "feeling_id", "Integer", "The id of the Feeling that represents how the User feels about the Project")
+
+	= errors error_authentication,
+			 error_not_lecturer,
+			 error_association,
+			 error_invalid_params

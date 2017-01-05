@@ -1,0 +1,11 @@
+h2#index-feelings Get Available Feelings
+
+= example "GET /feelings", data.doc_examples["V1::FeelingsController"]["Lecturer"]["index"]["success"].first[1]
+
+= authentication
+
+p Returns all available Feelings to use when creating the Project Evaluation Form
+
+= http_request "GET", "feelings"
+
+= errors error_authentication

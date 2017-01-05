@@ -64,6 +64,13 @@ includes:
   - endpoints/projects/update_extension
   - endpoints/projects/destroy_extension
   - endpoints/projects/update_nickname
+  - endpoints/project_evaluations/project_evaluations
+  - endpoints/project_evaluations/feelings
+  - endpoints/project_evaluations/index_feelings
+  - endpoints/project_evaluations/create_project_evaluation
+  - endpoints/project_evaluations/get_project_evaluations
+  - endpoints/project_evaluations/get_iteration_stats
+  - endpoints/project_evaluations/update_project_evaluation
   - endpoints/logs/logs
   - endpoints/logs/index_logs
   - endpoints/logs/create_log

@@ -1,0 +1,14 @@
+h2#get-iteration-evaluations Get Iteration Statistics
+
+= example "GET /iterations/1/evaluations", data.doc_examples["V1::ProjectEvaluationsController"]["Lecturer"]["index_with_iteration"]["success"].first[1]
+
+= authentication
+
+p Get Iteration Health.(This might be removed.)
+
+= http_request "GET", "iterations/:iteration_id/evaluations"
+
+= params param(required, "iteration_id", "Integer", "The id of the Iteration that the statistics will be returned for")
+
+= errors error_authentication,
+		 error_association

@@ -1,0 +1,23 @@
+h2#create-project-evaluation Submit Project Evaluation
+
+- @key1, @key2  = data.doc_examples["V1::ProjectEvaluationsController"]["Student"]["create"]["error"].keys
+
+= example "POST /project_evaluations", data.doc_examples["V1::ProjectEvaluationsController"]["Student"]["create"]["success"].first[1]
+= example "POST /project_evaluations", data.doc_examples["V1::ProjectEvaluationsController"]["Student"]["create"]["error"][@key1]
+= example "POST /project_evaluations", data.doc_examples["V1::ProjectEvaluationsController"]["Student"]["create"]["error"][@key2]
+
+
+= authentication
+
+p Submit a new Project Evaluation
+
+= http_request "POST", "project_evaluations"
+
+= params param(required, "project_id", "Integer", "The id of the Project that will be evaluated"),
+		 param(required, "iteration_id", "Integer", "The id of the Iteration, for which the Project is evaluated"),
+		 param(required, "percent_complete", "Integer", "A number from 0 to 100 that shows the perceived percentage of completion of the Project"),
+		 param(required, "feeling_id", "Integer", "The id of the Feeling that represents how the User feels about the Project")
+
+= errors error_authentication,
+		 error_association,
+		 error_invalid_params
