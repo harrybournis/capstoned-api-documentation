@@ -16,7 +16,8 @@ toc_footers:
 
 includes:
   - introduction
-  - endpoints/includes
+  - endpoints/query_string_parameters/includes
+  - endpoints/query_string_parameters/compact
   - endpoints/users/users
   - endpoints/users/register
   - endpoints/users/update_account

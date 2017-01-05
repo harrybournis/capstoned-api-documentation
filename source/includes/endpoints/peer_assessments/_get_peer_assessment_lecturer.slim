@@ -1,7 +1,7 @@
 = example "GET /peer_assessments/:id", data.doc_examples["V1::PeerAssessmentsController"]["Lecturer"]["show"]["success"].first[1]
 
 = authentication
-= includes
+= includes_for 'peer_assessment', 'lecturer'
 
 p Get a specific Peer Assessment. Must be associated with the current user
 

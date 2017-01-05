@@ -2,4 +2,4 @@
 
 This is the introduction
 
-<img src="images/erd.png" alt="ERD">
+<a href="images/erd.png" target='_blank'><img src="images/erd.png" alt="ERD"></a>

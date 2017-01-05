@@ -6,7 +6,7 @@
 = example "GET /peer_assessments", data.doc_examples["V1::PeerAssessmentsController"]["Student"]["index"]["error"].first[1]
 
 = authentication
-= includes
+= includes_for 'peer_assessment', 'student'
 
 p Get Peer Assessments based on the parameter passed. Can get Peer Assessments for a Project, Iterations, PAForm, Student that submitted the form, Student that the form was submitted for or any combination of the above. Basically, the database will be queried with the parameters provided. See 'Attributes' for a complete list of available options. At least <em>ONE</em> of them must be present, or the request will produce and error. The answers to the Peer Assessments are not available to the Students for privacy reasons.
 

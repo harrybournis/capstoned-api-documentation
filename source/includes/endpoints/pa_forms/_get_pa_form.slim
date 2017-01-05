@@ -3,7 +3,7 @@ h2#get-pa-form Get a Specific PA Form
 = example "GET /pa_forms/:id", data.doc_examples["V1::PAFormsController"]["Lecturer"]["show"]["success"].first[1]
 
 = authentication
-= includes
+= includes_for 'pa_form'
 
 p Returns a Peer Assessment Form. Must be associated with the current user. If there is an extension on pa_form, the new submission date (with the extension) is included inside the pa_form object as 'extension_until'. It there are any extensions for any team for a pa_form, they are included in 'extensions' inside the 'pa_form' object.
 

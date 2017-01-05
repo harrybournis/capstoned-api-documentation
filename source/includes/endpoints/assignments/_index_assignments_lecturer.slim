@@ -3,7 +3,7 @@
 = example "GET /assignments", data.doc_examples["V1::AssignmentsController"]["Lecturer"]["index_with_unit"]["success"].first[1], "Get Assingments for specific Unit"
 
 = authentication
-= includes
+= includes_for_assignment_lecturer
 
 p Returns all the Assignments for the current user. If a unit_id is passed in the parameters, the assignments will be scoped to that Unit.
 

@@ -1,0 +1,46 @@
+student:
+  assignment:
+    - lecturer
+    - unit
+    - projects
+    - iterations
+    - students
+    - pa_forms
+  unit:
+    - lecturer
+    - department
+  project:
+    - assignment
+    - students
+    - lecturer
+  iteration: []
+  pa_form:
+    - iteration
+  peer_assessment:
+    - pa_form
+    - submitted_by
+    - submitted_for
+
+lecturer:
+  assignment:
+    - lecturer
+    - unit
+    - projects
+    - students
+    - iterations
+    - pa_forms
+  unit:
+    - lecturer
+    - assignments
+    - department
+  project:
+    - assignment
+    - students
+  iteration: []
+  pa_form:
+    - iteration
+  peer_assessment:
+    - pa_form
+    - submitted_by
+    - submitted_for
+

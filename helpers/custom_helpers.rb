@@ -8,7 +8,36 @@ module CustomHelpers
 	end
 
 	def includes
-		return "<aside class='aside-includes'> Can Include other resources in the response</aside>"
+		return "<aside class='aside-includes'> Can Include other resources in the response. Available Resources: </aside>"
+	end
+
+	def includes_for(resource, usertype = nil)
+		if usertype
+			return "<aside class='aside-includes'> Can Include other resources in the response.
+				Available Resources: #{data.includes_attr[usertype][resource].join ', '}</aside>"
+		else
+			return "<aside class='aside-includes student-view'> Can Include other resources in the response.
+				Available Resources: #{data.includes_attr.student[resource].join ', '}</aside>
+				<aside class='aside-includes lecturer-view'> Can Include other resources in the response.
+				Available Resources: #{data.includes_attr.lecturer[resource].join ', '}</aside>"
+		end
+	end
+
+	def method_missing(method, *args, &block)
+		if method.to_s.include? "includes_"
+			array = method.to_s.split '_'
+			if array.length == 4
+				includes_for array[2], array[3]
+				#return "<aside class='aside-includes'> Can Include other resources in the response.
+				#	Available Resources: #{data.includes_attr[array[2]][array[3]].join ', '}</aside>"
+			else
+				includes_for array[2]
+				#return "<aside class='aside-includes student-view'> Can Include other resources in the response.
+				#	Available Resources: #{data.includes_attr.student[array[2]].join ', '}</aside>
+				#	<aside class='aside-includes lecturer-view'> Can Include other resources in the response.
+				#	Available Resources: #{data.includes_attr.lecturer[array[2]].join ', '}</aside>"
+			end
+		end
 	end
 
 	def site_url

@@ -8,7 +8,7 @@
 	= example "POST /pa_forms", data.doc_examples["V1::PAFormsController"]["Student"]["index"]["success"][@key2]
 
 	= authentication
-	= includes
+	= includes_for 'pa_form', 'student'
 
 	p Returns all Peer Assessment forms, associated with the current_user, that can be submitted at the moment, meaning that the start_date has passed, but the deadline is still in the future. If there is an extension on pa_form, the new submission date (with the extension) is included inside the pa_form object as 'extension_until'.
 

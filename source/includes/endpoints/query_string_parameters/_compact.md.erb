@@ -1,0 +1,14 @@
+## Compact
+
+Due to the power that the Users have by using the <b>includes</b> parameter, the
+response can grow significantly due to the number of records. To balance this,
+the **compact** parameter can be used. This indicates that the associated
+records should not be returned in their full form, but in a slimed down version.
+This usually means that the associated records will only contain their 'id'.
+
+> Examples
+
+
+```json
+<%= JSON.pretty_generate(JSON.parse("{\n  \"assignment\": {\n    \"id\": 3,\n    \"start_date\": \"2016-09-10\",\n    \"end_date\": \"2017-02-17\",\n    \"description\": \"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri.\",\n  \"unit\": {\n      \"id\": 1\n  },\n    \"projects\": [\n      {\n        \"id\": 1\n   },\n      {\n        \"id\": 2,\n        \"href\": \"/v1/projects/2\" }\n    ]\n  }\n}")) %>
+```
