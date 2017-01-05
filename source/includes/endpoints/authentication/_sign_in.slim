@@ -1,6 +1,14 @@
 h2#sign-in Sign In
 
-/= example 'GET /iterations/2', data.doc_examples["V1::IterationsController"]["Lecturer"]["show"]["success"].first[1]
+- @key1, @key2, @key3 = data.doc_examples["V1::AuthenticationsController"]["Lecturer"]["sign_in_email"]["error"].keys
+
+= example 'POST /sign_in', data.doc_examples["V1::AuthenticationsController"]["Lecturer"]["sign_in_email"]["success"].first[1]
+
+= example 'POST /sign_in', data.doc_examples["V1::AuthenticationsController"]["Lecturer"]["sign_in_email"]["error"][@key1]
+
+= example 'POST /sign_in', data.doc_examples["V1::AuthenticationsController"]["Lecturer"]["sign_in_email"]["error"][@key2]
+
+= example 'POST /sign_in', data.doc_examples["V1::AuthenticationsController"]["Lecturer"]["sign_in_email"]["error"][@key3]
 
 p Sign In using Email and Password. The user must have confirmed their account through the confirmation email sent after /register. On successful authentication, the user is returned. The XSRF-TOKEN header is added to the response, which should be saved on the client, to be added in subsequent requests under the header X-XSRF-TOKEN. The response also sets two cookies, one with the access-token, and one with the refresh-token, which are secure and http-only, thus they are not accessible via javascript, and require no further action for the client in order to use them. The access-token cookie will automatically be sent to all subsequent requests, while the refresh-token cookie will only be sent to the /refresh path. The remember_me param should be either '0' for false, or '1' for true.
 
