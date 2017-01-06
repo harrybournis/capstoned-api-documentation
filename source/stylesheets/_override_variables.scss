@@ -1,0 +1,39 @@
+$nav-bg: #546e7a;
+$examples-bg: #546e7a;
+$code-bg: #455B64;
+$code-annotation-bg: #1c1c1c !default;
+$nav-subitem-bg: #92A2AA;
+$nav-active-bg: #B1BDC2;
+$lang-select-border: #546e7a;
+$lang-select-bg: #546e7a;
+$lang-select-active-bg: #546e7a; // feel free to change this to blue or something
+$lang-select-pressed-bg: #111 !default; // color of language tab bg when mouse is pressed
+$main-bg: #F5F5F5;
+$aside-notice-bg: #8fbcd4 !default;
+$aside-warning-bg: #c97a7e !default;
+$aside-success-bg: #6ac174 !default;
+$search-notice-bg: #c97a7e !default;
+
+
+// SIZES
+////////////////////
+$nav-width: 250px; // width of the navbar
+$examples-width: 45%; // portion of the screen taken up by code examples
+
+// Custom
+$aside-authentication-color: #E3D985;
+$aside-includes-color: #94C595;
+$aside-warning-text-color: white;
+
+$request-label-bg-color: #394B52;
+$example-description-p-color: #394B52;
+
+// Switch
+$label-checked: white;
+$blue-switch-color: #E49273;
+$switch-color: #E49273;
+$disabled-switch-color: #868686;
+$disabled-switch-text-color: #bdbdbd;
+
+
+//highlight #f69421

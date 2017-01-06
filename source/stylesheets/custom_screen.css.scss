@@ -1,11 +1,10 @@
 @import "screen";
-@import "switch";
+//@import "switch";
+@import "toggle-switch-rem";
+@import "toggle_switch_custom";
 @import "custom_styling";
 
 // Variables
-$aside-authentication-color: #fcf8e3;
-$aside-includes-color: #8fbcd4;
-$aside-warning-text-color: white;
 
 body {
 	.student-view {
@@ -62,19 +61,33 @@ body {
 	}
 
 
-	.content .#{$view} aside.aside-authentication {
+	.content .#{$view} aside.aside-authentication,  {
 	    background-color: $aside-authentication-color;
-	    text-shadow: 0 1px 0 #dfb0b3;
+	    text-shadow: none;
 	}
 
 	.content .#{$view} aside.aside-includes {
 	    background-color: $aside-includes-color;
-	    text-shadow: 0 1px 0 #dfb0b3;
+	    text-shadow: none;
 	}
 
 	.content .#{$view} aside.warning {
 		color: $aside-warning-text-color;
 	}
+}
+
+.content aside.aside-authentication {
+    background-color: $aside-authentication-color;
+    text-shadow: none;
+}
+
+.content aside.aside-includes {
+    background-color: $aside-includes-color;
+    text-shadow: none;
+}
+
+.content aside.warning {
+	color: $aside-warning-text-color;
 }
 
 .content aside > img {
@@ -91,4 +104,9 @@ body {
 .content aside.warning {
 	color: white;
 }
+
+.content aside {
+	font-size: 0.91rem;
+}
+
 

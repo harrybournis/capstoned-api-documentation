@@ -5,8 +5,8 @@
 Authentication is implemented using **JWT (JSON Web Tokens)**.
 
 After successful authentication, a user is issued two JWT tokens which are stored in secure,
-http-only cookies. Both tokens have an expiration date. The first token, the ** access-token **
-is used to authenticate the user on following requests. The second token, the ** refresh-token **
+http-only cookies. Both tokens have an expiration date. The first token, the **access-token**
+is used to authenticate the user on following requests. The second token, the **refresh-token**
 is only sent to the /refresh path and is used to issue the user a new access-token.
 
 To prevent CSRF Attacks, the access-token contains a csrf-token value, which is equal to the

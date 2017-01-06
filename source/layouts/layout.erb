@@ -25,6 +25,7 @@ under the License.
     <style>
       <%= Rouge::Themes::Base16::Monokai.render(:scope => '.highlight') %>
     </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <%= stylesheet_link_tag :custom_screen, media: :screen %>
     <%= stylesheet_link_tag :custom_print, media: :print %>
     <% if current_page.data.search %>
@@ -69,6 +70,18 @@ under the License.
           <% end %>
         </ul>
       <% end %>
+            <div class="switch-wrapper">
+  <div class="switch-toggle switch-candy">
+    <input id="week" name="view" type="radio" checked onclick="lecturerSelected();">
+    <label for="week" onclick="">Lecturer</label>
+
+    <input id="month" name="view" type="radio" onclick="studentSelected();">
+    <label for="month" onclick="">Student</label>
+
+    <a></a>
+  </div>
+      </div>
+    </div>
     </div>
     <div class="page-wrapper">
       <div class="dark-box"></div>
