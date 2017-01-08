@@ -11,7 +11,7 @@ Parameter | Type | Description
 first_name | string | The first name of the User
 last_name | string | The last Name of the User
 password | string | The User's password
-type | Integer | Either 'Student' or 'Lecturer'
+type | String | Either 'Student' or 'Lecturer'
 
 ## Relationships
 
