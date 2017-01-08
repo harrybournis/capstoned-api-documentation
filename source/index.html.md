@@ -1,5 +1,5 @@
 ---
-title: API Reference
+title: CapstoneED Docs
 
 language_tabs:
   - json: Examples

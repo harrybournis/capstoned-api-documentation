@@ -2,10 +2,7 @@ student:
   assignment:
     - lecturer
     - unit
-    - projects
     - iterations
-    - students
-    - pa_forms
   unit:
     - lecturer
     - department
@@ -13,7 +10,8 @@ student:
     - assignment
     - students
     - lecturer
-  iteration: []
+  iteration:
+    - pa_form
   pa_form:
     - iteration
   peer_assessment:

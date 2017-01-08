@@ -1,9 +1,12 @@
-= example "GET /projects", data.doc_examples["V1::ProjectsController"]["Student"]["index"]["success"].first[1]
+- @key1, @key2 = data.doc_examples["V1::ProjectsController"]["Student"]["index"]["success"].keys
+
+= example "GET /projects", data.doc_examples["V1::ProjectsController"]["Student"]["index"]["success"][@key1]
+= example "GET /projects", data.doc_examples["V1::ProjectsController"]["Student"]["index"]["success"][@key2]
 
 = authentication
 = includes_for_project_student
 
-p Returns all the Projects of the Student
+p Returns all the Projects of the Student. Includes the nickname of the Student in each Project.
 
 = http_request "GET", "projects"
 

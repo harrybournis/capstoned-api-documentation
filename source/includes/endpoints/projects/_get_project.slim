@@ -1,16 +1,9 @@
-h2#get-single-project Get Single Project
+.lecturer-view
+	h2#get-single-project-lecturer.lecturer-view Get Single Project
 
-= example 'GET /projects/1?includes=students', data.doc_examples["V1::ProjectsController"]["Lecturer"]["show"]["success"].first[1], "Get a Project with its Students"
+	= partial "includes/endpoints/projects/get_project_lecturer"
 
-= authentication
-= includes_for_project
+.student-view
+	h2#get-single-project-student.student-view Get Single Project
 
-p Returns a single project. Requires the project's ID.
-
-= http_request "GET", "projects/:id"
-
-= params param(required, "id", "Integer", "The id of the Project to be returned")
-
-= errors error_includes,
-		 error_authentication,
-		 error_association
+	= partial "includes/endpoints/projects/get_project_student"
