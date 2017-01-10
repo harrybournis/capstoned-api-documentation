@@ -74,6 +74,7 @@ blockquote.example-description {
 .content pre {
 	padding: 14px 42px;
     text-overflow: ellipsis;
+    overflow-x: hidden;
 }
 
 blockquote.example-description {
