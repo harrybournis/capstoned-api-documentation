@@ -12,8 +12,8 @@
 	= http_request "POST", "pa_forms"
 
 	= params param(required, "iteration_id", "Integer", "The id of the Iteration that the PA Form belongs to"),
-			 param(required, "start_offset", "Integer", "The time passed from the start of the iteration, after which the PA Form will be available for completion. In Unix Time."),
-			 param(required, "end_offset", "Integer", "The time passed from the end of the Iteration, after which the PA Form will be unavailable for completion. In Unix Time."),
+			 param(required, "start_date", "DateTime", "The date from which the form is available to the Students for completion."),
+			 param(required, "deadline", "DateTime", "The deadline after which the form will not be able to be completed by the Students. In Unix Time."),
 			 param(required, "questions", "JSON", "The questions of the form. <a href='/#questions-format'>See 'Questions Format' section for information about the format</a>")
 
 	= errors error_authentication,
