@@ -1,7 +1,7 @@
 = example 'GET /projects/1?includes=students', data.doc_examples["V1::ProjectsController"]["Student"]["show"]["success"].first[1], "Get a Project with its Students, Assignment, Lecturer"
 
 = authentication
-= includes_for_project
+= includes_for_project_student
 
 p Returns a single project. Requires the project's ID. Also includes the nickname of the Student for this project.
 
