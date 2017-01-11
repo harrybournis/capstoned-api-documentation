@@ -11,6 +11,7 @@ Parameter | Type | Description
 name | string | The name of the Unit.
 start_date | Date | The date that the Iteration starts. It cannot be a date in the past
 deadline | Date | The date that the Iteration ends, and the deadline for submitting the PAForm and Project Evaluations
+assignment_id | Integer | The id of the Iteration that the Iteration belongs to
 
 ## Relationships
 

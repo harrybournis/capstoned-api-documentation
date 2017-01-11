@@ -12,6 +12,7 @@ name | string | The name of the Unit.
 code | string | The code that identifies the Unit. It doesn't have to be unique
 semester | string | The Semester that the Unit takes place. example: 'Autumn' or 'Spring'
 year | Integer | The year that the Unit takes place
+lecturer_id | Integer | The id of the Lecturer that teaches teh Unit
 department - name | string | The name of the Unit's Department
 department - university | string | The name of the Department's University
 archived_at | date | The date that the Unit was archived. Completed by the system upon archival.
