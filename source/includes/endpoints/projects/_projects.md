@@ -12,6 +12,7 @@ system. The students can change the team_name and the logo if they wish.
 Parameter | Type | Description | Unique?
 --------- | ------- | ----------- | -----------
 assignment_id | Integer | The id of the Assignment that the project belongs to
+unit_id | Integer | The id of the Unit that the project belongs to
 project_name | string | The name of the Project. Given by the Lecturer. | unique for the assignment
 team_name | string | The name of the Team. Given by the Students. | unique for the assignment
 enrollment_key | string | The key used by the Student to enrol in the Project. |

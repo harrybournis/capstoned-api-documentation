@@ -57,10 +57,12 @@ module CustomHelpers
 	end
 
 	def param_requirement required
-		if required
+		if required == true
 			return "required"
-		else
+		elsif required == false
 			return ""
+		else
+			return required
 		end
 	end
 

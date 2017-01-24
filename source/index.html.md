@@ -7,6 +7,7 @@ language_tabs:
 
 
 includes:
+  - latest_updates
   - introduction
   - endpoints/query_string_parameters/includes
   - endpoints/query_string_parameters/compact
