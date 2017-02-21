@@ -2,17 +2,16 @@
 
 = example "GET /projects", data.doc_examples["V1::ProjectsController"]["Lecturer"]["index"]["success"][@key2]
 
-= example "GET /projects", data.doc_examples["V1::ProjectsController"]["Lecturer"]["index"]["error"].first[1]
+//= example "GET /projects", data.doc_examples["V1::ProjectsController"]["Lecturer"]["index"]["error"].first[1]
 
 = authentication
 = includes_for_project_lecturer
 
-p Returns all the Projects for the provided unit_id. Will return an error if unit_id is missing from the params.
+p Returns all the Projects for the provided unit_id
 
 = http_request "GET", "projects"
 
 = params param(required, "unit_id", "Integer", "Return all Projects for a specific Unit")
 
 = errors error_includes,
-		 error_authentication,
-		 error(403, "Missing unit_id from the params")
+		 error_authentication

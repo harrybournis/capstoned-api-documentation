@@ -33,6 +33,7 @@ lecturer:
     - department
   project:
     - assignment
+    - unit
     - students
   iteration: []
   pa_form:

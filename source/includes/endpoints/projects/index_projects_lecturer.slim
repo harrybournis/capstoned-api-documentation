@@ -1,0 +1,15 @@
+- @key1, @key2, @key3, @key4 = data.doc_examples["V1::ProjectsController"]["Lecturer"]["index"]["success"].keys
+
+= example "GET /projects", data.doc_examples["V1::ProjectsController"]["Lecturer"]["index"]["success"][@key1]
+
+= example "GET /projects", data.doc_examples["V1::ProjectsController"]["Lecturer"]["index"]["success"][@key4]
+
+= authentication
+= includes_for_project_lecturer
+
+p Returns all the active Projects of the Lecturer
+
+= http_request "GET", "projects"
+
+= errors error_includes,
+		 error_authentication
