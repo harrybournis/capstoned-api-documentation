@@ -3,11 +3,14 @@ student:
     - lecturer
     - unit
     - iterations
+    - projects
   unit:
     - lecturer
     - department
+    - assignments
   project:
     - assignment
+    - unit
     - students
     - lecturer
   iteration:
