@@ -248,15 +248,15 @@ projects, so the parametera passed should be <strong>projects</strong>, not proj
 </thead><tbody>
 <tr>
 <td>assignment</td>
-<td>lecturer, unit, iterations</td>
+<td>lecturer, unit, iterations, projects</td>
 </tr>
 <tr>
 <td>unit</td>
-<td>lecturer, department</td>
+<td>lecturer, department, assignments</td>
 </tr>
 <tr>
 <td>project</td>
-<td>assignment, students, lecturer</td>
+<td>assignment, unit, students, lecturer</td>
 </tr>
 <tr>
 <td>iteration</td>
@@ -1038,7 +1038,7 @@ compared by the server.</p>
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span></code></pre><aside class='aside-authentication'> <img src='images/locked-padlock.svg'> Authentication Needed</aside><aside class='aside-includes student-view'> Can Include other resources in the response.
-				Available Resources: lecturer, department</aside>
+				Available Resources: lecturer, department, assignments</aside>
 				<aside class='aside-includes lecturer-view'> Can Include other resources in the response.
 				Available Resources: lecturer, assignments, department</aside><p>Returns all the NOT-ARCHIVED Units of the current User. For the archived Units, see get archived</p><h3>HTTP Request</h3>
 <p><code class='prettyprint'>GET http://example.com/v1/units</code></p><h3>Errors</h3><table><thead><tr><th>Error Code</th><th>Meaning</th></tr></thead><tbody><tr><td>400</td><td>Bad Request -- Invalid 'includes' parameter</td></tr><tr><td>401</td><td>Unauthorized -- Authentication Failed</td></tr></tbody></table>
@@ -1074,7 +1074,7 @@ compared by the server.</p>
 </span><span class="p">}</span></code></pre><blockquote class='example-description'></blockquote><blockquote class='request-label'><p>Request</p></blockquote><pre class="highlight plaintext"><code>GET /units/archived</code></pre><blockquote class='response-label'><p>Response</p></blockquote><pre class="highlight plaintext"><code>Status: 204 -- No Content</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">""</span><span class="w">
 </span><span class="p">}</span></code></pre><aside class='aside-authentication'> <img src='images/locked-padlock.svg'> Authentication Needed</aside><aside class='aside-includes student-view'> Can Include other resources in the response.
-				Available Resources: lecturer, department</aside>
+				Available Resources: lecturer, department, assignments</aside>
 				<aside class='aside-includes lecturer-view'> Can Include other resources in the response.
 				Available Resources: lecturer, assignments, department</aside><p>Returns all the ARCHIVED Units of the current User. For the active Units, see get index</p><h3>HTTP Request</h3>
 <p><code class='prettyprint'>GET http://example.com/v1/units/archived</code></p><h3>Errors</h3><table><thead><tr><th>Error Code</th><th>Meaning</th></tr></thead><tbody><tr><td>400</td><td>Bad Request -- Invalid 'includes' parameter</td></tr><tr><td>401</td><td>Unauthorized -- Authentication Failed</td></tr></tbody></table>
@@ -1095,7 +1095,7 @@ compared by the server.</p>
     </span><span class="p">}</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span></code></pre><aside class='aside-authentication'> <img src='images/locked-padlock.svg'> Authentication Needed</aside><aside class='aside-includes student-view'> Can Include other resources in the response.
-				Available Resources: lecturer, department</aside>
+				Available Resources: lecturer, department, assignments</aside>
 				<aside class='aside-includes lecturer-view'> Can Include other resources in the response.
 				Available Resources: lecturer, assignments, department</aside><p>Returns a single Unit</p><h3>HTTP Request</h3>
 <p><code class='prettyprint'>GET http://example.com/v1/units/:id</code></p><h3>Query Parameters</h3><table><thead><tr><th>Required</th><th>Parameter</th><th>Type</th><th>Desription</th></tr></thead><tbody><tr><td>required</td><td>id</td><td>Integer</td><td>The id of the Unit to be returned</td></tr></tbody></table><h3>Errors</h3><table><thead><tr><th>Error Code</th><th>Meaning</th></tr></thead><tbody><tr><td>400</td><td>Bad Request -- Invalid 'includes' parameter</td></tr><tr><td>401</td><td>Unauthorized -- Authentication Failed</td></tr><tr><td>403</td><td>Forbidden -- The current user is not associated with this resource</td></tr></tbody></table>
@@ -1426,7 +1426,7 @@ compared by the server.</p>
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span></code></pre><aside class='aside-authentication'> <img src='images/locked-padlock.svg'> Authentication Needed</aside><aside class='aside-includes'> Can Include other resources in the response.
-				Available Resources: lecturer, unit, iterations</aside><p>Returns all the Assignments for the current user</p><h3>HTTP Request</h3>
+				Available Resources: lecturer, unit, iterations, projects</aside><p>Returns all the Assignments for the current user</p><h3>HTTP Request</h3>
 <p><code class='prettyprint'>GET http://example.com/v1/assignments</code></p><h3>Errors</h3><table><thead><tr><th>Error Code</th><th>Meaning</th></tr></thead><tbody><tr><td>400</td><td>Bad Request -- Invalid 'includes' parameter</td></tr><tr><td>401</td><td>Unauthorized -- Authentication Failed</td></tr><tr><td>403</td><td>Forbidden -- The current user is not associated with this resource</td></tr><tr><td>403</td><td>Forbidden -- unit_id was present in the params. This is a lecturer-only functionality. Retry without any parameters.</td></tr></tbody></table></div>
           <h2 id="get-single-assignment">Get Single Assignment</h2><blockquote class='example-description'></blockquote><blockquote class='request-label'><p>Request</p></blockquote><pre class="highlight plaintext"><code>GET /assignments/:id</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"includes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unit"</span><span class="p">,</span><span class="w">
@@ -1449,7 +1449,7 @@ compared by the server.</p>
     </span><span class="p">}</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span></code></pre><aside class='aside-authentication'> <img src='images/locked-padlock.svg'> Authentication Needed</aside><aside class='aside-includes student-view'> Can Include other resources in the response.
-				Available Resources: lecturer, unit, iterations</aside>
+				Available Resources: lecturer, unit, iterations, projects</aside>
 				<aside class='aside-includes lecturer-view'> Can Include other resources in the response.
 				Available Resources: lecturer, unit, projects, students, iterations, pa_forms</aside><p>Returns a single Assignment</p><h3>HTTP Request</h3>
 <p><code class='prettyprint'>GET http://example.com/v1/assignments/:id</code></p><h3>Errors</h3><table><thead><tr><th>Error Code</th><th>Meaning</th></tr></thead><tbody><tr><td>400</td><td>Bad Request -- Invalid 'includes' parameter</td></tr><tr><td>401</td><td>Unauthorized -- Authentication Failed</td></tr><tr><td>403</td><td>Forbidden -- The current user is not associated with this resource</td></tr></tbody></table>
@@ -2004,7 +2004,7 @@ system. The students can change the team_name and the logo if they wish.</p>
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span></code></pre><aside class='aside-authentication'> <img src='images/locked-padlock.svg'> Authentication Needed</aside><aside class='aside-includes'> Can Include other resources in the response.
-				Available Resources: assignment, students, lecturer</aside><p>Returns all the Projects of the Student. Includes the nickname of the Student in each Project.</p><h3>HTTP Request</h3>
+				Available Resources: assignment, unit, students, lecturer</aside><p>Returns all the Projects of the Student. Includes the nickname of the Student in each Project.</p><h3>HTTP Request</h3>
 <p><code class='prettyprint'>GET http://example.com/v1/projects</code></p><h3>Query Parameters</h3><table><thead><tr><th>Required</th><th>Parameter</th><th>Type</th><th>Desription</th></tr></thead><tbody><tr><td>required</td><td>assignment_id</td><td>Integer</td><td>Return all Projects for a specific assignment</td></tr></tbody></table><h3>Errors</h3><table><thead><tr><th>Error Code</th><th>Meaning</th></tr></thead><tbody><tr><td>400</td><td>Bad Request -- Invalid 'includes' parameter</td></tr><tr><td>401</td><td>Unauthorized -- Authentication Failed</td></tr><tr><td>403</td><td>Forbidden -- Parameters contained assignment_id. This is only allowed for Lecturers</td></tr></tbody></table></div>
           <div class="lecturer-view"><h2 class="lecturer-view" id="get-single-project-lecturer">Get Single Project</h2><blockquote class='example-description'><p>Example: Get a Project with its Students</p></blockquote><blockquote class='request-label'><p>Request</p></blockquote><pre class="highlight plaintext"><code>GET /projects/1?includes=students</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"includes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"students"</span><span class="p">,</span><span class="w">
@@ -2112,7 +2112,7 @@ system. The students can change the team_name and the logo if they wish.</p>
     </span><span class="p">]</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span></code></pre><aside class='aside-authentication'> <img src='images/locked-padlock.svg'> Authentication Needed</aside><aside class='aside-includes'> Can Include other resources in the response.
-				Available Resources: assignment, students, lecturer</aside><p>Returns a single project. Requires the project's ID. Also includes the nickname of the Student for this project.</p><h3>HTTP Request</h3>
+				Available Resources: assignment, unit, students, lecturer</aside><p>Returns a single project. Requires the project's ID. Also includes the nickname of the Student for this project.</p><h3>HTTP Request</h3>
 <p><code class='prettyprint'>GET http://example.com/v1/projects/:id</code></p><h3>Query Parameters</h3><table><thead><tr><th>Required</th><th>Parameter</th><th>Type</th><th>Desription</th></tr></thead><tbody><tr><td>required</td><td>id</td><td>Integer</td><td>The id of the Project to be returned</td></tr></tbody></table><h3>Errors</h3><table><thead><tr><th>Error Code</th><th>Meaning</th></tr></thead><tbody><tr><td>400</td><td>Bad Request -- Invalid 'includes' parameter</td></tr><tr><td>401</td><td>Unauthorized -- Authentication Failed</td></tr><tr><td>403</td><td>Forbidden -- The current user is not associated with this resource</td></tr></tbody></table></div>
           <div class="lecturer-view"><h2 class="lecturer-view" id="create-project">Create Project</h2><blockquote class='example-description'></blockquote><blockquote class='request-label'><p>Request</p></blockquote><pre class="highlight plaintext"><code>POST /projects</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"assignment_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
