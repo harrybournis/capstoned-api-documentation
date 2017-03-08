@@ -63,6 +63,8 @@ includes:
   - endpoints/project_evaluations/get_project_evaluations
   - endpoints/project_evaluations/get_iteration_stats
   - endpoints/project_evaluations/update_project_evaluation
+  - endpoints/question_types/question_types
+  - endpoints/question_types/index_question_types
   - endpoints/units/units
   - endpoints/units/create_unit
   - endpoints/units/index_units

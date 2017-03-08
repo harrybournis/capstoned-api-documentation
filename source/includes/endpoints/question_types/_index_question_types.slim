@@ -1,0 +1,11 @@
+h2#index-pa-forms Get Question Types
+
+= example "GET /question_types", data.doc_examples["V1::QuestionTypesController"]["Lecturer"]["index"]["success"].first[1]
+
+= authentication
+
+p Returns all the available QuestionTypes
+
+= http_request "GET", "question_types"
+
+= errors error_authentication
