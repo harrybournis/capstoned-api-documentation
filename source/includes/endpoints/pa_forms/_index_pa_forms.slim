@@ -1,11 +1,11 @@
 .student-view
 	h2#index-pa-forms.student-view Get Active PA Forms
 
-	- @key1, @key2 = data.doc_examples["V1::PAFormsController"]["Student"]["index"]["success"].keys
+	- @key1, @key2 = data.doc_examples["V1::PaFormsController"]["Student"]["index"]["success"].keys
 
-	= example "POST /pa_forms", data.doc_examples["V1::PAFormsController"]["Student"]["index"]["success"][@key1]
+	= example "POST /pa_forms", data.doc_examples["V1::PaFormsController"]["Student"]["index"]["success"][@key1]
 
-	= example "POST /pa_forms", data.doc_examples["V1::PAFormsController"]["Student"]["index"]["success"][@key2]
+	= example "POST /pa_forms", data.doc_examples["V1::PaFormsController"]["Student"]["index"]["success"][@key2]
 
 	= authentication
 	= includes_for 'pa_form', 'student'

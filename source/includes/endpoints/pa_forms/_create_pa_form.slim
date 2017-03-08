@@ -1,9 +1,8 @@
 .lecturer-view
 	h2#create-pa-form.lecturer-view Create new PA Form
 
-	= example "POST /pa_forms", data.doc_examples["V1::PAFormsController"]["Lecturer"]["create"]["success"].first[1]
-
-	= example "POST /pa_forms", data.doc_examples["V1::PAFormsController"]["Lecturer"]["create"]["error"].first[1]
+	= example "POST /pa_forms", data.doc_examples["V1::PaFormsController"]["Lecturer"]["create"]["success"].first[1]
+	= example "POST /pa_forms", data.doc_examples["V1::PaFormsController"]["Lecturer"]["create"]["error"].first[1]
 
 	= authentication
 
