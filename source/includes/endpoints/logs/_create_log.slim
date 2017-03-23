@@ -1,15 +1,15 @@
 .student-view
 	h2#create-log.student-view New Log Entry
 
-	= example "POST /projects/12/update_logs", data.doc_examples["V1::ProjectsController"]["Student"]["update_logs"]["success"].first[1]
+	= example "POST /projects/12/logs", data.doc_examples["V1::ProjectsController"]["Student"]["update_logs"]["success"].first[1]
 
-	= example "POST /projects/12/update_logs", data.doc_examples["V1::ProjectsController"]["Student"]["update_logs"]["error"].first[1]
+	= example "POST /projects/12/logs", data.doc_examples["V1::ProjectsController"]["Student"]["update_logs"]["error"].first[1]
 
 	= authentication
 
 	p Create a new Log entry for a Project. The current time will be saved as `date_submitted` by the server. A Student can not update a Log after they have submitted it.
 
-	= http_request "POST", "projects/:id/update_logs"
+	= http_request "POST", "projects/:id/logs"
 
 	= params param(required, "id", "Integer", "The id of the Project that the log will be for"),
 			 param(required, "date_worked", "Integer", "The date that the Student did the work. Should be in Unix Time."),
