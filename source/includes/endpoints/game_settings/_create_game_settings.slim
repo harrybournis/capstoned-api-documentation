@@ -1,0 +1,37 @@
+.lecturer-view
+	h2#create-game-settings.lecturer-view Create Game Setting
+
+	- @key1, @key2 = data.doc_examples["V1::GameSettingsController"]["Lecturer"]["create"]["success"].keys
+	- @keyerror = data.doc_examples["V1::GameSettingsController"]["Lecturer"]["create"]["error"].keys[0]
+
+	= example 'POST /assignments/4/game_settings', data.doc_examples["V1::GameSettingsController"]["Lecturer"]["create"]["success"][@key1]
+
+	= example 'POST /assignments/5/game_settings', data.doc_examples["V1::GameSettingsController"]["Lecturer"]["create"]["success"][@key2]
+
+	= example 'POST /assignments/6/game_settings', data.doc_examples["V1::GameSettingsController"]["Lecturer"]["create"]["error"][@keyerror], "Error: Parameter is not a number"
+
+	= authentication
+
+	p Creates a new Game Setting for an Assignment. Parameters that are not provided will be replaced with the default values.
+
+	= http_request "POST", "assignments/:assignment_id/game_settings"
+
+	= params param(required, "assignment_id", "Integer", "The id of the Assignment that the settings belong to"),
+			param(optional, "points_log", "integer", "Points earned for submitting a log."),
+			param(optional, "points_log_first_of_day", "integer", "Points earned for submitting the first log of the day."),
+			param(optional, "points_log_first_of_team", "integer", "Points earned for submitting a log before the rest of the team."),
+			param(optional, "points_log_first_of_assignment", "integer", "Points earned for submitting a log before every other student in the all the Projects of the Assignment"),
+			param(optional, "points_peer_assessment", "integer", "Points earned for submitting a Peer Assessment"),
+			param(optional, "points_peer_assessment_first_of_day", "integer", "Points earned for .."),
+			param(optional, "points_peer_assessment_first_of_team", "integer", "Points earned for submitting the Peer Assessment before everyone on the team."),
+			param(optional, "points_peer_assessment_first_of_assignment", "integer", "Points earned for submitting the Peer Assessment before every other student in all the Projects of the Assignment"),
+			param(optional, "points_project_evaluation", "integer", "Points earned for submitting a Project Evaluation"),
+			param(optional, "points_project_evaluation_first_of_day", "integer", "Points earned for ..."),
+			param(optional, "points_project_evaluation_first_of_team", "integer", "Points earned for submitting a Project Evaluation before the rest of the Team."),
+			param(optional, "points_project_evaluation_first_of_assignment", "integer", "Points earned for submitting a Project Evaluation before every other student in the all the Projects of the Assignment")
+
+	= errors error_authentication,
+			 error_not_lecturer,
+			 error_association,
+			 error(403, "The Assignment already has GameSetting. Try 'Update Game Setting'."),
+			 error(422, "One of the points is not an integer.")

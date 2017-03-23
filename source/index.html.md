@@ -27,6 +27,10 @@ includes:
   - endpoints/departments/departments
   - endpoints/departments/update_department
   - endpoints/departments/delete_department
+  - endpoints/game_settings/game_settings
+  - endpoints/game_settings/get_game_setting
+  - endpoints/game_settings/create_game_settings
+  - endpoints/game_settings/update_game_settings
   - endpoints/iterations/iterations
   - endpoints/iterations/index_iterations
   - endpoints/iterations/get_iteration

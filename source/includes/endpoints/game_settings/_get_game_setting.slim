@@ -1,0 +1,20 @@
+.lecturer-view
+	h2#get-game-setting.lecturer-view Get Game Setting
+
+	- @key1 = data.doc_examples["V1::GameSettingsController"]["Lecturer"]["index"]["success"].keys[0]
+
+	= example 'GET /assignments/1/game_settings', data.doc_examples["V1::GameSettingsController"]["Lecturer"]["index"]["success"][@key1]
+
+	= authentication
+
+	p Update the values of the project settings for an Assignment
+
+	= http_request "GET", "assignments/:assignment_id/game_settings"
+
+	= params param(required, "assignment_id", "Integer", "The id of the Assignment that the settings belong to")
+
+	= errors error_authentication,
+			 error_association,
+			 error(403, "The Assignment does not exist in the database"),
+			 error_not_lecturer,
+			 error_invalid_params
