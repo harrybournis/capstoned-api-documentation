@@ -3,16 +3,15 @@
 
 	- @key1 = data.doc_examples["V1::GameSettingsController"]["Lecturer"]["update"]["success"].keys[0]
 
-	= example 'PATCH /assignments/1/game_settings/1', data.doc_examples["V1::GameSettingsController"]["Lecturer"]["update"]["success"][@key1]
+	= example 'PATCH /assignments/1/game_settings', data.doc_examples["V1::GameSettingsController"]["Lecturer"]["update"]["success"][@key1]
 
 	= authentication
 
 	p Update the values of the project settings for an Assignment
 
-	= http_request "PATCH", "assignments/:assignment_id/game_settings/:id"
+	= http_request "PATCH", "assignments/:assignment_id/game_settings"
 
-	= params param(required, "id", "Integer", "The id of the GameSetting"),
-			param(required, "assignment_id", "Integer", "The id of the Assignment that the settings belong to"),
+	= params param(required, "assignment_id", "Integer", "The id of the Assignment that the settings belong to"),
 			param(optional, "points_log", "integer", "Points earned for submitting a log."),
 			param(optional, "points_log_first_of_day", "integer", "Points earned for submitting the first log of the day."),
 			param(optional, "points_log_first_of_team", "integer", "Points earned for submitting a log before the rest of the team."),
@@ -29,6 +28,6 @@
 	= errors error_authentication,
 			 error_not_lecturer,
 			 error_association,
-			 error(403, "The Assignment already has GameSetting. Try 'Update Game Setting'."),
+			 error(422, "This assignment does not have game settings. First create them at POST /assignments/:assignment_id/game_settings"),
 			 error(422, "One of the points is not an integer."),
 			 error_invalid_params

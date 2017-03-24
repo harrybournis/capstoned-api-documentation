@@ -35,7 +35,7 @@ body {
 
 @each $view in student-view, lecturer-view {
 	.content > .#{$view} > h1, .content > .#{$view} > h2, .content > .#{$view} > h3, .content > .#{$view} > h4, .content > .#{$view} > h5, .content > .#{$view} > h6, .content > .#{$view} > p, .content > .#{$view} > table, .content > .#{$view} > ul, .content > .#{$view} > ol, .content > .#{$view} > aside, .content > .#{$view} > dl {
-	    margin-right: 50%;
+	    margin-right: 45%;
 	    padding: 0 28px;
 	    box-sizing: border-box;
 	    display: block;
