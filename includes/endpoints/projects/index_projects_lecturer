@@ -1,46 +1,13 @@
 <blockquote class='example-description'></blockquote><blockquote class='request-label'><p>Request</p></blockquote><pre class="highlight plaintext"><code>GET /projects</code></pre><blockquote class='response-label'><p>Response</p></blockquote><pre class="highlight plaintext"><code>Status: 200 -- OK</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"projects"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"assignment_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 72"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen72"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0cc6e2da9daa711654d0ce75bb4b9f3e"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"unit_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#cdd2ac"</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"assignment_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 71"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen71"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"825e3823908374256e802c16efa64497"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"unit_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#ced2ac"</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"assignment_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 70"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen70"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5853ea10770317ab4ece6ee4b3fb75a9"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"unit_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#c8d2ac"</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
       </span><span class="s2">"assignment_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 75"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen75"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 73"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen73"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
       </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0165c17a0ab55d84451b24ddda5de185"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fe61f872149ca3dd69d797612434014b"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"unit_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
       </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#d2c3ac"</span><span class="w">
     </span><span class="p">},</span><span class="w">
@@ -51,20 +18,53 @@
       </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen74"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
       </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"db6298777ffd45cd1ca5cd23f0492b5c"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"faeac3d73d4bdb7fde803429efbfc841"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"unit_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#acd2d2"</span><span class="w">
+      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#d2acb8"</span><span class="w">
     </span><span class="p">},</span><span class="w">
     </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
       </span><span class="s2">"assignment_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 73"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen73"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 75"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen75"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
       </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9971d1ae80c9b5b9fa99818c8ad333c6"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"d545541031c1d6a0f339f58195bf2e0c"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"unit_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#d2acac"</span><span class="w">
+      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#d2b4ac"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"assignment_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 70"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen70"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"004e7714b00cce801ec97f881b52b8f5"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"unit_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#d2acce"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"assignment_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 71"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen71"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"f6415d1df5f234c610e3b3c6fc73f736"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"unit_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#d2acb3"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"assignment_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 72"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen72"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"31cf660942cd6a898172cea224a0a657"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"unit_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#d2d2ac"</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span></code></pre><blockquote class='example-description'></blockquote><blockquote class='request-label'><p>Request</p></blockquote><pre class="highlight plaintext"><code>GET /projects</code></pre><blockquote class='response-label'><p>Response</p></blockquote><pre class="highlight plaintext"><code>Status: 204 -- No Content</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
