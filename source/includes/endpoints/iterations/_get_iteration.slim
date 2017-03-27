@@ -1,15 +1,32 @@
-h2#get-iteration Get Specific Iteration
+.lecturer-view
+	h2#get-iteration-lecturer.lecturer-view Get Specific Iteration
 
-= example 'GET /iterations/2', data.doc_examples["V1::IterationsController"]["Lecturer"]["show"]["success"].first[1]
+	= example 'GET /iterations/2', data.doc_examples["V1::IterationsController"]["Lecturer"]["show"]["success"].first[1]
 
-= authentication
-= includes_for_iteration
+	= authentication
 
-p Returns a specific iteration
+	p Returns a specific iteration
 
-= http_request "GET", "iterations/:id"
+	= http_request "GET", "iterations/:id"
 
-= params param(required, "id", "Integer", "The id of the Iteration that will be returned")
+	= params param(required, "id", "Integer", "The id of the Iteration that will be returned")
 
-= errors error_authentication,
-		 error_association
+	= errors error_authentication,
+			 error_association
+
+.student-view
+	h2#get-iteration-student.student-view Get Specific Iteration
+
+	= example 'GET /iterations/2', data.doc_examples["V1::IterationsController"]["Lecturer"]["show"]["success"].first[1]
+
+	= authentication
+	= includes_for_iteration_student
+
+	p Returns a specific iteration
+
+	= http_request "GET", "iterations/:id"
+
+	= params param(required, "id", "Integer", "The id of the Iteration that will be returned")
+
+	= errors error_authentication,
+			 error_association

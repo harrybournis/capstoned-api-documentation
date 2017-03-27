@@ -1,15 +1,32 @@
-h2#index-iterations Get Assignment Iterations
+.lecturer-view
+	h2#index-iterations-lecturer.lecturer-view Get Assignment Iterations
 
-= example 'GET /iterations', data.doc_examples["V1::IterationsController"]["Lecturer"]["index"]["success"].first[1]
+	= example 'GET /iterations', data.doc_examples["V1::IterationsController"]["Lecturer"]["index"]["success"].first[1]
 
-= authentication
-= includes_for_iteration
+	= authentication
 
-p Returns all Iterations for a specific Assignment. Needs assignment_id in the params.
+	p Returns all Iterations for a specific Assignment. Needs assignment_id in the params.
 
-= http_request "GET", "iterations"
+	= http_request "GET", "iterations"
 
-= params param(required, "assignment_id", "Integer", "The Assignment for which the Iteration will be returned")
+	= params param(required, "assignment_id", "Integer", "The Assignment for which the Iteration will be returned")
 
-= errors error(400, "assignment_id is missing from the params"),
-		 error_authentication
+	= errors error(400, "assignment_id is missing from the params"),
+			 error_authentication
+
+.student-view
+	h2#index-iterations-student.student-view Get Assignment Iterations
+
+	= example 'GET /iterations', data.doc_examples["V1::IterationsController"]["Lecturer"]["index"]["success"].first[1]
+
+	= authentication
+	= includes_for_iteration_student
+
+	p Returns all Iterations for a specific Assignment. Needs assignment_id in the params.
+
+	= http_request "GET", "iterations"
+
+	= params param(required, "assignment_id", "Integer", "The Assignment for which the Iteration will be returned")
+
+	= errors error(400, "assignment_id is missing from the params"),
+			 error_authentication
