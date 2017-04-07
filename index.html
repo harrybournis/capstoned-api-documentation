@@ -89,7 +89,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <link href="stylesheets/custom_screen.css" rel="stylesheet" media="screen" />
     <link href="stylesheets/custom_print.css" rel="stylesheet" media="print" />
-      <script src="javascripts/all.js"></script>
+      <script src="javascripts/all_nosearch.js"></script>
   </head>
 
   <body class="index lecturer-mode" data-languages="[&quot;json&quot;]">
@@ -104,31 +104,25 @@
         <div class="lang-selector">
               <a href="#" data-language-name="json">Examples</a>
         </div>
-        <div class="search">
-          <input type="text" class="search" id="input-search" placeholder="Search">
-        </div>
-        <ul class="search-results"></ul>
       <div id="toc">
       </div>
-            <div class="switch-wrapper">
-  <div class="switch-toggle switch-candy">
-    <input id="week" name="view" type="radio" checked onclick="lecturerSelected();">
-    <label for="week" onclick="">Lecturer</label>
+      <div class="switch-wrapper">
+        <div class="switch-toggle switch-candy">
+          <input id="week" name="view" type="radio" checked onclick="lecturerSelected();">
+          <label for="week" onclick="">Lecturer</label>
 
-    <input id="month" name="view" type="radio" onclick="studentSelected();">
-    <label for="month" onclick="">Student</label>
-
-    <a></a>
-  </div>
+          <input id="month" name="view" type="radio" onclick="studentSelected();">
+          <label for="month" onclick="">Student</label>
+          <a></a>
+        </div>
       </div>
-    </div>
     </div>
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
           <h1 id="latest-updates">Latest Updates</h1>
 
-<h3 id="changelog-last-updated-2017-04-07">Changelog (last updated: 2017-04-07)</h3>
+<h3 id="changelog-last-updated-2017-04-08">Changelog (last updated: 2017-04-08)</h3>
 
 <h3 id="23-3-17">23/3/17</h3>
 
@@ -4454,7 +4448,6 @@ system. The students can change the team_name and the logo if they wish.</p>
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span></code></pre><p>Resends a confirmation email to the email provided in the params. The email must be a valid email in the system.</p><h3>HTTP Request</h3>
 <p class='prettyprint '><code>POST http://example.com/v1/resend_confirmation_email</code></p><h3>Query Parameters</h3><table><thead><tr><th>Required</th><th>Parameter</th><th>Type</th><th>Desription</th></tr></thead><tbody><tr><td>required</td><td>email</td><td>String</td><td>The user's email. The confirmation email will be sent to this email</td></tr></tbody></table><h3>Errors</h3><table><thead><tr><th>Error Code</th><th>Meaning</th></tr></thead><tbody><tr><td>422</td><td>Unprocessable Entity -- Invalid Params. See response body for more info.</td></tr></tbody></table>
-
       </div>
       <div class="dark-box">
           <div class="lang-selector">
