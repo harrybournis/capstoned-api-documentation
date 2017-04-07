@@ -2,4 +2,4 @@
 //= require ./app/_lang
 //= require ./app/_search
 //= require ./app/_toc
-//= require ./custom/custom.js
+//= require ./custom/_custom

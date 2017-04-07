@@ -6,6 +6,8 @@ language_tabs:
 
 gh_pages_path: /capstoned-api-documentation
 
+search: false
+
 includes:
   - latest_updates
   - introduction
@@ -82,7 +84,5 @@ includes:
   - endpoints/users/update_account
   - endpoints/users/confirm_account
   - endpoints/users/resend_confirmation_email
-
-search: true
 ---
 

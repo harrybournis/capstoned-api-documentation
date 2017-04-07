@@ -70,18 +70,16 @@ under the License.
           <% end %>
         </ul>
       <% end %>
-            <div class="switch-wrapper">
-  <div class="switch-toggle switch-candy">
-    <input id="week" name="view" type="radio" checked onclick="lecturerSelected();">
-    <label for="week" onclick="">Lecturer</label>
+      <div class="switch-wrapper">
+        <div class="switch-toggle switch-candy">
+          <input id="week" name="view" type="radio" checked onclick="lecturerSelected();">
+          <label for="week" onclick="">Lecturer</label>
 
-    <input id="month" name="view" type="radio" onclick="studentSelected();">
-    <label for="month" onclick="">Student</label>
-
-    <a></a>
-  </div>
+          <input id="month" name="view" type="radio" onclick="studentSelected();">
+          <label for="month" onclick="">Student</label>
+          <a></a>
+        </div>
       </div>
-    </div>
     </div>
     <div class="page-wrapper">
       <div class="dark-box"></div>
@@ -90,7 +88,6 @@ under the License.
         <% current_page.data.includes && current_page.data.includes.each do |include| %>
           <%= partial "includes/#{include}" %>
         <% end %>
-
       </div>
       <div class="dark-box">
         <% if language_tabs.any? %>
