@@ -50,6 +50,9 @@ includes:
   - endpoints/peer_assessments/create_peer_assessment
   - endpoints/peer_assessments/index_peer_assessments
   - endpoints/peer_assessments/get_peer_assessment
+  - endpoints/points/points
+  - endpoints/points/index_points_for_project
+  - endpoints/points/index_points_for_assignment
   - endpoints/projects/projects
   - endpoints/projects/enrol
   - endpoints/projects/index_projects

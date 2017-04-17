@@ -1,9 +1,9 @@
 .student-view
 	h2#create-log.student-view New Log Entry
 
-	= example "POST /projects/12/logs", data.doc_examples["V1::ProjectsController"]["Student"]["update_logs"]["success"].first[1]
+	= example "POST /projects/12/logs", data.doc_examples["V1::LogsController"]["Student"]["update"]["success"].first[1]
 
-	= example "POST /projects/12/logs", data.doc_examples["V1::ProjectsController"]["Student"]["update_logs"]["error"].first[1]
+	= example "POST /projects/12/logs", data.doc_examples["V1::LogsController"]["Student"]["update"]["error"].first[1]
 
 	= authentication
 

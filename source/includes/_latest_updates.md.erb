@@ -2,9 +2,17 @@
 
 ### Changelog (last updated: <%= Date.today %>)
 
+### 18/4/17
+- Added [Points](<%= current_page.data.gh_pages_path %>/#points) resource.
+- Added GET projects/:id/points, and GET /assignments/:id/points endpoints.
+- Fixed [POST /pa_forms](<%= current_page.data.gh_pages_path %>/#create-pa-form) example incorrectly showing ids were needed in the request.
+- Added new [Game Settings](<%= current_page.data.gh_pages_path %>/#create-game-settings) attribute max_logs_per_day
+- Updated [Feelings](<%= current_page.data.gh_pages_path %>/#feeling) description and examples.
+- Updated [Confirm Account URL](<%= current_page.data.gh_pages_path %>/#confirm-account)
+
 ### 23/3/17
 - Added Game Settings (GET, POST, PATCH)
-- Fixed bug in [logs](/capstoned-api-documentation/#create-log) that showed that the route was /update_logs instead of /logs
+- Fixed bug in [logs](<%= current_page.data.gh_pages_path %>/#create-log) that showed that the route was /update_logs instead of /logs
 
 ### 9/3/17
 - Added GET /question_types
@@ -16,4 +24,4 @@
 
 ### 24/1/17
 - Added unit_id to projects table
-- Added [Get Projects for Unit ID](/capstoned-api-documentation/#get-projects-with-unit) endpoint
+- Added [Get Projects for Unit ID](<%= current_page.data.gh_pages_path %>/#get-projects-with-unit) endpoint

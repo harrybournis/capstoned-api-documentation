@@ -1,0 +1,12 @@
+= example "GET /assignments/1/points", data.doc_examples["V1::PointsController"]["Student"]["index_for_assignment"]["success"].first[1]
+
+= authentication
+
+p Get information about the Points of each Project in an Assignment. The Student must be associated with the Assignment.
+
+= http_request "GET", "assignments/:id/points"
+
+= params param(required, "assignment_id", "Integer", "The id of the Assignment, for which the points for its projects will be returned.")
+
+= errors error_authentication,
+		 error_association("The id does not belong to any project associated with the current user")

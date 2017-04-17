@@ -21,4 +21,5 @@ points_peer_assessment_first_of_assignment | integer | Points earned for submitt
 points_project_evaluation | integer | Points earned for submitting a Project Evaluation
 points_project_evaluation_first_of_team | integer | Points earned for submitting a Project Evaluation before the rest of the Team.
 points_project_evaluation_first_of_assignment | integer | Points earned for submitting a Project Evaluation before every other student in the all the Projects of the Assignment
+max_logs_per_day | integer | The maximum number of logs that a student is allowed to submit in one day. Defaults to 3.
 

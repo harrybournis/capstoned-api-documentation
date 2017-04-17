@@ -1,0 +1,112 @@
+# Points
+
+<p class="short-description">'A Student earns points for their team by performing various actions'</p>
+
+## Introduction
+
+Points are part of the gamification aspect of the system, and they are awarded to a student for performing
+certain actions. Actions that get awarded points are
+['Submitting a Peer assessment'](/capstoned-api-documentation/#create-peer-assessment),
+['Submitting a Project evaluation'](/capstoned-api-documentation/#create-project-evaluation),
+ and ['Submitting a new Log Entry'](/capstoned-api-documentation/#create-log). Upon successful submission, the points earned can be found in the
+response received. There are also endpoints specifically aimed at getting the points for a specific Project or Assignment.
+
+This is what a response for a successful log submission looks like:
+
+```
+{
+  "log_entry": {
+    "date_worked": "1492376866",
+    "time_worked": "36000",
+    "date_submitted": "1492463266",
+    "stage": "Analysis",
+    "text": "Worked on database and use cases"
+  },
+  "points": {
+    "points_earned": 10,
+    "new_total": 10,
+    "detailed": {
+      "log": [
+        {
+          "points": 10,
+          "reason_id": 3
+        }
+      ]
+    }
+  }
+}
+```
+
+The attribute 'points_earned' refers to the total point earned from the action, while the "new_total"
+represents the updated points of the student for the specific Project. Inside "detailed", a complete
+report of the points gained can be found, which is categorized by resource (log, peer_assessment,
+project_evaluation). The resource is used as a key, pointing to an Array containg multiple 'Points hashes'.
+In the hashes, one can find the number of points awarded, as well as the id of the reason for awarding them.
+
+For example, the reason with id 3 corresponds to "Points gained for submitting a Log". Although the
+resources used as keys are currently mutually exclusive (one can not gain points for submitting a log by
+submitting a peer assessment), by formatting the results in this way it is possible to support arbitrary
+reasons for gaining points, that do not necessarily align with the submitted resource.
+
+## Point Awardable Actions
+A student may gain points by completing any of the follwing tasks:
+
+### Peer Assessment
+
+#### Submit a Peer Assessment
+A Student automatically gains points when they submit a Peer Assessment.
+
+#### Submit a Peer Assessment first in their Team
+A Student gets extra points if they submitted the Peer Assessment before their teammates.
+
+#### Submit a Peer Assessment first in the Assignment
+A Student gets extra points if they submitted the Peer Assessment before everyone in all the
+teams of the Assignment. Basically, first in their entire class.
+
+### Project Evaluation
+
+#### Submit a Project Evaluation
+A Student automatically gains points when they submit a Project Evaluation.
+
+#### Submit a Project Evaluation first in their Team
+A Student gets extra points if they submitted the Project Evaluation before their teammates.
+
+#### Submit a Project Evaluation first in the Assignment
+A Student gets extra points if they submitted the Project Evaluation before everyone in all the
+teams of the Assignment. Basically, first in their entire class. Naturally, the Lecturer does not
+count as one of the class.
+
+### Log
+
+#### Submit a Log
+A Student automatically gains points when they submit a Log Entry.
+
+#### Submit the first Log of the Day
+A Student get extra points for submitting the first log of the day.
+
+#### Submit a Log first in their Team
+A Student gets extra points if they submitted the Log Entry before their teammates.
+
+#### Submit a Log first in the Assignment
+A Student gets extra points if they submitted the Log Entry before everyone in all the
+teams of the Assignment. Basically, first in their entire class.
+
+
+## Reasons
+
+Reason ID | Description
+----------|-------------
+<% data.reasons[:reasons].keys.each do |resource| %>
+<%= data.reasons[:reasons][resource][:id] %> | <%= data.reasons[:reasons][resource][:description] %>
+<% end %>
+
+## Attributes
+
+Parameter | Type | Description
+--------- | ------- | -----------
+personal | Integer | For Students Only. The number of points in a particular project.
+team_average | Integer | The average points of a Project.
+team_points | Integer | The sum of all the students' points in the Project.
+my_team | Boolean | For Students Only. Indicates whether a project is the one that the current user belongs to.
+points_earned | Integer | For Students Only. Is included in the response of a succesfull submission of a points awardable action. Indicates the new points earned from this action.
+detailed | Hash | Contains a hash with keys corresponding to point awardable resources, which in turn point to an Array of each point earned.

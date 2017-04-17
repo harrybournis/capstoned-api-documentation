@@ -9,6 +9,6 @@ h2#confirm-account Confirm Account
 
 p Accept Confirmation. The link contained in the email sent to the user points to this route. It redirects to a 'success' or 'failure' page to inform the user. Evaluates the confirmation token contained within the params and confirms or rejects the user. If this fails, assure that the link sent to the user contains the confirmation token in the url, and offer the user the option to resend the confirmation email through the POST /confirmation endpoint.
 
-= http_request "GET", "confirm_account"
+= render_markdown("### HTTP Request") + code_prettyprint("GET http://capstoneed-api.org:21992/v1/confirm_account?confirmation_token=Lai67Y226RNxPZquBnVy")
 
 = params param(required, "confirmation_token", "String", "The confirmation token is contained as a parameter in the link that is sent to the user to confirm their account")
