@@ -1,70 +1,82 @@
 <blockquote class='example-description'></blockquote><blockquote class='request-label'><p>Request</p></blockquote><pre class="highlight plaintext"><code>GET /projects</code></pre><blockquote class='response-label'><p>Response</p></blockquote><pre class="highlight plaintext"><code>Status: 200 -- OK</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"projects"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">9</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"assignment_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 79"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen79"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"a9dfa14c6286e605874193054fe94617"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"unit_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#d2acc7"</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"assignment_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 78"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen78"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0e874486d4570a0c1f7a3c2ffb377aed"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"unit_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#b2acd2"</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"assignment_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 77"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen77"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"acad8ce9d5303b8f43edec7a74353c26"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"unit_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#d2acbe"</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
       </span><span class="s2">"assignment_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 82"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen82"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 213"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen213"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
       </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"326e9b2597a2bec824a9653f95b9c737"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"08c5d049b3202188d6b5ab244d948af9"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"unit_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#bfd2ac"</span><span class="w">
+      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#c2acd2"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_points"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_average"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
     </span><span class="p">},</span><span class="w">
     </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">11</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
       </span><span class="s2">"assignment_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 81"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen81"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 212"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen212"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
       </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"07abc35f922abc854dfee398dec659e9"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"b882a79eba7282e6b3dc66e8212b4f27"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"unit_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#d2acc6"</span><span class="w">
+      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#baacd2"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_points"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_average"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
     </span><span class="p">},</span><span class="w">
     </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
       </span><span class="s2">"assignment_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 80"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen80"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 211"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen211"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
       </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"bcb120a29a1955943ab4ab604be0494e"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0da84bc5684c8ec18750ab7c0c40f70e"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"unit_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#acd2bf"</span><span class="w">
+      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#d2b6ac"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_points"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_average"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"assignment_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 216"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen216"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"8e21953ef6092e4ee4368ae75ca19721"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"unit_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#acd2cc"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_points"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_average"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"assignment_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 215"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen215"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"89d0d9f280c1500c630f6d416ec03348"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"unit_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#acd2b9"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_points"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_average"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"assignment_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 214"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen214"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"8795a24ed8160a92a5f81ef28815a5a1"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"unit_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#acd0d2"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_points"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_average"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span></code></pre><blockquote class='example-description'></blockquote><blockquote class='request-label'><p>Request</p></blockquote><pre class="highlight plaintext"><code>GET /projects</code></pre><blockquote class='response-label'><p>Response</p></blockquote><pre class="highlight plaintext"><code>Status: 204 -- No Content</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
