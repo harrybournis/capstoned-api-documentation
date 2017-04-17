@@ -1,6 +1,12 @@
 ## Feeling
 
-There are predefined Feelings that the User can select when evaluating a Project
+Feelings are part of project evaluation. In each evaluation, the user
+has to select one of the predefined feelings. Each feeling also has
+a value associated with it. Currently, feelings can have either values of
+either 0 (a negative feeling), and a 1 (a positive feeling). However,
+the value field accepts any integer, and it is possible to define
+different values for each feeling, allowing them to be processed in
+more complicated ways.
 
 ### Attributes
 
