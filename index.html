@@ -127,12 +127,12 @@
 <h3 id="21-4-17">21/4/17</h3>
 
 <ul>
-<li>Changed create and update Project Evaluation routes to <a href="/#create-project-evaluation">POST /v1/projects/:project_id/evaluations</a> and <a href="/#update-project-evaluation">PATCH /v1/projects/:project_id/evaluations</a></li>
-<li>Added <a href="/#index-projects-lecturer">&lsquo;pending_project_evaluation&rsquo;</a> field in Project to indicate if the current user can submit a project evaluation for this project.</li>
+<li>Changed create and update Project Evaluation routes to <a href="/capstoned-api-documentation/#create-project-evaluation">POST /v1/projects/:project_id/evaluations</a> and <a href="/capstoned-api-documentation/#update-project-evaluation">PATCH /v1/projects/:project_id/evaluations</a></li>
+<li>Added <a href="/capstoned-api-documentation/#index-projects-lecturer">&lsquo;pending_project_evaluation&rsquo;</a> field in Project to indicate if the current user can submit a project evaluation for this project.</li>
 <li>Removed statistics endpoints until they are refactored.</li>
-<li>Fixed bug where <a href="/#index-pa-forms">GET /v1/pa_forms</a> would return the currently active pa_forms(in terms of time), but also inlcude forms already completed by the Student.</li>
-<li>Added endpoint <a href="/#index-questions">GET /v1/questions</a> for the Lecturer</li>
-<li>Added endpoint <a href="/#get-reasons">GET /v1/reasons</a></li>
+<li>Fixed bug where <a href="/capstoned-api-documentation/#index-pa-forms">GET /v1/pa_forms</a> would return the currently active pa_forms(in terms of time), but also include forms already completed by the Student.</li>
+<li>Added endpoint <a href="/capstoned-api-documentation/#index-questions">GET /v1/questions</a> for the Lecturer</li>
+<li>Added endpoint <a href="/capstoned-api-documentation/#get-reasons">GET /v1/reasons</a></li>
 </ul>
 
 <h3 id="18-4-17">18/4/17</h3>
@@ -3113,7 +3113,11 @@ count as one of the class.</p>
 
 <h4 id="submit-a-log">Submit a Log</h4>
 
-<p>A Student automatically gains points when they submit a Log Entry.</p>
+<p>A Student automatically gains points when they submit a Log Entry. For the first log of the day,
+they get the full points that this reason awards. The Student receives a portion of the full points
+for each subsequent log entry of the day, until they reach the limit set by the <a href="/capstoned-api-documentation/#attributes31">&#39;max_logs_per_day&rsquo;</a>
+GameSetting of the project, at which point they sto receiving points for submitting logs for the reast of the day.
+The cycle begins again 24 hours later.</p>
 
 <h4 id="submit-the-first-log-of-the-day">Submit the first Log of the Day</h4>
 
