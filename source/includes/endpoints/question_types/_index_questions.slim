@@ -1,0 +1,12 @@
+.lecturer-view
+	h2#index-questions.lecturer-view Get Previous Questions
+
+	= example "GET /questions", data.doc_examples["V1::QuestionsController"]["Lecturer"]["index"]["success"].first[1]
+
+	= authentication
+
+	p Returns all the unique, previously created Questions of the Lecturer. This can be used when a new PaForm is created, to allow the Lecturer to pick Questions that they frequently use and reuse them. The Questions are scoped to the current user, and a lecturer can only see their own Questions.
+
+	= http_request "GET", "questions"
+
+	= errors error_authentication

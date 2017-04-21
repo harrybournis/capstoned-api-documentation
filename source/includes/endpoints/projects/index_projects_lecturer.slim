@@ -7,7 +7,7 @@
 = authentication
 = includes_for_project_lecturer
 
-p Returns all the active Projects of the Lecturer
+p Returns all the active Projects of the Lecturer. If the field 'pending_project_evaluation' is true then the current user can submit a project evaluation for this project.
 
 = http_request "GET", "projects"
 

@@ -53,6 +53,7 @@ includes:
   - endpoints/points/points
   - endpoints/points/index_points_for_project
   - endpoints/points/index_points_for_assignment
+  - endpoints/points/get_reasons
   - endpoints/projects/projects
   - endpoints/projects/enrol
   - endpoints/projects/index_projects
@@ -69,11 +70,12 @@ includes:
   - endpoints/project_evaluations/feelings
   - endpoints/project_evaluations/index_feelings
   - endpoints/project_evaluations/create_project_evaluation
-  - endpoints/project_evaluations/get_project_evaluations
-  - endpoints/project_evaluations/get_iteration_stats
+  #- endpoints/project_evaluations/get_project_evaluations
+  #- endpoints/project_evaluations/get_iteration_stats
   - endpoints/project_evaluations/update_project_evaluation
   - endpoints/question_types/question_types
   - endpoints/question_types/index_question_types
+  - endpoints/question_types/index_questions
   - endpoints/units/units
   - endpoints/units/create_unit
   - endpoints/units/index_units

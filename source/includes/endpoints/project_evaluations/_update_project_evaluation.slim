@@ -7,9 +7,10 @@
 
 	p Update the percent_complete or feeling of an already submitted Project Evaluation
 
-	= http_request "PATCH", "project_evaluations/:id"
+	= http_request "PATCH", "projects/:project_id/evaluations"
 
-	= params param(required, "id", "Integer", "The id of the Project Evaluation to be updated"),
+	= params param(required, "project_id", "Integer", "The of the project"),
+			 param(required, "id", "Integer", "The id of the Project Evaluation to be updated"),
 			 param(optional, "percent_complete", "Integer", "A number from 0 to 100 that shows the perceived percentage of completion of the Project"),
 		 	 param(optional, "feeling_id", "Integer", "The id of the Feeling that represents how the User feels about the Project")
 

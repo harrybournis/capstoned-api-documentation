@@ -2,6 +2,14 @@
 
 ### Changelog (last updated: <%= Date.today %>)
 
+### 21/4/17
+- Changed create and update Project Evaluation routes to [POST /v1/projects/:project_id/evaluations](<% current_page.data.gh_pages_path %>/#create-project-evaluation) and [PATCH /v1/projects/:project_id/evaluations](<% current_page.data.gh_pages_path %>/#update-project-evaluation)
+- Added ['pending_project_evaluation'](<% current_page.data.gh_pages_path %>/#index-projects-lecturer) field in Project to indicate if the current user can submit a project evaluation for this project.
+- Removed statistics endpoints until they are refactored.
+- Fixed bug where [GET /v1/pa_forms](<% current_page.data.gh_pages_path %>/#index-pa-forms) would return the currently active pa_forms(in terms of time), but also inlcude forms already completed by the Student.
+- Added endpoint [GET /v1/questions](<% current_page.data.gh_pages_path %>/#index-questions) for the Lecturer
+- Added endpoint [GET /v1/reasons](<% current_page.data.gh_pages_path %>/#get-reasons)
+
 ### 18/4/17
 - Added [Points](<%= current_page.data.gh_pages_path %>/#points) resource.
 - Added GET projects/:id/points, and GET /assignments/:id/points endpoints.

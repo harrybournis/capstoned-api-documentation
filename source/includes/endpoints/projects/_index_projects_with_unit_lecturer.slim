@@ -7,7 +7,7 @@
 = authentication
 = includes_for_project_lecturer
 
-p Returns all the Projects for the provided unit_id
+p Returns all the Projects for the provided unit_id. Contains the 'team_points' and the 'team_average'. If the field 'pending_project_evaluation' is true then the current user can submit a project evaluation for this project.
 
 = http_request "GET", "projects"
 

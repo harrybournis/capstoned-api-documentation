@@ -11,7 +11,7 @@ h2#create-project-evaluation Submit Project Evaluation
 
 p Submit a new Project Evaluation
 
-= http_request "POST", "project_evaluations"
+= http_request "POST", "projects/:project_id/evaluations"
 
 = params param(required, "project_id", "Integer", "The id of the Project that will be evaluated"),
 		 param(required, "iteration_id", "Integer", "The id of the Iteration, for which the Project is evaluated"),

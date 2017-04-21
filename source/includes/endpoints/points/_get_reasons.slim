@@ -1,0 +1,11 @@
+h2#get-reasons Get Reasons
+
+= example "GET /reasons", data.doc_examples["V1::ReasonsController"]["Lecturer"]["index"]["success"].first[1]
+
+= authentication
+
+p Get the reasons file in JSON form, containing all the Reasons that Points may be awarded to a Student. Contains an 'id' for the Reason, a 'description' and an optional message to show to the Student upon receiving Points for that Reason.
+
+= http_request "GET", "reasons"
+
+= errors error_authentication
