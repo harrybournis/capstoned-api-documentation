@@ -3,6 +3,10 @@ module CustomHelpers
   Struct.new("Param", :required, :name, :type, :description)
   Struct.new("Error", :code, :description)
 
+  def url
+    current_page.data.gh_pages_path
+  end
+
   def authentication
     return "<aside class='aside-authentication'> <img src='images/locked-padlock.svg'> Authentication Needed</aside>"
   end

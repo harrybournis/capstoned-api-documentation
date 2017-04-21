@@ -79,7 +79,11 @@ count as one of the class.
 ### Log
 
 #### Submit a Log
-A Student automatically gains points when they submit a Log Entry.
+A Student automatically gains points when they submit a Log Entry. For the first log of the day,
+they get the full points that this reason awards. The Student receives a portion of the full points
+for each subsequent log entry of the day, until they reach the limit set by the ['max_logs_per_day'](<%= url %>#attributes31)
+GameSetting of the project, at which point they sto receiving points for submitting logs for the reast of the day.
+The cycle begins again 24 hours later.
 
 #### Submit the first Log of the Day
 A Student get extra points for submitting the first log of the day.

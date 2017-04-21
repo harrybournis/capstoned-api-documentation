@@ -4,7 +4,7 @@ title: CapstoneED Docs
 language_tabs:
   - json: Examples
 
-gh_pages_path: /capstoned-api-documentation
+gh_pages_path: /capstoned-api-documentation/
 
 search: false
 
