@@ -1,13 +1,23 @@
 .student-view
 	h2#create-peer-assessment.student-view Submit Peer Assessment
 
-	= example "POST /peer_assessments", data.doc_examples["V1::PeerAssessmentsController"]["Student"]["create"]["success"].first[1]
+	- @key1, @key2 = data.doc_examples["V1::PeerAssessmentsController"]["Student"]["create"]["success"].keys
+
+	= example "POST /peer_assessments", data.doc_examples["V1::PeerAssessmentsController"]["Student"]["create"]["success"][@key1]
+
+	= example "POST /peer_assessments", data.doc_examples["V1::PeerAssessmentsController"]["Student"]["create"]["success"][@key2], "Mutliple Peer Assessments"
 
 	= example "POST /peer_assessments", data.doc_examples["V1::PeerAssessmentsController"]["Student"]["create"]["error"].first[1], "Invalid Answers Format"
 
 	= authentication
 
 	p Submit a Peer Assessment for another Student. Students should evaluate their teammates once per iteration. The current time will be saved as `date_submitted` by the server. The server will return an error if the deadline for the Peer Assessment has passed, or the start date is in the future. A Student can not update a Peer Assessment after they have submitted it.
+
+	h3 Submit Multiple Peer Assessments
+
+	p To submit more than one Peer Assessments with one request, the body of the request should contain an object called "peer_assessments", that points to any array whose elements is each individual Peer Assessment record.
+
+	= code_prettyprint JSON.pretty_generate(JSON.parse({ "peer_assessments": [{ "answers": [{"answer": "1", "question_id": "3"}, { "answer": "I enjoyed the presentations", "question_id": "2" }], "pa_form_id": "1", "submitted_for_id": "3" }, { "answers": [{"answer": "1", "question_id": "3"}, { "answer": "I enjoyed the presentations", "question_id": "2" }], "pa_form_id": "1", "submitted_for_id": "3" }, { "answers": [{"answer": "1", "question_id": "3"}, { "answer": "I enjoyed the presentations", "question_id": "2" }], "pa_form_id": "1", "submitted_for_id": "3" }] }.to_json)), "json"
 
 	= http_request "POST", "peer_assessments"
 

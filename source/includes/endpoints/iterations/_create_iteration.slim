@@ -5,11 +5,11 @@
 
 	= example "POST /iterations", data.doc_examples["V1::IterationsController"]["Lecturer"]["create"]["success"][@key1]
 
-	= example "POST /iterations", data.doc_examples["V1::IterationsController"]["Lecturer"]["create"]["success"][@key2]
+	= example "POST /iterations", data.doc_examples["V1::IterationsController"]["Lecturer"]["create"]["success"][@key2], "Create Iteration with PaForm"
 
 	= authentication
 
-	p Create a new Iteration for an Assignment
+	p Create a new Iteration for an Assignment. This endpoint can also receive attributes and create the PaForm of the Iteration.
 
 	= http_request "POST", "iterations"
 
@@ -17,6 +17,13 @@
 			 param(required, "name", "String", "The name of the project"),
 			 param(required, "start_date", "String", "The date that the Iteration starts"),
 			 param(required, "deadline", "String", "The date that the iteration ends")
+
+	h3 pa_form_attributes
+
+	= params param(required, "iteration_id", "Integer", "The id of the Iteration that the PA Form belongs to"),
+			 param(required, "start_date", "DateTime", "The date from which the form is available to the Students for completion."),
+			 param(required, "deadline", "DateTime", "The deadline after which the form will not be able to be completed by the Students. In Unix Time."),
+			 param(required, "questions", "JSON", "The questions of the form. <a href='/capstoned-api-documentation/#questions-format'>See 'Questions Format' section for information about the format</a>")
 
 	= errors error_authentication,
 			 error_not_lecturer,
