@@ -1,0 +1,13 @@
+.lecturer-view
+	h2#index-form-templates.lecturer-view Get Form Templates
+
+	= example "GET /form_templates", data.doc_examples["V1::FormTemplatesController"]["Lecturer"]["index"]["success"].first[1]
+
+	= authentication
+
+	p Returns all the Form Templates associated with the current user.
+
+	= http_request "GET", "form_templates"
+
+	= errors error_authentication,
+			 error_not_lecturer

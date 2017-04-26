@@ -1,0 +1,16 @@
+.lecturer-view
+	h2#delete-form-template.lecturer-view Delete Form Template
+
+	= example 'PATCH /form_templates/:id', data.doc_examples["V1::FormTemplatesController"]["Lecturer"]["destroy"]["success"].first[1]
+
+	= authentication
+
+	p Delete a Form Template. It must belong to the current user.
+
+	= http_request "DELETE", "assignments/:id"
+
+	= params param(required, "id", "Integer", "The id of the Form Template to be deleted.")
+
+	= errors error_authentication,
+			 error_not_lecturer,
+			 error_association

@@ -29,6 +29,11 @@ includes:
   - endpoints/departments/departments
   - endpoints/departments/update_department
   - endpoints/departments/delete_department
+  - endpoints/form_templates/form_templates
+  - endpoints/form_templates/index_form_templates
+  - endpoints/form_templates/create_form_templates
+  - endpoints/form_templates/update_form_templates
+  - endpoints/form_templates/delete_form_templates
   - endpoints/game_settings/game_settings
   - endpoints/game_settings/get_game_setting
   - endpoints/game_settings/create_game_settings

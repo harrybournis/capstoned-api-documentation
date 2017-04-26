@@ -1,0 +1,1 @@
+{"resource":"V1::FormTemplatesController","action":"destroy","status":204,"description":"200 if no errors","error":false,"lecturer":true,"request_params":"{\"id\":\"7\"}","response_body":"","response_headers":{"X-Frame-Options":"SAMEORIGIN","X-XSS-Protection":"1; mode=block","X-Content-Type-Options":"nosniff"}}

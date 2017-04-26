@@ -1,0 +1,30 @@
+# Form Templates
+
+<p class="short-description">'Saved Peer Assessment Forms for the Lecturer'</p>
+
+A FormTemplate contains a collection of questions that can be used by the Lecturer to create a new PaForm.
+Form Templates are created independently of the the PaForms, and can be selected in the PaForm creation process.
+Each Lecturer has their own collection of FormTemplates, and each one is identified by a name, specified by the Lecturer.
+
+## Attributes
+
+Parameter | Type | Description
+--------- | ------- | -----------
+name | String | The name that identifies the FormTemplate
+lecturer_id | Integer | The id of the Lecturer that created the FormTemplate
+questions | JSON | The questions of the form. See "Questions Format" below for explanation
+
+## Questions Format
+
+Questions are submitted and saved as a JSON array of JSON objects that contain the 'question_id', the 'text' of the question, and its 'type_id', which corresponds to the id of one of the available QuestionTypes. Questions should be submitted in the following format:
+
+`questions: [ { text: 'Question?', type_id: 2 } ]`
+
+> Example
+
+```json
+<%= JSON.pretty_generate(JSON.parse({ "questions": [ { "text" => "Did this person work hard?", "type_id" => 2 }, { "text" => "Did they deliver the work in time?", "type_id" => 1 }, { "text" => "Die they exhbit leadership skills?", "type_id" => 2 } ] }.to_json)) %>
+```
+
+> The questions format will be validated, and input will be rejected if it does not follow the above example.
+

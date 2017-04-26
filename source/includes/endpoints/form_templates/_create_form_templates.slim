@@ -1,0 +1,17 @@
+.lecturer-view
+	h2#create-form-template.lecturer-view Create Form Template
+
+	= example "POST /form_templates", data.doc_examples["V1::FormTemplatesController"]["Lecturer"]["create"]["success"].first[1]
+
+	= authentication
+
+	p Create a new Form Template. The lecturer_id is automatically set to the current user's id.
+
+	= http_request "POST", "form_templates"
+
+	= params param(required, "name", "String", "The name that identifies the FormTemplate"),
+			 param(required, "questions", "JSON", "The questions of the form. <a href='/capstoned-api-documentation/#questions-format'>See 'Questions Format' section for information about the format</a>")
+
+	= errors error_authentication,
+			 error_not_lecturer,
+			 error(422, "Invalid params. Start Date must be sometime AFTER the current time, and deadline must be AFTER start_date. See response body.")
