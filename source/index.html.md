@@ -44,6 +44,7 @@ includes:
   - endpoints/logs/create_log
   - endpoints/pa_forms/pa_forms
   - endpoints/pa_forms/create_pa_form
+  - endpoints/pa_forms/create_pa_form_multiple
   - endpoints/pa_forms/index_pa_forms
   - endpoints/pa_forms/get_pa_form
   - endpoints/peer_assessments/peer_assessments

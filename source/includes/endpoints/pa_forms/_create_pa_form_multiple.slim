@@ -1,0 +1,25 @@
+.lecturer-view
+	h2#create-pa-form-multiple.lecturer-view Create same PA Form for all Iterations
+
+	= example "POST /assignments/1/pa_forms", data.doc_examples["V1::PaFormsController"]["Lecturer"]["create_for_each_iteration"]["success"].first[1]
+	= authentication
+
+	p Creates the same PaForm for each Iteration of an Assignment. The Assignment needs to contain at least one Iteration, and no Iteration must already have a PaForm. The dates must also be a start and end offset from the deadline of the Iteration, since the start and deadline of a PaForm depends on the start and end of an Iteration.
+
+	p Returns the created PaForms.
+
+	aside.warning This endpoint expects a start_offset and end_offset instad of start_date and end_date.
+
+	= http_request "POST", "assignments/:assignment_id/pa_forms"
+
+	= params param(required, "assignment_id", "Integer", "The id of the Assignment."),
+			 param(required, "start_offset", "Integer", "The time that must pass after the end of an Iteration, before the pa_forms can be sent. In Unix Time."),
+			 param(required, "end_offset", "Integer", "The time that must pass after the end of an Iteration, before the pa_forms can be sent. In Unix Time."),
+			 param(required, "questions", "JSON", "The questions of the form. <a href='/capstoned-api-documentation/#questions-format'>See 'Questions Format' section for information about the format</a>")
+
+	= errors error_authentication,
+			 error_not_lecturer,
+			 error(403, 'The assignment_id does not belong to an Assignment associated with current_user'),
+			 error_invalid_params('This assignment has no Iterations.'),
+			 error_invalid_params('An Iteration in this Assignment already contains a PaForm.'),
+			 error_invalid_params

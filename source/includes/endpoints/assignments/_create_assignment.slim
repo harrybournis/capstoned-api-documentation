@@ -1,13 +1,15 @@
 .lecturer-view
 	h2#create-assignment.lecturer-view Create Assignment
 
-	- @key1, @key2, @key3 = data.doc_examples["V1::AssignmentsController"]["Lecturer"]["create"]["success"].keys
+	- @key1, @key2, @key3, @key4 = data.doc_examples["V1::AssignmentsController"]["Lecturer"]["create"]["success"].keys
 
 	= example 'POST /assignments', data.doc_examples["V1::AssignmentsController"]["Lecturer"]["create"]["success"][@key1]
 
 	= example 'POST /assignments', data.doc_examples["V1::AssignmentsController"]["Lecturer"]["create"]["success"][@key2], "Creating an Assignment with 2 Projects"
 
 	= example 'POST /assignments/1/game_settings', data.doc_examples["V1::AssignmentsController"]["Lecturer"]["create"]["success"][@key3], "Creating an Assignment with Game Settings"
+
+	= example 'POST /assignments/1/game_settings', data.doc_examples["V1::AssignmentsController"]["Lecturer"]["create"]["success"][@key4], "Creating an Assignment with Iterations"
 
 	= example 'POST /assignments', data.doc_examples["V1::AssignmentsController"]["Lecturer"]["create"]["error"].first[1], "Errors in projects_attributes"
 

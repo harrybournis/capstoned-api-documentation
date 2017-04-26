@@ -9,8 +9,8 @@ Assignments belong to Units and have many teams of Students. A Lecturer creates 
 Parameter | Type | Description
 --------- | ------- | -----------
 name | string | The name of the Assignment.
-start_date | Date | The Date that the Assignment started
-end_date | Date | The Date that the Assignment ended
+start_date | DateTime | The Date that the Assignment started
+end_date | DateTime | The Date that the Assignment ended
 unit_id | Integer | The id of the Unit that the Assignment belongs to
 lecturer_id | Integer | The id of the Lecturer that the Assignment belongs to
 
