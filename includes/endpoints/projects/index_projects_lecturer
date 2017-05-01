@@ -3,13 +3,13 @@
     </span><span class="p">{</span><span class="w">
       </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
       </span><span class="s2">"assignment_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 220"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen220"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 224"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen224"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
       </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0e3b6e989f040aa15727fb6a6a6c9d41"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5c5d1b71f855cf6cc686e2830f1f8a6e"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"unit_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#d2d1ac"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#c6d2ac"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"pending_project_evaluation"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
       </span><span class="s2">"points"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="s2">"total"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
@@ -19,13 +19,13 @@
     </span><span class="p">{</span><span class="w">
       </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
       </span><span class="s2">"assignment_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 221"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen221"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 225"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen225"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
       </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"f4be1ff88af0610b2fc8f0cca1e46f6e"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0a44796c25ed28998c87a7ea047c88ff"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"unit_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#d2acbe"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#b3acd2"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"pending_project_evaluation"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
       </span><span class="s2">"points"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="s2">"total"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
@@ -35,13 +35,13 @@
     </span><span class="p">{</span><span class="w">
       </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
       </span><span class="s2">"assignment_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 224"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen224"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 228"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen228"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
       </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4634e2d681a61b81964bff699dd37292"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"772231b2135539bd0cf6af74e91e420f"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"unit_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#acd2b0"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#acd2bb"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"pending_project_evaluation"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
       </span><span class="s2">"points"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="s2">"total"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
@@ -51,13 +51,13 @@
     </span><span class="p">{</span><span class="w">
       </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
       </span><span class="s2">"assignment_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 225"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen225"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 229"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen229"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
       </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"d7a873ca186a8de6b2056aad3fa2fff7"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9ecd89918b7157f42b3503cb70f9d3ee"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"unit_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#acd2c4"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#c9d2ac"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"pending_project_evaluation"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
       </span><span class="s2">"points"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="s2">"total"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
@@ -67,13 +67,13 @@
     </span><span class="p">{</span><span class="w">
       </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
       </span><span class="s2">"assignment_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 223"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen223"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 227"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen227"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
       </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"a0e2b5503f546b9023e751de741198fd"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"c14e28b46fd9f5fcb7ee5b34a0131b32"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"unit_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#bed2ac"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#acd1d2"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"pending_project_evaluation"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
       </span><span class="s2">"points"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="s2">"total"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
@@ -83,13 +83,13 @@
     </span><span class="p">{</span><span class="w">
       </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
       </span><span class="s2">"assignment_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 222"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen222"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project 226"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The xmen226"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, pri in erant detracto antiopam, duis altera nostrud id eam. Feugait invenire ut vim, novum reprimique reformidans id vis, sit at quis hinc liberavisse. Eam ex sint elaboraret assueverit, sed an equidem reformidans, idque doming ut quo. Ex aperiri labores has, dolorem indoctum hendrerit has cu. At case posidonium pri."</span><span class="p">,</span><span class="w">
       </span><span class="s2">"logo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"db91888a1e34ff8b13136b10b83eca12"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"enrollment_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"6f93e5886d66232cac5f593105525cf0"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"unit_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#acd2b3"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#acd2c1"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"pending_project_evaluation"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
       </span><span class="s2">"points"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="s2">"total"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
@@ -100,5 +100,5 @@
 </span><span class="p">}</span></code></pre><blockquote class='example-description'></blockquote><blockquote class='request-label'><p>Request</p></blockquote><pre class="highlight plaintext"><code>GET /projects</code></pre><blockquote class='response-label'><p>Response</p></blockquote><pre class="highlight plaintext"><code>Status: 204 -- No Content</code></pre><pre class="highlight json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">""</span><span class="w">
 </span><span class="p">}</span></code></pre><aside class='aside-authentication'> <img src='images/locked-padlock.svg'> Authentication Needed</aside><aside class='aside-includes'> Can Include other resources in the response.
-        Available Resources: assignment, unit, students</aside><p>Returns all the active Projects of the Lecturer. If the field 'pending_project_evaluation' is true then the current user can submit a project evaluation for this project.</p><h3>HTTP Request</h3>
+        Available Resources: assignment, unit, students</aside><p>Returns all the active Projects of the Lecturer. If the field 'pending_project_evaluation' is true then the current user can submit a project evaluation for this project. If 'pending_project_evaluations' is true, the response also contains the 'current_iteration_id' which indicated the iteration that can be evaluated. Also contains the previous and current rank of the Project by calculating the total points of each project in the Assignment.</p><h3>HTTP Request</h3>
 <p class='prettyprint '><code>GET http://example.com/v1/projects</code></p><h3>Errors</h3><table><thead><tr><th>Error Code</th><th>Meaning</th></tr></thead><tbody><tr><td>400</td><td>Bad Request -- Invalid 'includes' parameter</td></tr><tr><td>401</td><td>Unauthorized -- Authentication Failed</td></tr></tbody></table>
