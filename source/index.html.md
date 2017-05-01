@@ -29,6 +29,8 @@ includes:
   - endpoints/departments/departments
   - endpoints/departments/update_department
   - endpoints/departments/delete_department
+  - endpoints/feelings/feelings
+  - endpoints/feelings/index_feelings
   - endpoints/form_templates/form_templates
   - endpoints/form_templates/index_form_templates
   - endpoints/form_templates/create_form_templates
@@ -73,12 +75,11 @@ includes:
   - endpoints/projects/destroy_extension
   - endpoints/projects/update_nickname
   - endpoints/project_evaluations/project_evaluations
-  - endpoints/project_evaluations/feelings
-  - endpoints/project_evaluations/index_feelings
+  - endpoints/project_evaluations/index_pending_project_evaluations
   - endpoints/project_evaluations/create_project_evaluation
   #- endpoints/project_evaluations/get_project_evaluations
   #- endpoints/project_evaluations/get_iteration_stats
-  - endpoints/project_evaluations/update_project_evaluation
+  #- endpoints/project_evaluations/update_project_evaluation
   - endpoints/question_types/question_types
   - endpoints/question_types/index_question_types
   - endpoints/question_types/index_questions

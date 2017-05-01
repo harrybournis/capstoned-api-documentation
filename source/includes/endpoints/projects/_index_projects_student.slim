@@ -6,7 +6,7 @@
 = authentication
 = includes_for_project_student
 
-p Returns all the Projects of the Student. Includes the nickname of the Student in each Project. Contains the 'team_points' and the 'team_average'. If the field 'pending_project_evaluation' is true then the current user can submit a project evaluation for this project.
+p Returns all the Projects of the Student. Includes the nickname of the Student in each Project. Contains the 'team_points' and the 'team_average'. If the field 'pending_project_evaluation' is true then the current user can submit a project evaluation for this project. If 'pending_project_evaluations' is true, the response also contains the 'current_iteration_id' which indicated the iteration that can be evaluated. Also contains the previous and current rank of the Project by calculating the total points of each project in the Assignment.
 
 = http_request "GET", "projects"
 

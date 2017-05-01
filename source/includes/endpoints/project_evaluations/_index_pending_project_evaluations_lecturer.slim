@@ -1,0 +1,12 @@
+- @key1, @key2  = data.doc_examples["V1::ProjectEvaluationsController"]["Lecturer"]["index"]["success"].keys
+
+= example "GET /project-evaluations", data.doc_examples["V1::ProjectEvaluationsController"]["Lecturer"]["index"]["success"][@key1]
+= example "GET /project-evaluations", data.doc_examples["V1::ProjectEvaluationsController"]["Lecturer"]["index"]["success"][@key2]
+
+= authentication
+
+p Get Pending Project Evaluation for the current_user at the current time. Contains the project_id, the iteration_id and the answers that the students have given, if any of them have submitted the Project Evalution.
+
+= http_request "GET", "project-evaluations"
+
+= errors error_authentication
